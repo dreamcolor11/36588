@@ -29,20 +29,30 @@
 </div> -->
 <div layout="column" layout-fill ng-controller="pageLogin" class="login_bg">
 	<md-content flex layout-padding >
+		<!--上方選單-->
 		<div layout="row" class="top_menu">
-			<div flex="10" class="icon_size">
-				<i class="material-icons icon_dehaze">dehaze</i>
+			<div flex="10" class="nav_icon hamburger">
+				<span class="first"></span>
+			    <span class="second"></span>
+			    <span class="third"></span>
 			</div>
-			<div layout="row" flex="80" layout-align="center">
-				<ul class="main_menu">
-					<li>真人</li>
-					<li>遊戲</li>
-					<li>六合</li>
-					<li>賓果</li>
-				</ul>
+			<div flex="10" class="nav_icon arrow">
+				<span class="first"></span>
+			    <span class="second"></span>
+			    <span class="third"></span>
+			</div>
+			<div layout="row" flex layout-align="center">
+				<div class="main_menu">
+					<div class="menu_live">真人</div>
+					<div class="menu_game">遊戲</div>
+					<div class="menu_ssc">六合</div>
+					<div class="menu_bingo">賓果</div>
+				</div>
 			</div>
 			<div flex="10"></div>
 		</div>
+		<!--上方選單 end-->
+		<!--中間登入區-->
 		<div layout="row" layout-padding class="login_box">
 			<div flex> </div>
 			<div layout="column" layout-align="center center" class="md-whiteframe-4dp" >
@@ -59,8 +69,11 @@
 			</div>
 			<div flex> </div>
 		</div>
+		<!--中間登入區 end-->
+		<!--底部合作廠商-->
 		<div layout="row" layout-padding>
 			
 		</div>
+		<!--底部合作廠商 end-->
 	</md-content>
 </div>

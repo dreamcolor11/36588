@@ -1,45 +1,4 @@
-html {
-  padding: 0;
-}
-html :hover {
-  padding: 20px;
-  -webkit-animation: in-html 5s;
-  -moz-animation: in-html 5s;
-  animation: in-html 5s;
-}
-@-moz-keyframes in-html {
-  0% {
-    padding: 0;
-  }
-  20% {
-    padding: 20px;
-  }
-  100% {
-    padding: 0;
-  }
-}
-@-webkit-keyframes in-html {
-  0% {
-    padding: 0;
-  }
-  20% {
-    padding: 20px;
-  }
-  100% {
-    padding: 0;
-  }
-}
-@keyframes in-html {
-  0% {
-    padding: 0;
-  }
-  20% {
-    padding: 20px;
-  }
-  100% {
-    padding: 0;
-  }
-}
+/*預設*/
 ul {
   margin: 0;
   padding: 0;
@@ -58,6 +17,49 @@ md-toolbar {
   position: fixed;
   top: 0;
   /* perspective: 600px; */
+}
+.top_menu .nav_icon {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  position: relative;
+  transition: all 500ms ease;
+}
+.top_menu .nav_icon span {
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  transition: all 200ms ease;
+}
+.top_menu .hamburger span {
+  height: 10px;
+  -webkit-transform: translateY(29px);
+}
+.top_menu .hamburger .second {
+  -webkit-transform: translateY(0);
+}
+.top_menu .hamburger .third {
+  -webkit-transform: translateY(60px);
+}
+.top_menu .arrow {
+  display: none;
+  -webkit-transform: rotate(180deg) translateX(-3px);
+}
+.top_menu .arrow span {
+  height: 10px;
+  -webkit-transform: translateY(29px);
+}
+.top_menu .arrow .second {
+  -webkit-transform: rotate(-45deg) translateY(56px);
+  width: 40px;
+  -webkit-transform: rotate(45deg) translateY(-15px) translateX(40px);
+}
+.top_menu .arrow .third {
+  -webkit-transform: rotate(-45deg) translateY(56px);
+  width: 40px;
 }
 /*背景圖*/
 md-content.md-default-theme,
@@ -171,3 +173,32 @@ ul.main_menu li {
   font-weight: bold;
   padding: 0 1.2rem;
 }
+/* html {
+	padding: 0;
+	
+
+	:hover {
+		padding: 5px;
+
+		.animation (
+			in-html,
+			in-html 5s ,
+			{
+				0% { 
+					padding: 0; 
+				}
+				20% { 
+					padding: 5px; 
+				}
+				100% {
+					padding: 0;
+				}
+			}
+
+		);
+
+	}
+
+
+
+} */

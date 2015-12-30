@@ -2,7 +2,7 @@
 	-webkit-transition: @setting;
 	transition: @setting;
 }
-
+/*預設*/
 ul {
 	margin: 0;
 	padding: 0; 
@@ -23,7 +23,63 @@ md-toolbar {
 	position: fixed;
 	top: 0;
 	/* perspective: 600px; */
+	.nav_icon {
+		width: 70px;
+	    height: 70px;
+	    margin: 10px;
+	    position: relative;
+		transition: all 500ms ease;
+
+	    span {
+	    	background-color: #fff;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70px;
+	    	transition: all 200ms ease;
+	    }
+	}
+	.hamburger {
+		span {
+		    height: 10px;
+		    -webkit-transform: translateY(29px);
+		}
+
+		.second {
+		    -webkit-transform: translateY(0);
+		}
+
+		.third{
+		    -webkit-transform: translateY(60px);
+		}
+	}
+	.arrow {
+		display: none;
+		-webkit-transform: rotate(180deg) translateX(-3px);
+
+		span {
+			height: 10px;
+			-webkit-transform: translateY(29px);
+		}
+		.second {
+			-webkit-transform: rotate(-45deg) translateY(56px);
+    		width: 40px;
+    		-webkit-transform: rotate(45deg) translateY(-15px) translateX(40px);
+		}
+		.third {
+			-webkit-transform: rotate(-45deg) translateY(56px);
+    		width: 40px;
+		}
+	}
+	.animation {
+		form {}
+		to {}
+	}
 }
+
+
+
 
 /*背景圖*/
 md-content.md-default-theme, md-content {
