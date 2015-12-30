@@ -1,0 +1,40 @@
+<div layout="row" layout-fill>
+	<!-- ROW 1 -->
+	<md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-xs')">
+		<md-toolbar>
+			<h1 class="md-toolbar-tools">左側區塊</h1>
+		</md-toolbar>
+		<md-content flex>
+			這裡是左側區塊的內容
+		</md-content>
+	</md-sidenav>
+	
+	
+	<!-- ROW 2 -->
+	<div layout="column" layout-fill>
+		<!-- ROW 2 > COLUMN 1 -->
+		<md-toolbar>
+			<div class="md-toolbar-tools" layout="row" layout-align="start center">
+				<!-- 1 --><md-button class="md-icon-button material-icons" ng-click="toggleLeft()">menu</md-button>
+				<!-- 2 -->主要區塊
+				<!-- 3 --><span flex></span>
+				<!-- 4 --><md-button class="md-icon-button material-icons" ng-click="toggleRight()">face</md-button>
+			</div>
+		</md-toolbar>
+		<!-- ROW 2 > COLUMN 2 -->
+		<md-content flex layout-padding>
+			這裡是主要區塊的內容
+		</md-content>
+	</div>
+	
+	
+	<!-- ROW 3 -->
+	<md-sidenav md-component-id="right" class="md-sidenav-right md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-xs')">
+		<md-toolbar>
+			<h1 class="md-toolbar-tools">右側區塊</h1>
+		</md-toolbar>
+		<md-content flex>
+			這裡是右側區塊的內容
+		</md-content>
+	</md-sidenav>
+</div>

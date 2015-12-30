@@ -1,0 +1,49 @@
+
+
+// @import "common.less";
+
+
+.animation (@name; @animation; @styles) {
+    -webkit-animation:  @animation;
+    -moz-animation: @animation;
+    animation: @animation;
+
+    @-moz-keyframes @name { @styles(); }
+    @-webkit-keyframes @name { @styles(); }
+    @keyframes @name { @styles(); }
+}
+
+
+html {
+	padding: 0;
+	
+
+	:hover {
+		padding: 20px;
+
+		.animation (
+			in-html,
+			in-html 5s ,
+			{
+				0% { 
+					padding: 0; 
+				}
+				20% { 
+					padding: 20px; 
+				}
+				100% {
+					padding: 0;
+				}
+			}
+
+		);
+
+	}
+
+
+
+}
+
+
+
+@import 'login.less';

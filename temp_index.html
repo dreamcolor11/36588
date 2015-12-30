@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+<title>展示頁面</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="libs/angular_material/angular-material.min.css">
+<link rel="stylesheet" href="icons/material-icons.css">
+
+<script src="libs/angularjs/angular.min.js"></script>
+<script src="libs/angularjs/angular-animate.min.js"></script>
+<script src="libs/angularjs/angular-aria.min.js"></script>
+
+<script src="libs/angular_material/angular-material.min.js"></script>
+
+<script src="script/index.js"></script>
+</head>
+<body ng-controller="Main" ng-cloak>
+	<div layout="row" layout-fill>
+		<!-- ROW 1 -->
+		<md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-xs')">
+			<md-toolbar>
+				<h1 class="md-toolbar-tools">左側區塊</h1>
+			</md-toolbar>
+			<md-content flex>
+				這裡是左側區塊的內容
+			</md-content>
+		</md-sidenav>
+		
+		
+		<!-- ROW 2 -->
+		<div layout="column" layout-fill>
+			<!-- ROW 2 > COLUMN 1 -->
+			<md-toolbar>
+				<div class="md-toolbar-tools" layout="row" layout-align="start center">
+					<!-- 1 --><md-button class="md-icon-button material-icons" ng-click="toggleLeft()">menu</md-button>
+					<!-- 2 -->主要區塊
+					<!-- 3 --><span flex></span>
+					<!-- 4 --><md-button class="md-icon-button material-icons" ng-click="toggleRight()">face</md-button>
+				</div>
+			</md-toolbar>
+			<!-- ROW 2 > COLUMN 2 -->
+			<md-content flex layout-padding>
+				這裡是主要區塊的內容
+			</md-content>
+		</div>
+		
+		
+		<!-- ROW 3 -->
+		<md-sidenav md-component-id="right" class="md-sidenav-right md-whiteframe-z2" md-is-locked-open="$mdMedia('gt-xs')">
+			<md-toolbar>
+				<h1 class="md-toolbar-tools">右側區塊</h1>
+			</md-toolbar>
+			<md-content flex>
+				這裡是右側區塊的內容
+			</md-content>
+		</md-sidenav>
+	</div>
+</body>
+</html>

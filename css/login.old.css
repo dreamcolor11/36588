@@ -1,0 +1,141 @@
+
+ul {
+	margin: 0;
+	padding: 0; 
+}
+/*背景色*/
+.login_bg {
+	background: #191b25;	
+}
+
+/*上方toolbar透明度*/
+md-toolbar {
+ opacity: 0.5;
+}
+
+/*上方選單*/
+.top_menu {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	/* perspective: 600px; */
+}
+
+/*背景圖*/
+md-content.md-default-theme, md-content {
+	background: url(../images/login/web_bg01.jpg) no-repeat center top #191b25;
+	background-size: cover;
+}
+
+/*登入區塊*/
+.login_box {
+	margin: 23% 0 0 0;
+}
+
+/*icon*/
+/* @keyframes m01 {
+    from {transform: perspective( 0px ) rotateY( 0deg );}
+    to {transform: perspective( 130px ) rotateY( 60deg );}
+}
+@keyframes m02 {
+    from {transform: perspective( 130px ) rotateY( 60deg );}
+    to {transform: perspective( 0px ) rotateY( 0deg );}
+}
+
+.icon_size {
+	font-size: 100%;
+	color: #e5ff0b;
+	background: transparent;
+	border: 0px;
+	outline:none;
+	cursor: pointer;
+	animation: m02 0.3s;
+	transform: perspective( 0px ) rotateY( 0deg );
+	animation-duration:0.3s;
+}
+
+.icon_size:hover{
+	color: #fff;
+	border: 0px;
+	animation: m01 0.3s;
+	transform: perspective( 130px ) rotateY( 60deg );
+}*/
+
+/* .icon_size {
+	font-size: 100%;
+	color: #e5ff0b;
+	background: transparent;
+	border: 0px;
+	outline:none;
+	cursor: pointer;	
+ 	 
+}
+
+.icon_size:hover i{
+	border: 0px;
+	transform: perspective(600px) rotateY(45deg);
+	font-size: 3rem;
+}
+ 
+.icon_size i {
+	transform:perspective(600px);
+	 transition: font-size , transform 0.3s;
+}
+
+i.icon_dehaze {
+	font-size: 3rem;
+} */
+
+
+/*法3*/
+
+.icon_size {
+	font-size: 100%;
+	color: #e5ff0b;
+	background: transparent;
+	border: 0px;
+	outline:none;
+	cursor: pointer;	
+ 	 
+}
+
+.icon_size:hover i{
+	border: 0px;
+	transform: perspective( 600px ) rotateY( 45deg );
+	font-size: 3.4rem;
+	line-height:3.4rem; 
+}
+ 
+.icon_size i {
+	transform: perspective( 600px );
+	transition: font-size 0.16s, transform 0.23s;
+}
+
+i.icon_dehaze {
+	font-size: 3rem;
+	line-height:3.4rem; 
+}
+
+
+/*mainMenu 主選單*/
+.top_menu ul {
+	width: 29rem;
+}
+.main_menu {
+	background: url(../images/login/menu/333.jpg) no-repeat center top;
+	background-size: cover;
+	height: 51px;
+	width: 24%;
+}
+ul.main_menu {
+	list-style: none;
+	color: #e5ff0b;
+	font-size:100%; 
+	font-family:"微軟正黑體";
+}
+ul.main_menu li {
+    float: left;
+    font-size: 2.4rem;
+    font-weight:bold; 
+    padding: 0 1.2rem;
+}
