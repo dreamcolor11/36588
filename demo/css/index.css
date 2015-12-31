@@ -1,0 +1,275 @@
+/*預設*/
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*背景色*/
+.login_bg {
+  background: #191b25;
+}
+/*上方toolbar透明度*/
+md-toolbar {
+  opacity: 0.5;
+}
+/*上方*/
+.top {
+  width: 100%;
+  position: fixed;
+  /*上方選單*/
+  /*中間主選單*/
+}
+.top .top_menu {
+  top: 8px;
+}
+.top .top_menu .nav_icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+.top .top_menu .hamburger span {
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 13%;
+  top: 0;
+  left: 0;
+  background: rgba(241, 253, 23, 0.6);
+  transition: all 500ms ease;
+}
+.top .top_menu .hamburger .first {
+  transform: translateY(0);
+}
+.top .top_menu .hamburger .second {
+  transform: translateY(18px);
+}
+.top .top_menu .hamburger .third {
+  transform: translateY(37px);
+}
+.top .top_menu .nav_icon:hover {
+  transform: rotate(180deg);
+}
+.top .top_menu .nav_icon:hover span {
+  background: #f1fd17;
+}
+.top .top_menu .nav_icon:hover .first {
+  -webkit-transform: rotate(45deg) translateY(-6px) translateX(35px);
+  width: 60%;
+}
+.top .top_menu .nav_icon:hover .second {
+  transform: translateY(29px) translateX(0px);
+}
+.top .top_menu .nav_icon:hover .third {
+  -webkit-transform: rotate(-45deg) translateY(47px) translateX(-6px);
+  width: 60%;
+}
+.top .top_main_menu {
+  top: 0;
+}
+.top .top_main_menu .main_menu {
+  width: 366px;
+  font-size: 100%;
+  /*滑入*/
+}
+.top .top_main_menu .main_menu > div {
+  float: left;
+  font-size: 2.4rem;
+  color: #f1fd17;
+  font-family: "微軟正黑體";
+  padding: 0 2%;
+  cursor: pointer;
+  width: 80px;
+}
+.top .top_main_menu .main_menu .menu_live {
+  /* 
+				transition: all 500ms ease;
+				cursor: pointer;
+				background: rgba(255, 255, 255, 0);
+				width: 80px;
+				height: 80px;
+				font-size: 35px;
+				transition-property:width,background;
+				transition-duration: 1s, 1s; */
+}
+.top .top_main_menu .main_menu .menu_live div::before {
+  content: "";
+  background: #cf4d35;
+  width: 0px;
+  height: 50px;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+.top .top_main_menu .main_menu .menu_live span {
+  transition: all .2s linear;
+  position: relative;
+  /* opacity: 0; */
+}
+.top .top_main_menu .main_menu .menu_live:hover {
+  /* ackground: rgba(100, 55, 255, 1);
+				    width: 130px;
+				    height: 80px;
+				    font-size: 35px; */
+}
+.top .top_main_menu .main_menu .menu_live:hover div::before {
+  content: "";
+  background: #f1fd17;
+  width: 80px;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+.top .top_main_menu .main_menu .menu_live:hover span {
+  color: #fff;
+  display: inherit;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.6rem;
+  /* opacity: 0; */
+}
+/*背景圖*/
+md-content.md-default-theme,
+md-content {
+  background: url(../images/login/web_bg01.jpg) no-repeat center top #191b25;
+  background-size: cover;
+}
+/*登入區塊*/
+.login_box {
+  margin: 23% 0 0 0;
+  -webkit-transition: "font-size 0.16s transform 0.23s";
+  transition: "font-size 0.16s transform 0.23s";
+}
+.login_box :hover {
+  font-size: 20px;
+}
+/*icon*/
+/* @keyframes m01 {
+    from {transform: perspective( 0px ) rotateY( 0deg );}
+    to {transform: perspective( 130px ) rotateY( 60deg );}
+}
+@keyframes m02 {
+    from {transform: perspective( 130px ) rotateY( 60deg );}
+    to {transform: perspective( 0px ) rotateY( 0deg );}
+}
+
+.icon_size {
+	font-size: 100%;
+	color: #e5ff0b;
+	background: transparent;
+	border: 0px;
+	outline:none;
+	cursor: pointer;
+	animation: m02 0.3s;
+	transform: perspective( 0px ) rotateY( 0deg );
+	animation-duration:0.3s;
+}
+
+.icon_size:hover{
+	color: #fff;
+	border: 0px;
+	animation: m01 0.3s;
+	transform: perspective( 130px ) rotateY( 60deg );
+}*/
+/* .icon_size {
+	font-size: 100%;
+	color: #e5ff0b;
+	background: transparent;
+	border: 0px;
+	outline:none;
+	cursor: pointer;	
+ 	 
+}
+
+.icon_size:hover i{
+	border: 0px;
+	transform: perspective(600px) rotateY(45deg);
+	font-size: 3rem;
+}
+ 
+.icon_size i {
+	transform:perspective(600px);
+	 transition: font-size , transform 0.3s;
+}
+
+i.icon_dehaze {
+	font-size: 3rem;
+} */
+/*法3*/
+.icon_size {
+  font-size: 100%;
+  color: #e5ff0b;
+  background: transparent;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+}
+.icon_size > i > i {
+  transform: perspective(600px);
+  transition: font-size 0.16s, transform 0.23s;
+}
+.icon_size:hover i {
+  border: 0px;
+  transform: perspective(600px) rotateY(45deg);
+  font-size: 3.4rem;
+  line-height: 3.4rem;
+}
+.icon_size i.icon_dehaze {
+  font-size: 3rem;
+  line-height: 3.4rem;
+}
+/*mainMenu 主選單*/
+/* .top_menu ul {
+	width: 29rem;
+}
+.main_menu {
+	background: url(../images/login/menu/333.jpg) no-repeat center top;
+	background-size: cover;
+	height: 51px;
+	width: 24%;
+}
+ul.main_menu {
+	list-style: none;
+	color: #e5ff0b;
+	font-size:100%; 
+	font-family:"微軟正黑體";
+}
+ul.main_menu li {
+    float: left;
+    font-size: 2.4rem;
+    font-weight:bold; 
+    padding: 0 1.2rem;
+}
+ */
+/* html {
+	padding: 0;
+	
+
+	:hover {
+		padding: 5px;
+
+		.animation (
+			in-html,
+			in-html 5s ,
+			{
+				0% { 
+					padding: 0; 
+				}
+				20% { 
+					padding: 5px; 
+				}
+				100% {
+					padding: 0;
+				}
+			}
+
+		);
+
+	}
+
+
+
+} */

@@ -29,43 +29,73 @@
 </div> -->
 <div layout="column" layout-fill ng-controller="pageLogin" class="login_bg">
 	<md-content flex layout-padding >
-		<!--上方選單-->
-		<div layout="row" class="top_menu">
-			<div flex="10" class="nav_icon hamburger">
-				<span class="first"></span>
-			    <span class="second"></span>
-			    <span class="third"></span>
-			</div>
-			<div flex="10" class="nav_icon arrow">
-				<span class="first"></span>
-			    <span class="second"></span>
-			    <span class="third"></span>
-			</div>
-			<div layout="row" flex layout-align="center">
-				<div class="main_menu">
-					<div class="menu_live">真人</div>
-					<div class="menu_game">遊戲</div>
-					<div class="menu_ssc">六合</div>
-					<div class="menu_bingo">賓果</div>
+		<div layout="row" class="top" >
+			<!--上方選單-->
+			<div layout="row" class="top_menu">
+				<div class="nav_icon hamburger">
+					<span class="first"></span>
+				    <span class="second"></span>
+				    <span class="third"></span>
 				</div>
 			</div>
-			<div flex="10"></div>
+		
+			<div layout="row" layout-align="center" class="top_main_menu" flex="85">
+				<div class="main_menu">
+					<div class="menu_ac menu_live">
+						<div><span>真人</span></div>
+					</div>
+					<div class="menu_ac menu_game">
+						<div><span>遊戲</span></div>
+					</div>
+					<div class="menu_ac menu_ssc">
+						<div><span>六合</span></div>
+					</div>
+					<div class="menu_ac menu_bingo">
+						<div><span>賓果</span></div>
+					</div>
+				</div>
+			</div>
 		</div>
+			
+	
 		<!--上方選單 end-->
 		<!--中間登入區-->
-		<div layout="row" layout-padding class="login_box">
+		<div layout="row" layout-padding class="login_main">
 			<div flex> </div>
-			<div layout="column" layout-align="center center" class="md-whiteframe-4dp" >
-				<md-input-container>
-					<label>帳號</label>
-					<input ng-model="inputid" required>
-				</md-input-container>
-				<md-input-container>
-					<label>密碼</label>
-					<input ng-model="inputpw" required>
-				</md-input-container>
-				<md-button class="md-raised md-primary" ng-click="login()">登入</md-button>
-				<md-button>>回電腦版登入</md-button>
+			<!--登入區-->
+			<div flex="30" flex-md="40" flex-sm="60" flex-xs="100" layout="column" layout-align="center center" class="login_group" >
+				<div layout="row" layout-xs="column" class="login_box" >
+					<!--登入區 左--><!--左邊input-->
+					<div flex flex-xs="100" class="log_box01"> 
+						<md-input-container class="user_box">
+							<input ng-model="inputid" required>
+							<label>帳號</label>
+							
+						</md-input-container>
+						<md-input-container class="pw_box">
+							<input ng-model="inputpw" required>
+							<label>密碼</label>
+							
+						</md-input-container>
+					</div>
+					<!--登入區 右--><!--右邊按鈕-->
+					<div flex flex-xs="100" class="log_box02">
+						<div class="check_box01"> 
+							<md-checkbox ng-model="data.cb1" aria-label="Checkbox 1" class="md-checkbox">
+								<span>記住我的密碼</span>
+							</md-checkbox>
+						</div>
+						<div class="login_btn01">
+							<button class="md-raised md-button md-ink-ripple" type="button" ng-transclude="">
+								<span class="ng-scope">立即登入</span>
+								<div class="md-ripple-container"></div>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- <md-button class="md-raised md-primary" ng-click="login()">登入</md-button>
+				<md-button>>回電腦版登入</md-button> -->
 			</div>
 			<div flex> </div>
 		</div>

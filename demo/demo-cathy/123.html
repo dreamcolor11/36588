@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>滑動DEMO</title>
+<meta charset="UTF-8">
+	<style>
+		.box {
+		    width: 200px; height: 100px;
+		    background-size: 100% 200%;
+		    background-image: linear-gradient(to bottom, red 50%, black 50%);
+		    transition: background-position 1s;
+		}
+		.box:hover {
+		    background-position: 100% -100%;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
