@@ -1,4 +1,5 @@
 /*預設*/
+@import 'reset.css';
 ul {
   margin: 0;
   padding: 0;
@@ -75,7 +76,23 @@ md-toolbar {
   position: absolute;
   left: 50%;
   margin-left: -200px;
+  text-align: center;
   /*滑入*/
+  /* .menu_ac:hover {
+				div::before {
+					content: "";
+					width: 80px;
+					opacity: 0.5;
+					border-radius: 5px;
+				}
+				div::after {}
+				span {
+					color: #fff;
+					display: inherit;
+					text-align: center;
+				}
+				
+			} */
 }
 .top .top_main_menu .main_menu > div {
   float: left;
@@ -86,37 +103,55 @@ md-toolbar {
   cursor: pointer;
   width: 80px;
 }
-.top .top_main_menu .main_menu .menu_ac div::before {
-  content: "";
-  background: #f1fd17;
-  width: 0px;
-  height: 50px;
-  position: absolute;
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-  padding: 0 1%;
-  margin-left: -3px;
-}
-.top .top_main_menu .main_menu .menu_ac span {
-  transition: all .2s linear;
-  position: relative;
-  font-weight: bold;
-  line-height: 50px;
-  width: 77px;
-  height: 50px;
-  padding-left: 3px;
-  padding-top: 1px;
-}
-.top .top_main_menu .main_menu .menu_ac:hover div::before {
-  content: "";
+.top .top_main_menu .main_menu .menu_ac {
+  overflow: hidden;
   width: 80px;
-  opacity: 0.5;
-  border-radius: 5px;
+  height: 50px;
+  /* .a1 a div{width: 100px;height: 20px; margin-top: -20px;background:#ccc;    transition: all 0.3s ;}
+
+.a1 a:hover div{margin-top:0; } */
+  /* 	div{	
+			}
+			div::before {
+				content: "";
+				background: #f1fd17;
+				width: 0px;
+				height: 50px;
+				position: absolute;
+				transition: all .5s ease-in-out;
+				opacity: 0;
+				padding: 0 1%;
+				margin-left: -3px;
+			}
+			div::after {}
+			span {
+				transition: all .2s linear;
+				position: relative;
+				font-weight:bold;
+				line-height: 50px;
+				width: 77px;
+				height: 50px;
+				padding-left: 3px;
+				padding-top: 1px;
+			} */
 }
-.top .top_main_menu .main_menu .menu_ac:hover span {
+.top .top_main_menu .main_menu .menu_ac a {
+  color: #f1fd17;
+  text-decoration: none;
+  width: 80px;
+  height: 50px;
+  display: inline-block;
+}
+.top .top_main_menu .main_menu .menu_ac a div {
+  width: 80px;
+  height: 3rem;
+  margin: -4rem 0 14px 0;
+  transition: all 0.3s ;
+  border-bottom: 2px solid #f1fd17;
+}
+.top .top_main_menu .main_menu .menu_ac a:hover div {
+  margin-top: 0;
   color: #fff;
-  display: inherit;
-  text-align: center;
 }
 /*背景圖*/
 md-content.md-default-theme,
@@ -143,6 +178,8 @@ md-content {
 }
 .login_main .login_group .login_box .log_box01 .user_box {
   margin: 18px 0 -8px 0;
+  height: 30px;
+  position: relative;
   /* input:focus + label {
 						color: #f1fd17;
 					} */
@@ -151,27 +188,72 @@ md-content {
   color: #fff;
   font-size: 1.3rem;
   font-family: "微軟正黑體";
-}
-.login_main .login_group .login_box .log_box01 .user_box label:focus {
-  color: #f1fd17;
+  /* margin-left: -169px; */
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin: -10px 0 0 0;
 }
 .login_main .login_group .login_box .log_box01 .user_box input {
-  color: #fff;
+  border: transparent;
+  background-color: transparent;
   border-bottom: 2px solid #fff;
+  color: #f1fd17;
+  padding: 0 0 5px 0;
+  width: 100%;
 }
 .login_main .login_group .login_box .log_box01 .user_box input:focus {
   border-bottom: 2px solid #f1fd17;
+  outline: 0;
+  color: #fff;
+}
+.login_main .login_group .login_box .log_box01 .user_box input:focus + label,
+.login_main .login_group .login_box .log_box01 .user_box input:valid + label {
+  font-size: 1.2rem;
+  color: yellow;
+  top: -20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.login_main .login_group .login_box .log_box01 .pw_box {
+  margin: 40px 0 0 0;
+  height: 30px;
+  position: relative;
 }
 .login_main .login_group .login_box .log_box01 .pw_box label {
   color: #fff;
   font-size: 1.3rem;
   font-family: "微軟正黑體";
+  /* margin-left: -169px; */
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin: -10px 0 0 0;
 }
 .login_main .login_group .login_box .log_box01 .pw_box input {
+  border: transparent;
+  background-color: transparent;
   border-bottom: 2px solid #fff;
+  color: #f1fd17;
+  padding: 0 0 5px 0;
+  width: 100%;
 }
 .login_main .login_group .login_box .log_box01 .pw_box input:focus {
   border-bottom: 2px solid #f1fd17;
+  outline: 0;
+  color: #fff;
+}
+.login_main .login_group .login_box .log_box01 .pw_box input:focus + label,
+.login_main .login_group .login_box .log_box01 .pw_box input:valid + label {
+  font-size: 1.1rem;
+  color: yellow;
+  top: -20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 .login_main .login_group .login_box .log_box02 {
   margin: 30px 0 0 0;
@@ -192,6 +274,7 @@ md-content {
 }
 .login_main .login_group .login_box .log_box02 .login_btn01 {
   margin: 10px 0 0 0;
+  position: absolute;
 }
 .login_main .login_group .login_box .log_box02 .login_btn01 button {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#deec6d+0,dfef5e+23,e2f732+50,e4ff00+97,e2f732+100 */
@@ -211,31 +294,47 @@ md-content {
   font-size: 1rem;
   font-weight: bold;
   font-family: "微軟正黑體";
-  padding: 0 15%;
+  padding: 0 27%;
   border-radius: 0;
+  transition: all 0.3s ;
 }
-/*法3*/
-.icon_size {
-  font-size: 100%;
-  color: #e5ff0b;
-  background: transparent;
-  border: 0px;
-  outline: none;
-  cursor: pointer;
+.login_main .login_group .login_box .log_box02 .login_btn01 button:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebf4ab+0,e7f771+23,e9fc58+50,dafc00+97,e2f732+100 */
+  background: #ebf4ab;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ebf4ab 0%, #e7f771 23%, #e9fc58 50%, #dafc00 97%, #e2f732 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ebf4ab 0%, #e7f771 23%, #e9fc58 50%, #dafc00 97%, #e2f732 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ebf4ab 0%, #e7f771 23%, #e9fc58 50%, #dafc00 97%, #e2f732 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf4ab', endColorstr='#e2f732', GradientType=0);
+  /* IE6-9 */
+  color: #000;
+  /* padding: 0 5%; */
+  border-bottom: 2px solid #727f05;
+  margin: 3px 0 0 0;
+  /* border-radius: 5px; */
 }
-.icon_size > i > i {
-  transform: perspective(600px);
-  transition: font-size 0.16s, transform 0.23s;
+/*客戶LOGO*/
+.partner_box {
+  width: 100%;
 }
-.icon_size:hover i {
-  border: 0px;
-  transform: perspective(600px) rotateY(45deg);
-  font-size: 3.4rem;
-  line-height: 3.4rem;
+.partner_box .partner_logo {
+  background: url(../images/login/partner_logo.png) no-repeat center top;
+  background-size: 100% auto;
+  width: 400px;
+  height: 160px;
 }
-.icon_size i.icon_dehaze {
-  font-size: 3rem;
-  line-height: 3.4rem;
+/*合作廠商LOGO*/
+.cooperate_box {
+  width: 100%;
+}
+.cooperate_box .cooperate_logo {
+  background: url(../images/login/cooperate_logo.png) no-repeat center top;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 30px;
 }
 /*RWD */
 /*xl (xlarge)*/
@@ -250,7 +349,7 @@ md-content {
 /*lg (large) */
 @media (max-width: 1919px) and (min-width: 1280px) {
   .login_main {
-    margin: 26% 0 0 0;
+    margin: 30% 0 0 0;
   }
   .login_main .login_group {
     margin: 0 0 0 5%;
@@ -259,7 +358,7 @@ md-content {
 /*md (medium)*/
 @media (max-width: 1279px) and (min-width: 960px) {
   .login_main {
-    margin: 320px 0 0 0;
+    margin: 380px 0 0 0;
   }
   .login_main .login_group {
     margin: 0 0 0 5%;
@@ -268,7 +367,7 @@ md-content {
 /*sm (small)  */
 @media (max-width: 959px) and (min-width: 600px) {
   .login_main {
-    margin: 250px 0 0 0;
+    margin: 380px 0 0 0;
   }
   .login_main .login_group {
     margin: 0 0 0 5%;
@@ -277,7 +376,7 @@ md-content {
 /*xs (xsmall) */
 @media (max-width: 599px) {
   .login_main {
-    margin: 210px 0 0 0;
+    margin: 250px 0 0 0;
   }
   .login_main .login_group {
     margin: 0 0 0 5%;

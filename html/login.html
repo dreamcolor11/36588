@@ -39,24 +39,28 @@
 				</div>
 			</div>
 		
-			<div layout="row" layout-align="center" class="top_main_menu" flex="85">
-				<div class="main_menu">
+			<div flex layout="row" class="top_main_menu" >
+				<div class="main_menu"  layout-align="center" >
 					<div class="menu_ac menu_live">
-						<div><span>真人</span></div>
+						<a><div>真人</div>真人</a>
 					</div>
 					<div class="menu_ac menu_game">
-						<div><span>遊戲</span></div>
+						<a><div>遊戲</div>遊戲</a>
 					</div>
 					<div class="menu_ac menu_ssc">
-						<div><span>六合</span></div>
+						<a><div>六合</div>六合</a>
 					</div>
 					<div class="menu_ac menu_bingo">
-						<div><span>賓果</span></div>
+						<a><div>賓果</div>賓果</a>
 					</div>
 				</div>
 			</div>
 		</div>
 			
+			<!-- <div class="a1" style="overflow: hidden; width:100px;height:20px; color:#fff; margin-:200px;">
+				<a><div >123</div>123</a>
+			</div>
+			 -->
 	
 		<!--上方選單 end-->
 		<!--中間登入區-->
@@ -67,16 +71,20 @@
 				<div layout="row" layout-xs="column" class="login_box" >
 					<!--登入區 左--><!--左邊input-->
 					<div flex flex-xs="100" class="log_box01"> 
-						<md-input-container class="user_box">
-							<input ng-model="inputid" required>
+						<div flex class="user_box">
+							<input type="text" required>
 							<label>帳號</label>
+							<!-- <input ng-model="inputid" required>
+							<label>帳號</label> -->
 							
-						</md-input-container>
-						<md-input-container class="pw_box">
-							<input ng-model="inputpw" required>
+						</div>
+						<div flex class="pw_box">
+							<input type="password" required>
 							<label>密碼</label>
+							<!-- <input ng-model="inputpw" required>
+							<label>密碼</label> -->
 							
-						</md-input-container>
+						</div>
 					</div>
 					<!--登入區 右--><!--右邊按鈕-->
 					<div flex flex-xs="100" class="log_box02">
@@ -100,9 +108,21 @@
 			<div flex> </div>
 		</div>
 		<!--中間登入區 end-->
+		<!--中間客戶LOGO-->
+		<div layout="row" layout-padding class="partner_box">
+			<div flex></div>
+			<div flex-lg="25" flex-md="30" flex-sm="50" flex-xs="80" class="partner_logo"></div>
+			<div flex></div>
+		</div>
+		<!--中間客戶LOGO end-->
 		<!--底部合作廠商-->
-		<div layout="row" layout-padding>
-			
+		<div layout="row" layout-padding class="cooperate_box">
+			<!-- <div class="a1" style="overflow: hidden; width:100px;height:20px; color:#fff; margin-:200px;">
+				<a><div >123</div>123</a>
+			</div> -->
+			<div flex></div>
+			<div flex-sm="80" flex-xs="90" class="cooperate_logo"></div>
+			<div flex></div>
 		</div>
 		<!--底部合作廠商 end-->
 	</md-content>
