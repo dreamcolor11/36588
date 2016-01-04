@@ -12,6 +12,24 @@
 				</div>
 			</div>
 		
+			
+			<!-- <div flex hide-xs layout="row" class="top_main_menu" >
+				<div class="main_menu"  layout-align="center" >
+					<div class="menu_ac menu_live">
+						<div>真人</div>
+					</div>
+					<div class="menu_ac menu_game">
+						<div>遊戲</div>
+					</div>
+					<div class="menu_ac menu_ssc">
+						<a><div>六合</div>六合</a>
+					</div>
+					<div class="menu_ac menu_bingo">
+						<a><div>賓果</div>賓果</a>
+					</div>
+				</div>
+			</div> -->
+
 			<div flex hide-xs layout="row" class="top_main_menu" >
 				<div class="main_menu"  layout-align="center" >
 					<div class="menu_ac menu_live">
@@ -43,7 +61,7 @@
 			<div flex="30" flex-md="40" flex-sm="60" flex-xs="100" layout="column" layout-align="center center" class="login_group" >
 				<div layout="row" layout-xs="column" class="login_box" >
 					<!--登入區 左--><!--左邊input-->
-					<div flex flex-xs="100" class="log_box01"> 
+					<div flex flex-gt-xs="100" class="log_box01"> 
 						<div flex class="user_box">
 							<input type="text" required>
 							<label>帳號</label>
@@ -60,17 +78,21 @@
 						</div>
 					</div>
 					<!--登入區 右--><!--右邊按鈕-->
-					<div flex flex-xs="100" class="log_box02">
+					<div flex flex-gt-xs="100" class="log_box02">
 						<div class="check_box01"> 
 							<md-checkbox ng-model="data.cb1" aria-label="Checkbox 1" class="md-checkbox">
 								<span>記住我的密碼</span>
 							</md-checkbox>
 						</div>
 						<div class="login_btn01" layout-align="center">
-							<button class="md-raised md-button md-ink-ripple" type="button" ng-transclude="">
-								<span class="ng-scope">立即登入</span>
-								<div class="md-ripple-container"></div>
-							</button>
+							<div class="btn_group01" >
+								<span class="btn_text">立即登入</span>
+								<div class="btn_icon">
+									<i class="material-icons">arrow_forward</i>
+									<span>ENTER</span>
+								</div>
+								<!-- <div class="md-ripple-container"></div> -->
+							</div>
 						</div>
 					</div>
 				</div>
