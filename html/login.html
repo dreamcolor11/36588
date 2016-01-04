@@ -1,32 +1,5 @@
 
 
-<!-- <div >
-	<div layout="column" layout-fill ng-controller="pageLogin" >
-		<md-toolbar>
-			<div class="md-toolbar-tools md-whiteframe-z2" layout="row" layout-align="center center">
-				LOGO
-			</div>
-		</md-toolbar>
-		<md-content flex layout-padding class="web_bg">
-			<div layout="row" layout-padding>
-				<div flex> </div>
-				<div layout="column" layout-align="center center" class="md-whiteframe-4dp" style="background-color: #f0f0f0">
-					<md-input-container>
-						<label>帳號</label>
-						<input ng-model="inputid" required>
-					</md-input-container>
-					<md-input-container>
-						<label>密碼</label>
-						<input ng-model="inputpw" required>
-					</md-input-container>
-					<md-button class="md-raised md-primary" ng-click="login()">登入</md-button>
-					<md-button>>回電腦版登入</md-button>
-				</div>
-				<div flex> </div>
-			</div>
-		</md-content>
-	</div>
-</div> -->
 <div layout="column" layout-fill ng-controller="pageLogin" class="login_bg">
 	<md-content flex layout-padding >
 		<div layout="row" class="top" >
@@ -39,7 +12,7 @@
 				</div>
 			</div>
 		
-			<div flex layout="row" class="top_main_menu" >
+			<div flex hide-xs layout="row" class="top_main_menu" >
 				<div class="main_menu"  layout-align="center" >
 					<div class="menu_ac menu_live">
 						<a><div>真人</div>真人</a>
@@ -65,7 +38,7 @@
 		<!--上方選單 end-->
 		<!--中間登入區-->
 		<div layout="row" layout-padding class="login_main">
-			<div flex> </div>
+			<div flex flex-xs="5"> </div>
 			<!--登入區-->
 			<div flex="30" flex-md="40" flex-sm="60" flex-xs="100" layout="column" layout-align="center center" class="login_group" >
 				<div layout="row" layout-xs="column" class="login_box" >
@@ -93,7 +66,7 @@
 								<span>記住我的密碼</span>
 							</md-checkbox>
 						</div>
-						<div class="login_btn01">
+						<div class="login_btn01" layout-align="center">
 							<button class="md-raised md-button md-ink-ripple" type="button" ng-transclude="">
 								<span class="ng-scope">立即登入</span>
 								<div class="md-ripple-container"></div>
@@ -105,7 +78,7 @@
 				<!-- <md-button class="md-raised md-primary" ng-click="login()">登入</md-button>
 				<md-button>>回電腦版登入</md-button> -->
 			</div>
-			<div flex> </div>
+			<div flex flex-xs="5"> </div>
 		</div>
 		<!--中間登入區 end-->
 		<!--中間客戶LOGO-->
