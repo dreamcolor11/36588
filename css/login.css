@@ -26,8 +26,10 @@ md-toolbar {
   width: 50px;
   height: 50px;
   margin: 10px;
-  transition: all 500ms ease;
   cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 .top .top_menu .hamburger span {
   position: absolute;
@@ -38,18 +40,28 @@ md-toolbar {
   top: 0;
   left: 0;
   background: rgba(241, 253, 23, 0.6);
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 .top .top_menu .hamburger .first {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 .top .top_menu .hamburger .second {
+  -webkit-transform: translateY(18px);
+  -ms-transform: translateY(18px);
   transform: translateY(18px);
 }
 .top .top_menu .hamburger .third {
+  -webkit-transform: translateY(37px);
+  -ms-transform: translateY(37px);
   transform: translateY(37px);
 }
 .top .top_menu .nav_icon:hover {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .top .top_menu .nav_icon:hover span {
@@ -57,13 +69,19 @@ md-toolbar {
 }
 .top .top_menu .nav_icon:hover .first {
   -webkit-transform: rotate(45deg) translateY(-6px) translateX(35px);
+  -ms-transform: rotate(45deg) translateY(-6px) translateX(35px);
+  transform: rotate(45deg) translateY(-6px) translateX(35px);
   width: 60%;
 }
 .top .top_menu .nav_icon:hover .second {
+  -webkit-transform: translateY(29px) translateX(0px);
+  -ms-transform: translateY(29px) translateX(0px);
   transform: translateY(29px) translateX(0px);
 }
 .top .top_menu .nav_icon:hover .third {
   -webkit-transform: rotate(-45deg) translateY(47px) translateX(-6px);
+  -ms-transform: rotate(-45deg) translateY(47px) translateX(-6px);
+  transform: rotate(-45deg) translateY(47px) translateX(-6px);
   width: 60%;
 }
 .top .top_main_menu {
@@ -145,7 +163,9 @@ md-toolbar {
   width: 80px;
   height: 3rem;
   margin: -4rem 0 14px 0;
-  transition: all 0.3s ;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
   border-bottom: 2px solid #f1fd17;
 }
 .top .top_main_menu .main_menu .menu_ac a:hover div {
@@ -160,8 +180,9 @@ md-content {
 }
 /*登入區塊*/
 .login_main {
-  -webkit-transition: "font-size 0.16s transform 0.23s";
-  transition: "font-size 0.16s transform 0.23s";
+  -webkit-transition: font-size 0.16s transform 0.23s;
+  -ms-transition: font-size 0.16s transform 0.23s;
+  transition: font-size 0.16s transform 0.23s;
   /*:hover {}*/
 }
 .login_main .login_group {
@@ -191,9 +212,10 @@ md-content {
   position: absolute;
   pointer-events: none;
   top: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
   margin: -10px 0 0 0;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .login_main .login_group .login_box .log_box01 .user_box input {
   border: transparent;
@@ -213,8 +235,9 @@ md-content {
   font-size: 1.2rem;
   color: yellow;
   top: -20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .login_main .login_group .login_box .log_box01 .pw_box {
   margin: 40px 0 0 0;
@@ -229,9 +252,10 @@ md-content {
   position: absolute;
   pointer-events: none;
   top: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
   margin: -10px 0 0 0;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .login_main .login_group .login_box .log_box01 .pw_box input {
   border: transparent;
@@ -251,8 +275,9 @@ md-content {
   font-size: 1.1rem;
   color: yellow;
   top: -20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .login_main .login_group .login_box .log_box02 {
   margin: 15px 0 0 0;
@@ -298,7 +323,9 @@ md-content {
   padding: 0 27%;
   border-radius: 0;
   width: 100%;
-  transition: all 0.2s ;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .login_main .login_group .login_box .log_box02 .login_btn01 button:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebf4ab+0,e7f771+23,e9fc58+50,dafc00+97,e2f732+100 */

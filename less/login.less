@@ -1,7 +1,14 @@
 .transition (@setting) {
 	-webkit-transition: @setting;
+	-ms-transition: @setting;
 	transition: @setting;
 }
+.transform (@setting) {
+	-webkit-transform: @setting;
+	-ms-transform: @setting;
+	transform: @setting;
+}
+
 /*預設*/
 ul {
 	margin: 0;
@@ -30,8 +37,8 @@ md-toolbar {
 			width: 50px;
 		    height: 50px;
 		    margin: 10px;
-			transition: all 500ms ease;
 			cursor: pointer;
+			.transition ( all 500ms ease);
 		}
 		.hamburger {
 			span {
@@ -43,34 +50,34 @@ md-toolbar {
 				top: 0;
 				left: 0;
 				background: rgba(241, 253, 23, 0.6);
-		    	transition: all 500ms ease;
+		    	.transition ( all 500ms ease);
 			}
 			.first {
-				transform: translateY(0);
+				.transform ( translateY(0));
 			}
 			.second {
-			    transform: translateY(18px);
+			    .transform ( translateY(18px));
 			}
 			.third{
-			    transform: translateY(37px);
+			    .transform ( translateY(37px));
 			}
 		}
 		.nav_icon:hover {
-			transform: rotate(180deg);
+			.transform ( rotate(180deg));
 			span{
 				background: rgba(241, 253, 23,1);
 			}
 
 			.first {
 				
-				-webkit-transform: rotate(45deg) translateY(-6px) translateX(35px);
+				.transform ( rotate(45deg) translateY(-6px) translateX(35px));
 				width: 60%;
 			}
 			.second {
-				transform: translateY(29px) translateX(0px);
+				.transform ( translateY(29px) translateX(0px));
 			}
 			.third {
-				-webkit-transform: rotate(-45deg) translateY(47px) translateX(-6px) ;
+				.transform ( rotate(-45deg) translateY(47px) translateX(-6px));
 	    		width: 60%;
 			}
 		}
@@ -115,7 +122,7 @@ md-toolbar {
 						width: 80px;
 						height: 3rem; 
 						margin: -4rem 0 14px 0;   
-						transition: all 0.3s ;
+						.transition ( all 0.3s );
 						border-bottom: 2px solid #f1fd17;
 					}
 				}
@@ -185,7 +192,7 @@ md-content.md-default-theme, md-content {
 /*登入區塊*/
 .login_main {
 	
-	.transition("font-size 0.16s transform 0.23s");
+	.transition (font-size 0.16s transform 0.23s);
 	/*:hover {}*/
 	.login_group {
 		border: 0px solid #fff; /*測試用*/
@@ -205,9 +212,8 @@ md-content.md-default-theme, md-content {
 						position: absolute;
 						pointer-events:none;
 						top:0;
-						-webkit-transition:all .5s;
-						transition:all .5s;
 						margin: -10px 0 0 0;
+						.transition (all .5s);
 						}
 					input {
 						border:transparent;
@@ -227,8 +233,7 @@ md-content.md-default-theme, md-content {
 						font-size: 1.2rem;
 						color:yellow;
 						top:-20px;
-						-webkit-transition:all .5s;
-						transition:all .5s;
+						.transition(all .5s);
 					}
 					/* input:focus + label {
 						color: #f1fd17;
@@ -246,9 +251,9 @@ md-content.md-default-theme, md-content {
 						position: absolute;
 						pointer-events:none;
 						top:0;
-						-webkit-transition:all .5s;
-						transition:all .5s;
+						
 						margin: -10px 0 0 0;
+						.transition (all .5s);
 						}
 					input {
 						border:transparent;
@@ -268,8 +273,7 @@ md-content.md-default-theme, md-content {
 						font-size: 1.1rem;
 						color:yellow;
 						top:-20px;
-						-webkit-transition:all .5s;
-						transition:all .5s;
+						.transition (all .5s);
 					}
 				}
 			}
@@ -317,7 +321,7 @@ md-content.md-default-theme, md-content {
 						padding: 0 27%;
 						border-radius: 0;
 						width: 100%;
-						transition: all 0.2s ;
+						.transition ( all 0.2s );
 					}
 					button:hover {
 						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebf4ab+0,e7f771+23,e9fc58+50,dafc00+97,e2f732+100 */
