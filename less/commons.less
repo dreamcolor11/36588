@@ -1,0 +1,23 @@
+
+.animation (@name; @animation; @styles) {
+    -webkit-animation:  @name @animation;
+    -moz-animation: @name @animation;
+    animation: @name  @animation;
+
+    @-moz-keyframes @name { @styles(); }
+    @-webkit-keyframes @name { @styles(); }
+    @keyframes @name { @styles(); }
+    
+}
+
+.transition (@setting) {
+	-webkit-transition: @setting;
+	-ms-transition: @setting;
+	transition: @setting;
+}
+.transform (@setting) {
+	-webkit-transform: @setting;
+	-ms-transform: @setting;
+	transform: @setting;
+}
+

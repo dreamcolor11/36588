@@ -4,6 +4,8 @@ var path = require('path');
 var connect = require('gulp-connect');
 
 var less_source = './less/**/*.less';
+//var less_source = './less/index.less';
+
 var less_out = './css'
 
 gulp.task('connect', function () {
