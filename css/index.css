@@ -741,7 +741,7 @@ md-content {
 }
 /*預設*/
 body {
-  font-family: "微軟正黑體";
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
 }
 ul {
   margin: 0;
@@ -750,8 +750,10 @@ ul {
 /*左邊選單區塊*/
 .side_group {
   width: 255px;
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   background: #3c4044;
+  /* float:left; */
 }
 .side_group .game_main {
   /* background: #fff; */
@@ -1210,6 +1212,51 @@ ul {
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover span {
   color: #0064DB;
   left: 73px;
+}
+/*預設*/
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+ul {
+  margin: 0;
+  padding: 30px;
+}
+/*左邊最新下注區塊*/
+.new_list_group {
+  width: 255px;
+  min-height: 100vh;
+  height: auto;
+  background: #3c4044;
+  /*上方按扭區*/
+  /*下方資訊區*/
+}
+.new_list_group .nl_btn_box {
+  width: 100%;
+  padding: 8px 8px;
+  /*共用按鈕*/
+  /*等待中*/
+  /*作廢*/
+  /*最新注單*/
+}
+.new_list_group .nl_btn_box .nl_btn {
+  padding: 0 6%;
+  height: 30px;
+  background: #ffab41;
+  border-bottom: 5px solid #a0661a;
+  text-align: center;
+  margin: 0 1px;
+  line-height: 30px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+.new_list_group .nl_info_box {
+  /*刷新按鈕*/
+  /*注單資訊*/
+}
+.new_list_group .nl_info_box .nl_info {
+  /*無注單*/
+  /*注單列表*/
 }
 /* .animation (@name; @animation; @styles) {
     -webkit-animation:  @name @animation;

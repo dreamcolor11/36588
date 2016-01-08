@@ -2,7 +2,7 @@
 
 /*預設*/
 body {
-	font-family: "微軟正黑體";
+	font-family: monospace,Arial,Helvetica,sans-serif,"微軟正黑體";
 }
 ul {
 	margin: 0;
@@ -10,371 +10,56 @@ ul {
 
 }
 
-/*左邊選單區塊*/
-.side_group {
+/*左邊最新下注區塊*/
+.new_list_group {
 	width: 255px;
-	height: 100%;
+	min-height: 100vh;
+	height: auto;
 	background: #3c4044;
-	.game_main {
-		/* background: #fff; */
+	/*上方按扭區*/
+	.nl_btn_box {
 		width: 100%;
-		padding: 8px 0;
-		.gm_title {
-			background: url(../images/game_menu/gm_title.png) no-repeat top center; 
-			width: 238px;
-			height: 55px;
-			margin: 0 auto;
+		padding: 8px 8px;
+		/*共用按鈕*/
+		.nl_btn {
+			padding: 0 6%;
+			height: 30px;
+			background: #ffab41;
+			border-bottom: 5px solid #a0661a;
+			text-align: center; 
+			margin: 0 1px;
+			line-height: 30px;
+			font-size: 1rem;
+			color: #fff;
+			cursor: pointer;
+			&:hover {}
 		}
-		.gm_menu {
-			width: 238px;
-			height: auto;
-			margin: 10px auto;
-			box-shadow:0px 4px 12px 2px rgba(0,0,0,0.8);
-			/*一般區塊*/
-			.gm_menu_btn {
-				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
-				background: #878e98; /* Old browsers */
-				background: -moz-linear-gradient(top, #878e98 1%, #565d62 2%, #4e5459 50%, #474c50 51%, #3f4347 97%, #3f4347 98%, #33373d 99%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top, #878e98 1%,#565d62 2%,#4e5459 50%,#474c50 51%,#3f4347 97%,#3f4347 98%,#33373d 99%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom, #878e98 1%,#565d62 2%,#4e5459 50%,#474c50 51%,#3f4347 97%,#3f4347 98%,#33373d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878e98', endColorstr='#33373d',GradientType=0 ); /* IE6-9 */
-				height: 33px;
-				cursor: pointer;
-				.gm_name {
-					 position: relative;
-					 box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),
-					 			inset -1px 0px 0px 0px rgba(124, 124, 124, 1),
-					 			inset 0px 1px 0px 0px rgba(135, 142, 152, 1);
-					&:before {
-						content:' ';
-						position: absolute;
-						height: 100%;
-					}
-					&:after {
-						content:' ';
-						position: absolute;
-					} 
-					.icon_box {
-						.name_icon {
-							background: url(../images/game_menu/menu_icon.png) no-repeat;
-							width: 23px;
-							height: 23px;
-							margin: 5px auto;
-						}
-						.baseball {
-							background-position: 0 0; 
-						}
-						.basketball {
-							background-position: 0 -23px;
-						}
-						.soccer {
-							background-position: 0 -46px;
-						}
-						.volleyball {
-							background-position: 0 -69px;
-						}
-						.football {
-							background-position: 0 -92px;
-						}
-						.billiard {
-							background-position: 0 -115px;
-						}
-						.tennis01 {
-							background-position: 0 -138px;
-						}
-						.champion01 {
-							background-position: 0 -161px;
-						}
-						.special {
-							background-position: 0 -184px;
-						}
-						.champion02 {
-							background-position: 0 -207px;
-						}
-						.cricket {
-							background-position: 0 -230px;
-						}
-						.tennis02 {
-							background-position: 0 -253px;
-						}
-						.iceball {
-							background-position: 0 -276px;
-						}
-						.count {
-							background-position: 0 -299px;
-						}
-						.lottery {
-							background-position: 0 -322px;
-						}
-						.favorite {
-							background-position: 0 -345px;
-						}
-					}
-					span {
-						color:#fff;
-						line-height: 33px;
-						font-size:1rem;
-						text-shadow: 1px 2px 1px rgba(0,0,0,1);
-						letter-spacing: 10px;
-					}
-				}
-				.gm_number {
-					box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 0, 0, 1),inset 0px 1px 0px 0px rgba(135, 142, 152, 1);
-					.number_bg {
-						width: 25px;
-						height: 25px;
-						border-radius: 25px;
-						background: #657180;
-						margin: 3px auto;
-						box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(0, 0, 0, 1),  0px 0px 0px 2px rgba(84, 91, 96, 1);
-						text-align: center;
-						span {
-							color: #fff;
-							line-height: 26px;
-							font-size: 0.8rem;
-							text-shadow: 1px 2px 1px rgba(0,0,0,1);
-						}
-					}
-				}
-				&:hover {
-					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44c6eb+0,30a7e0+100 */
-					background: #44c6eb; /* Old browsers */
-					background: -moz-linear-gradient(top, #44c6eb 0%, #30a7e0 100%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(top, #44c6eb 0%,#30a7e0 100%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(to bottom, #44c6eb 0%,#30a7e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#30a7e0',GradientType=0 ); /* IE6-9 */
-					.gm_name {
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset -1px 0px 0px 0px rgba(146, 227, 255, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
-						&:before {	
-							.animation( gowave, 800ms, { 
-							  0% { background: rgba(255, 255, 255, 0);left: 50%;width: 0%;};
-							  50% {background: rgba(255, 255, 255, 0.5);left:0%;width: 100%;};
-							  100% { background: rgba(255, 255, 255, 0);left: 0%;width: 100%;};
-							}); 
-						}
-						&:after {
-						} 
-						.icon_box {
-							.baseball {
-								background-position: -23px 0; 
-							}
-							.basketball {
-								background-position: -23px -23px;
-							}
-							.soccer {
-								background-position: -23px -46px;
-							}
-							.volleyball {
-								background-position: -23px -69px;
-							}
-							.football {
-								background-position: -23px -92px;
-							}
-							.billiard {
-								background-position: -23px -115px;
-							}
-							.tennis01 {
-								background-position: -23px -138px;
-							}
-							.champion01 {
-								background-position: -23px -161px;
-							}
-							.special {
-								background-position: -23px -184px;
-							}
-							.champion02 {
-								background-position: -23px -207px;
-							}
-							.cricket {
-								background-position: -23px -230px;
-							}
-							.tennis02 {
-								background-position: -23px -253px;
-							}
-							.iceball {
-								background-position: -23px -276px;
-							}
-							.count {
-								background-position: -23px -299px;
-							}
-							.lottery {
-								background-position: -23px -322px;
-							}
-							.favorite {
-								background-position: -23px -345px;
-							}
-						}
-
-					}
-					.gm_number {
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 83, 141, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
-						.number_bg {
-							background: #2a90c9;
-							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1);
-						}
-					}
-					
-				}
+		/*等待中*/
+		.wait {}
+		/*作廢*/
+		.useless {}
+		/*最新注單*/
+		.newlist {}
+	}
+	/*下方資訊區*/
+	.nl_info_box {
+		/*刷新按鈕*/
+		.nl_refresh {}
+		/*注單資訊*/
+		.nl_info {
+			/*無注單*/
+			.info_none {
+				span {}
 			}
-			/*按下後區塊*/
-			.gm_menu_active {
-				/*標題active狀態*/
-				.gm_menu_btn_in {
-					background: #44c6eb; /* Old browsers */
-					background: -moz-linear-gradient(top, #44c6eb 0%, #30a7e0 100%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(top, #44c6eb 0%,#30a7e0 100%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(to bottom, #44c6eb 0%,#30a7e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#30a7e0',GradientType=0 ); /* IE6-9 */
-					height: 33px;
-					cursor: pointer;
-					.gm_name {
-						position: relative;
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),
-								   inset -1px 0px 0px 0px rgba(146, 227, 255, 1),
-								   inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
-						&:before {
-							content:' ';
-							position: absolute;
-							height: 100%;
-						}
-						&:after {
-							content:' ';
-							position: absolute;
-						} 
-						.icon_box {
-							.name_icon {
-								background: url(../images/game_menu/menu_icon.png) no-repeat;
-								width: 23px;
-								height: 23px;
-								margin: 5px auto;
-							}
-							.baseball {
-								background-position: -23px 0; 
-							}
-							.basketball {
-								background-position: -23px -23px;
-							}
-							.soccer {
-								background-position: -23px -46px;
-							}
-							.volleyball {
-								background-position: -23px -69px;
-							}
-							.football {
-								background-position: -23px -92px;
-							}
-							.billiard {
-								background-position: -23px -115px;
-							}
-							.tennis01 {
-								background-position: -23px -138px;
-							}
-							.champion01 {
-								background-position: -23px -161px;
-							}
-							.special {
-								background-position: -23px -184px;
-							}
-							.champion02 {
-								background-position: -23px -207px;
-							}
-							.cricket {
-								background-position: -23px -230px;
-							}
-							.tennis02 {
-								background-position: -23px -253px;
-							}
-							.iceball {
-								background-position: -23px -276px;
-							}
-							.count {
-								background-position: -23px -299px;
-							}
-							.lottery {
-								background-position: -23px -322px;
-							}
-							.favorite {
-								background-position: -23px -345px;
-							}
-						}
-						span {
-							color:#fff;
-							line-height: 33px;
-							font-size:1rem;
-							text-shadow: 1px 2px 1px rgba(0,0,0,1);
-							letter-spacing: 10px;
-						}
-					}
-					&:hover {
-						.gm_name {
-							&:before {	
-								.animation( gowave, 800ms, { 
-								  0% { background: rgba(255, 255, 255, 0);left: 50%;width: 0%;};
-								  50% {background: rgba(255, 255, 255, 0.5);left:0%;width: 100%;};
-								  100% { background: rgba(255, 255, 255, 0);left: 0%;width: 100%;};
-								}); 
-							}
-							.icon_box {}
-						}
-					}
-
-					.gm_number {
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 83, 141, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
-						.number_bg {
-							width: 25px;
-							height: 25px;
-							border-radius: 25px;
-							margin: 3px auto;
-							text-align: center;
-							background: #2a90c9;
-							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1);
-							span {
-								color: #34FFAD;
-								line-height: 26px;
-								font-size: 0.8rem;
-								text-shadow: 1px 2px 1px rgba(0,0,0,1);
-							}
-						}
-					}
-				}
-				/*白底選單區塊*/
-				.gm_menu_list {
-					background: #fff;
-					height: 33px;
-					cursor: pointer;
-					border-bottom: 1px solid #ccc;
-					padding: 0 0 0 45px;
-					position: relative;
-					.transition ( all 0.5s );
-					i {
-						position: absolute;
-						top:5px;
-						left: 43px;
-						.transition ( all 0.6s );
-					}
+			/*注單列表*/
+			.info_new {
+				.info_text {
+					div {}
 					span {
-						position: absolute;
-						left: 70px;
-						top: 7px;
-						font-size: 0.9rem;
-						color: #000;
-						.transition ( all 0.3s );
-					}
-					&:hover {
-						background: #EFEFEF;
-						i {
-							left: 50px;
-						}
-						span {
-							color: #0064DB;
-							left: 73px;
-						}
+						a {}
 					}
 				}
 			}
-				
-			
 		}
-		.gm_livebet {}
 	}
 }
