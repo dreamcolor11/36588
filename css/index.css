@@ -747,32 +747,32 @@ ul {
   margin: 0;
   padding: 30px;
 }
-/**/
+/*左邊選單區塊*/
 .side_group {
   width: 255px;
   height: 100%;
   background: #3c4044;
 }
-.side_group .game_menu {
+.side_group .game_main {
   /* background: #fff; */
   width: 100%;
   padding: 8px 0;
 }
-.side_group .game_menu .gm_title {
+.side_group .game_main .gm_title {
   background: url(../images/game_menu/gm_title.png) no-repeat top center;
   width: 238px;
   height: 55px;
   margin: 0 auto;
 }
-.side_group .game_menu .gm_menu {
+.side_group .game_main .gm_menu {
   width: 238px;
   height: auto;
   margin: 10px auto;
   box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.8);
+  /*一般區塊*/
   /*按下後區塊*/
-  /*白底選單區塊*/
 }
-.side_group .game_menu .gm_menu .gm_menu_btn {
+.side_group .game_main .gm_menu .gm_menu_btn {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
   background: #878e98;
   /* Old browsers */
@@ -786,52 +786,85 @@ ul {
   /* IE6-9 */
   height: 33px;
   cursor: pointer;
-  /* &:active {
-					.gm_name {
-						background: red;
-						&:before {
-							.animation( gowave, 500ms, { 
-							  0% { background: rgba(255, 255, 255, 0);left: 50%;width: 0%;};
-							  50% {background: rgba(255, 255, 255, 0.5);left:0%;width: 100%;};
-							  100% { background: rgba(255, 255, 255, 0);left: 0%;width: 100%;};
-							});
-						}
-					}
-				} */
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_name {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name {
   position: relative;
   box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #7c7c7c, inset 0px 1px 0px 0px #878e98;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_name:before {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name:before {
   content: ' ';
   position: absolute;
   height: 100%;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_name:after {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name:after {
   content: ' ';
   position: absolute;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_name .icon_box .name_icon {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .name_icon {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
   width: 23px;
   height: 23px;
   margin: 5px auto;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_name .icon_box .baseball {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .baseball {
   background-position: 0 0;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_name span {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .basketball {
+  background-position: 0 -23px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .soccer {
+  background-position: 0 -46px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .volleyball {
+  background-position: 0 -69px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .football {
+  background-position: 0 -92px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .billiard {
+  background-position: 0 -115px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .tennis01 {
+  background-position: 0 -138px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .champion01 {
+  background-position: 0 -161px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .special {
+  background-position: 0 -184px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .champion02 {
+  background-position: 0 -207px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .cricket {
+  background-position: 0 -230px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .tennis02 {
+  background-position: 0 -253px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .iceball {
+  background-position: 0 -276px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .count {
+  background-position: 0 -299px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .lottery {
+  background-position: 0 -322px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .favorite {
+  background-position: 0 -345px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
   color: #fff;
   line-height: 33px;
   font-size: 1rem;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 10px;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_number {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_number {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #000000, inset 0px 1px 0px 0px #878e98;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_number .number_bg {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg {
   width: 25px;
   height: 25px;
   border-radius: 25px;
@@ -840,13 +873,13 @@ ul {
   box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #000000, 0px 0px 0px 2px #545b60;
   text-align: center;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn .gm_number .number_bg span {
+.side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg span {
   color: #fff;
   line-height: 26px;
   font-size: 0.8rem;
   text-shadow: 1px 2px 1px #000000;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn:hover {
+.side_group .game_main .gm_menu .gm_menu_btn:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44c6eb+0,30a7e0+100 */
   background: #44c6eb;
   /* Old browsers */
@@ -859,10 +892,10 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c6eb', endColorstr='#30a7e0', GradientType=0);
   /* IE6-9 */
 }
-.side_group .game_menu .gm_menu .gm_menu_btn:hover .gm_name {
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #92e3ff, inset 0px 1px 0px 0px #caf1ff;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn:hover .gm_name:before {
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name:before {
   -webkit-animation: gowave 800ms;
   -moz-animation: gowave 800ms;
   animation: gowave 800ms;
@@ -918,17 +951,66 @@ ul {
     width: 100%;
   }
 }
-.side_group .game_menu .gm_menu .gm_menu_btn:hover .gm_name .icon_box .baseball {
-  background-position: -23px 0px;
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .baseball {
+  background-position: -23px 0;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn:hover .gm_number {
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .basketball {
+  background-position: -23px -23px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .soccer {
+  background-position: -23px -46px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .volleyball {
+  background-position: -23px -69px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .football {
+  background-position: -23px -92px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .billiard {
+  background-position: -23px -115px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .tennis01 {
+  background-position: -23px -138px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .champion01 {
+  background-position: -23px -161px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .special {
+  background-position: -23px -184px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .champion02 {
+  background-position: -23px -207px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .cricket {
+  background-position: -23px -230px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .tennis02 {
+  background-position: -23px -253px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .iceball {
+  background-position: -23px -276px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .count {
+  background-position: -23px -299px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .lottery {
+  background-position: -23px -322px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .favorite {
+  background-position: -23px -345px;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #00538d, inset 0px 1px 0px 0px #caf1ff;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn:hover .gm_number .number_bg {
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg {
   background: #2a90c9;
   box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #032eac, 0px 0px 0px 2px #13b8de;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in {
+.side_group .game_main .gm_menu .gm_menu_active {
+  /*標題active狀態*/
+  /*白底選單區塊*/
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in {
   background: #44c6eb;
   /* Old browsers */
   background: -moz-linear-gradient(top, #44c6eb 0%, #30a7e0 100%);
@@ -942,36 +1024,81 @@ ul {
   height: 33px;
   cursor: pointer;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_name {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name {
   position: relative;
   box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #92e3ff, inset 0px 1px 0px 0px #caf1ff;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_name:before {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name:before {
   content: ' ';
   position: absolute;
   height: 100%;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_name:after {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name:after {
   content: ' ';
   position: absolute;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_name .icon_box .name_icon {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .name_icon {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
   width: 23px;
   height: 23px;
   margin: 5px auto;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_name .icon_box .baseball {
-  background-position: -23px 0px;
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .baseball {
+  background-position: -23px 0;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_name span {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .basketball {
+  background-position: -23px -23px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .soccer {
+  background-position: -23px -46px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .volleyball {
+  background-position: -23px -69px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .football {
+  background-position: -23px -92px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .billiard {
+  background-position: -23px -115px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .tennis01 {
+  background-position: -23px -138px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .champion01 {
+  background-position: -23px -161px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .special {
+  background-position: -23px -184px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .champion02 {
+  background-position: -23px -207px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .cricket {
+  background-position: -23px -230px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .tennis02 {
+  background-position: -23px -253px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .iceball {
+  background-position: -23px -276px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .count {
+  background-position: -23px -299px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .lottery {
+  background-position: -23px -322px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .favorite {
+  background-position: -23px -345px;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name span {
   color: #fff;
   line-height: 33px;
   font-size: 1rem;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 10px;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in:hover .gm_name:before {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in:hover .gm_name:before {
   -webkit-animation: gowave 800ms;
   -moz-animation: gowave 800ms;
   animation: gowave 800ms;
@@ -1027,10 +1154,10 @@ ul {
     width: 100%;
   }
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_number {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #00538d, inset 0px 1px 0px 0px #caf1ff;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_number .number_bg {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg {
   width: 25px;
   height: 25px;
   border-radius: 25px;
@@ -1039,13 +1166,13 @@ ul {
   background: #2a90c9;
   box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #032eac, 0px 0px 0px 2px #13b8de;
 }
-.side_group .game_menu .gm_menu .gm_menu_btn_in .gm_number .number_bg span {
-  color: #fff;
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg span {
+  color: #34FFAD;
   line-height: 26px;
   font-size: 0.8rem;
   text-shadow: 1px 2px 1px #000000;
 }
-.side_group .game_menu .gm_menu .gm_menu_list {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list {
   background: #fff;
   height: 33px;
   cursor: pointer;
@@ -1056,7 +1183,7 @@ ul {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.side_group .game_menu .gm_menu .gm_menu_list i {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list i {
   position: absolute;
   top: 5px;
   left: 43px;
@@ -1064,7 +1191,7 @@ ul {
   -ms-transition: all 0.6s;
   transition: all 0.6s;
 }
-.side_group .game_menu .gm_menu .gm_menu_list span {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list span {
   position: absolute;
   left: 70px;
   top: 7px;
@@ -1074,13 +1201,14 @@ ul {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-.side_group .game_menu .gm_menu .gm_menu_list:hover {
-  background: #ccc;
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover {
+  background: #EFEFEF;
 }
-.side_group .game_menu .gm_menu .gm_menu_list:hover i {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover i {
   left: 50px;
 }
-.side_group .game_menu .gm_menu .gm_menu_list:hover span {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover span {
+  color: #0064DB;
   left: 73px;
 }
 /* .animation (@name; @animation; @styles) {
