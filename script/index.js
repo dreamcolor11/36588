@@ -31,6 +31,12 @@ angular.module('app').directive('teamitem', function() {
 		templateUrl: "html/test.html"
 	}
 });
+angular.module('app').directive('gamemenu', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/gamemenu.html"
+	}
+});
 
 //Main 功能
 angular.module('app').controller('Main', function ($scope, $mdSidenav) {

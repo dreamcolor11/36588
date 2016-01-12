@@ -11,7 +11,7 @@ ul {
   width: 255px;
   min-height: 100vh;
   height: auto;
-  background: #3c4044;
+  background: rgba(255, 255, 255, 0.3);
   /* float:left; */
 }
 .side_group .game_main {

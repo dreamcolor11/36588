@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+<title>DEMO</title>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="libs/angular_material/angular-material.min.css">
+<link rel="stylesheet" href="icons/material-icons.css">
+<!-- <link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/login.css"> -->
+<link rel="stylesheet" href="css/index.css">
+
+<script type="text/javascript" src="http://127.0.0.1:35729/livereload.js?snipver="></script>
+
+<script src="libs/angularjs/angular.min.js"></script>
+<script src="libs/angularjs/angular-animate.min.js"></script>
+<script src="libs/angularjs/angular-aria.min.js"></script>
+
+<script src="libs/angular_material/angular-material.min.js"></script>
+
+<script src="script/index.js"></script>
+</head>
+<body ng-controller="Main" ng-cloak>
+	<!-- 底圖區塊 -->
+	<div layout-fill class="main_bg">
+		<ul>
+			<li>
+				<span>Image 01</span>
+			</li>
+			<li>
+				<span>Image 02</span>
+			</li>
+			<li>
+				<span>Image 03</span>
+			</li>
+			<li>
+				<span>Image 04</span>
+			</li>
+			<li>
+				<span>Image 05</span>
+			</li>
+		</ul>		
+	</div>
+	<!--底圖區塊 END-->
+	<!--內容區塊-->	
+	<div layout-fill class="main_content" layout="row">
+		<div class="main_left" layout="column">
+			<div class="ml_top"></div>
+			<gamemenu></gamemenu>
+		</div>
+		<div class="main_right"></div>
+	</div>
+	<!--內容區塊-->	
+</body>
+</html>
