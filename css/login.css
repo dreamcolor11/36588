@@ -1,8 +1,12 @@
 /*預設*/
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
 ul {
   margin: 0;
   padding: 0;
 }
+/*預設*/
 /*背景色*/
 .login_bg {
   background: #191b25;

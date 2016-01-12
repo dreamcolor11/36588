@@ -4,7 +4,7 @@ body {
 }
 ul {
   margin: 0;
-  padding: 30px;
+  padding: 0;
 }
 /*左邊最新下注區塊*/
 .new_list_group {
@@ -17,14 +17,15 @@ ul {
 }
 .new_list_group .nl_btn_box {
   width: 100%;
-  padding: 8px 8px;
+  padding: 8px 8px 0 8px;
+  height: 45px;
   /*共用按鈕*/
   /*等待中*/
   /*作廢*/
   /*最新注單*/
 }
 .new_list_group .nl_btn_box .nl_btn {
-  padding: 0 6%;
+  padding: 0 6.2%;
   height: 30px;
   background: #ffab41;
   border-bottom: 5px solid #a0661a;
@@ -34,12 +35,96 @@ ul {
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
+  text-shadow: 1px 1px 1px #000000;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.new_list_group .nl_btn_box .nl_btn:hover {
+  height: 31px;
+  line-height: 32px;
+  background: #ff9600;
+  border-bottom: 5px solid #7f4c0a;
+  text-shadow: 1px 2px 1px #000000;
 }
 .new_list_group .nl_info_box {
+  width: 100%;
+  height: auto;
+  padding: 0 8px;
   /*刷新按鈕*/
   /*注單資訊*/
 }
+.new_list_group .nl_info_box .nl_refresh {
+  text-align: center;
+  background: #ff0000;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #AF0000;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.new_list_group .nl_info_box .nl_refresh i {
+  position: absolute;
+  color: #fff;
+  font-size: 0.9rem;
+  top: 3px;
+  left: 90px;
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.new_list_group .nl_info_box .nl_refresh span {
+  position: absolute;
+  color: #fff;
+  font-size: 0.9rem;
+  top: 0px;
+  left: 110px;
+}
+.new_list_group .nl_info_box .nl_refresh:hover {
+  background: #DC1010;
+  box-shadow: inset 0px 0px 8px 3px #ff0000;
+}
+.new_list_group .nl_info_box .nl_refresh:hover i {
+  transform: rotate(90deg);
+}
 .new_list_group .nl_info_box .nl_info {
+  width: 100%;
+  height: auto;
+  padding: 10px 8px 10px 8px;
+  background: #fff;
+  /* box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.6); */
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.3), inset 0px 4px 5px -4px rgba(0, 0, 0, 0.3);
   /*無注單*/
   /*注單列表*/
+}
+.new_list_group .nl_info_box .nl_info .info_none {
+  min-height: 50px;
+}
+.new_list_group .nl_info_box .nl_info .info_none span {
+  font-size: 0.9rem;
+  color: #ff0000;
+}
+.new_list_group .nl_info_box .nl_info .info_new .info_text {
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+.new_list_group .nl_info_box .nl_info .info_new .info_text span {
+  padding: 0 0 0 5px;
+  color: #2031B3;
+}
+.new_list_group .nl_info_box .nl_info .info_new .info_text span a {
+  color: #ff0000;
+  padding: 0 5px;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.new_list_group .nl_info_box .nl_info .info_new .info_text:hover a {
+  color: #fff;
+  background: #C31919;
+  text-decoration: none;
 }

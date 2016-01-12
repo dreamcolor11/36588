@@ -1,0 +1,279 @@
+/*預設*/
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*投注區塊*/
+.bet_info_group {
+  width: 255px;
+  min-height: 100vh;
+  height: auto;
+  background: #3c4044;
+}
+.bet_info_group .bi_main {
+  width: 100%;
+  padding: 8px 8px;
+  /*投注選項區塊*/
+}
+.bet_info_group .bi_main .bi_title {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5297d1+0,325c86+30,325c86+100 */
+  background: #6277B7;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #5297d1 0%, #325c86 30%, #325c86 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5297d1', endColorstr='#325c86', GradientType=0);
+  /* IE6-9 */
+  height: 42px;
+  color: #fff;
+  border: 1px solid #7fd4eb;
+}
+.bet_info_group .bi_main .bi_title h1 {
+  width: 90%;
+  padding: 0 5%;
+  text-align: center;
+  line-height: 42px;
+}
+.bet_info_group .bi_main .bi_box {
+  background: #fff;
+  /*第1區塊*/
+  /*第2區塊*/
+  /*第3區塊*/
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_info {
+  width: 220px;
+  padding: 8px;
+  background: #EAEAEA;
+  margin: 10px auto;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_info h6 {
+  font-size: 0.9rem;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_info span {
+  font-size: 0.9rem;
+  color: #233B84;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox {
+  position: relative;
+  margin: 15px 0 15px 0;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 {
+  height: 30px;
+  /*checkbox*/
+  /*字的位置*/
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 .md-checkbox {
+  position: absolute;
+  left: 190px;
+  line-height: 24px;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span {
+  position: absolute;
+  left: 25px;
+  font-size: 0.95rem;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a {
+  text-decoration: none;
+  background: #c1d0ff;
+  border-bottom: 3px solid #465A96;
+  padding: 4px 18px 2px 18px;
+  font-size: 0.92em;
+  color: #233B84;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a:hover {
+  background: #759fd4;
+  border-bottom: 3px solid #43628A;
+  color: #fff;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span p {
+  font-size: 1.5rem;
+  color: #ff0000;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0 0 0 15px;
+}
+.bet_info_group .bi_main .bi_box .bi_count .count_box {
+  border-top: 1px solid #9DBEDE;
+  background: #F4F4F5;
+}
+.bet_info_group .bi_main .bi_box .bi_count .count_box span {
+  font-size: 0.8rem;
+  width: 90px;
+  line-height: 34px;
+  text-align: center;
+}
+.bet_info_group .bi_main .bi_box .bi_count .count_box .bic-input {
+  padding: 2px 0 0 0;
+  margin: 0px;
+  height: 30px;
+  width: 135px;
+}
+.bet_info_group .bi_main .bi_box .bi_count .count_box .bic-input input {
+  font-size: 0.6rem;
+  font-family: "微軟正黑體";
+  color: #ff0000;
+  background: #fff;
+  padding: 0 0 0 5px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn {
+  padding: 10px 28px 10px 29px;
+  border-top: 1px solid #9DBEDE;
+  /*btn01 END*/
+  /*btn02 END*/
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 {
+  overflow: hidden;
+  margin: 0 5px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group {
+  position: relative;
+  background: #9E9E9E;
+  border-bottom: 3px solid #3f3f3f;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group > span {
+  color: #fff;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon {
+  position: absolute;
+  top: 3px;
+  left: -100%;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon i {
+  color: #344371;
+  position: relative;
+  top: 4px;
+  left: 4%;
+  opacity: 0;
+  font-size: 1rem;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon span {
+  color: #344371;
+  font-size: 0.9rem;
+  line-height: 26px;
+  padding: 0 0 0 5%;
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover {
+  background: #C1D0FF;
+  border-bottom: 3px solid #344371;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover > span {
+  right: -100%;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon {
+  left: 0px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon i {
+  opacity: 1;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon span {
+  opacity: 1;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 {
+  overflow: hidden;
+  margin: 0 5px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group {
+  position: relative;
+  background: #D65A5A;
+  border-bottom: 3px solid #712828;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group > span {
+  color: #fff;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group .btn_icon {
+  position: absolute;
+  top: 3px;
+  left: -100%;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group .btn_icon i {
+  color: #fff;
+  position: relative;
+  top: 4px;
+  left: 4%;
+  opacity: 0;
+  font-size: 1rem;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group .btn_icon span {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 26px;
+  padding: 0 0 0 5%;
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group:hover {
+  background: #AF2727;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group:hover > span {
+  right: -100%;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group:hover .btn_icon {
+  left: 0px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group:hover .btn_icon i {
+  opacity: 1;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group:hover .btn_icon span {
+  opacity: 1;
+}

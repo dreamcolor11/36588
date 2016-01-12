@@ -1,14 +1,5 @@
 @import 'commons.less';
 
-/*預設*/
-body {
-	font-family: monospace,Arial,Helvetica,sans-serif,"微軟正黑體";
-}
-ul {
-	margin: 0;
-	padding: 30px; 
-
-}
 
 /*左邊最新下注區塊*/
 .new_list_group {
@@ -19,10 +10,11 @@ ul {
 	/*上方按扭區*/
 	.nl_btn_box {
 		width: 100%;
-		padding: 8px 8px;
+		padding: 8px 8px 0 8px;
+		height: 45px;
 		/*共用按鈕*/
 		.nl_btn {
-			padding: 0 6%;
+			padding: 0 6.2%;
 			height: 30px;
 			background: #ffab41;
 			border-bottom: 5px solid #a0661a;
@@ -32,7 +24,15 @@ ul {
 			font-size: 1rem;
 			color: #fff;
 			cursor: pointer;
-			&:hover {}
+			text-shadow: 1px 1px 1px rgba(0,0,0,1);
+			.transition ( all 0.2s );
+			&:hover {
+				height: 31px;
+				line-height: 32px;
+				background: #ff9600;
+				border-bottom: 5px solid #7f4c0a;
+				text-shadow: 1px 2px 1px rgba(0,0,0,1);
+			}
 		}
 		/*等待中*/
 		.wait {}
@@ -43,20 +43,82 @@ ul {
 	}
 	/*下方資訊區*/
 	.nl_info_box {
+		width: 100%;
+		height: auto;
+		padding: 0 8px;
 		/*刷新按鈕*/
-		.nl_refresh {}
+		.nl_refresh {
+			text-align: center;
+			background: #ff0000;
+			height: 22px;
+			cursor: pointer;
+			position: relative;
+			box-shadow:inset 0px 0px 0px 0px rgba(0, 0, 0, 0.6);
+			border-bottom: 2px solid #AF0000;
+			.transition ( all 0.3s );
+			i {
+				position: absolute;
+				color: #fff;
+				font-size: 0.9rem;
+				top: 3px;
+				left: 90px;
+				transform:rotate(0deg);
+				.transition ( all 0.5s );
+			}
+			span {
+				position: absolute;
+				color: #fff;
+				font-size: 0.9rem;
+				top: 0px;
+				left: 110px;
+			}
+			&:hover {
+				background: #DC1010;
+    			box-shadow: inset 0px 0px 8px 3px rgb(255, 0, 0);
+				i {
+					transform:rotate(90deg);
+				}
+				span {}
+			}
+		}
 		/*注單資訊*/
 		.nl_info {
+			width: 100%;
+			height: auto;
+			padding: 10px 8px 10px 8px;
+			background: #fff;
+			/* box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.6); */
+			box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.3), inset 0px 4px 5px -4px rgba(0, 0, 0, 0.3);
 			/*無注單*/
 			.info_none {
-				span {}
+				min-height: 50px;
+				span {
+					font-size: 0.9rem;
+					color: #ff0000;
+				}
 			}
 			/*注單列表*/
 			.info_new {
 				.info_text {
-					div {}
+					line-height: 20px;
+					font-size: 0.9rem;
+					div {
+					}
 					span {
-						a {}
+						padding: 0 0 0 5px;
+						color: #2031B3; 
+						a { 
+							color: #ff0000;
+							padding: 0 5px;
+							.transition ( all 0.3s );
+						}
+					}
+					&:hover {
+						a {
+							color: #fff;
+							background: #C31919;
+							text-decoration: none;
+						}
 					}
 				}
 			}
