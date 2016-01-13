@@ -4,9 +4,9 @@
 /*左邊選單區塊*/
 .side_group {
 	width: 255px;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	height: auto;	
-    background: rgba(255, 255, 255, 0.3);
+    /* background: rgba(255, 255, 255, 0.3); */
 	/* float:left; */
 	.game_main {
 		/* background: #fff; */
@@ -20,9 +20,27 @@
 		}
 		.gm_menu {
 			width: 238px;
-			height: auto;
-			margin: 10px auto;
+			height: 454px;
+			margin: 8px auto;
 			box-shadow:0px 4px 12px 2px rgba(0,0,0,0.8);
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+			      width: 2px;
+			}
+			&::-webkit-scrollbar-track {
+			      background-color: rgba(0, 0, 0, 0.5);
+			      height: 0px;
+			}
+			&::-webkit-scrollbar-thumb {
+			      background-color: rgba(255, 255, 255, 0.4);
+			}
+			&::-webkit-scrollbar-button {
+			      background-color: rgba(0, 0, 0, 0.5);
+			      height: 0px;
+			}
+			&::-webkit-scrollbar-corner {
+			      background-color: rgba(0, 0, 0, 0.5);
+			}
 			/*一般區塊*/
 			.gm_menu_btn {
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
@@ -31,7 +49,7 @@
 				background: -webkit-linear-gradient(top, #878e98 1%,#565d62 2%,#4e5459 50%,#474c50 51%,#3f4347 97%,#3f4347 98%,#33373d 99%); /* Chrome10-25,Safari5.1-6 */
 				background: linear-gradient(to bottom, #878e98 1%,#565d62 2%,#4e5459 50%,#474c50 51%,#3f4347 97%,#3f4347 98%,#33373d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878e98', endColorstr='#33373d',GradientType=0 ); /* IE6-9 */
-				height: 33px;
+				height: 30px;
 				cursor: pointer;
 				.gm_name {
 					 position: relative;
@@ -52,7 +70,7 @@
 							background: url(../images/game_menu/menu_icon.png) no-repeat;
 							width: 23px;
 							height: 23px;
-							margin: 5px auto;
+							margin: 3px auto;
 						}
 						.baseball {
 							background-position: 0 0; 
@@ -105,8 +123,8 @@
 					}
 					span {
 						color:#fff;
-						line-height: 33px;
-						font-size:1rem;
+						line-height: 30px;
+						font-size:0.9rem;
 						text-shadow: 1px 2px 1px rgba(0,0,0,1);
 						letter-spacing: 10px;
 					}
@@ -114,16 +132,16 @@
 				.gm_number {
 					box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 0, 0, 1),inset 0px 1px 0px 0px rgba(135, 142, 152, 1);
 					.number_bg {
-						width: 25px;
-						height: 25px;
-						border-radius: 25px;
+						width: 23px;
+						height: 23px;
+						border-radius: 23px;
 						background: #657180;
 						margin: 3px auto;
 						box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(0, 0, 0, 1),  0px 0px 0px 2px rgba(84, 91, 96, 1);
 						text-align: center;
 						span {
 							color: #fff;
-							line-height: 26px;
+							line-height: 23px;
 							font-size: 0.8rem;
 							text-shadow: 1px 2px 1px rgba(0,0,0,1);
 						}
@@ -218,7 +236,7 @@
 					background: -webkit-linear-gradient(top, #44c6eb 0%,#30a7e0 100%); /* Chrome10-25,Safari5.1-6 */
 					background: linear-gradient(to bottom, #44c6eb 0%,#30a7e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#30a7e0',GradientType=0 ); /* IE6-9 */
-					height: 33px;
+					height: 30px;
 					cursor: pointer;
 					.gm_name {
 						position: relative;
@@ -239,7 +257,7 @@
 								background: url(../images/game_menu/menu_icon.png) no-repeat;
 								width: 23px;
 								height: 23px;
-								margin: 5px auto;
+								margin: 3px auto;
 							}
 							.baseball {
 								background-position: -23px 0; 
@@ -292,7 +310,7 @@
 						}
 						span {
 							color:#fff;
-							line-height: 33px;
+							line-height: 30px;
 							font-size:1rem;
 							text-shadow: 1px 2px 1px rgba(0,0,0,1);
 							letter-spacing: 10px;
@@ -314,16 +332,16 @@
 					.gm_number {
 						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 83, 141, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
 						.number_bg {
-							width: 25px;
-							height: 25px;
-							border-radius: 25px;
+							width: 23px;
+							height: 23px;
+							border-radius: 23px;
 							margin: 3px auto;
 							text-align: center;
 							background: #2a90c9;
 							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1);
 							span {
 								color: #34FFAD;
-								line-height: 26px;
+								line-height: 23px;
 								font-size: 0.8rem;
 								text-shadow: 1px 2px 1px rgba(0,0,0,1);
 							}
@@ -333,7 +351,7 @@
 				/*白底選單區塊*/
 				.gm_menu_list {
 					background: #fff;
-					height: 33px;
+					height: 30px;
 					cursor: pointer;
 					border-bottom: 1px solid #ccc;
 					padding: 0 0 0 45px;

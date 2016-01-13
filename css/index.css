@@ -743,12 +743,13 @@ md-content {
     font-size: 1.3rem;
   }
 }
+/*登入頁面*/
 /*左邊選單區塊*/
 .side_group {
   width: 255px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: auto;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3); */
   /* float:left; */
 }
 .side_group .game_main {
@@ -764,11 +765,29 @@ md-content {
 }
 .side_group .game_main .gm_menu {
   width: 238px;
-  height: auto;
-  margin: 10px auto;
+  height: 454px;
+  margin: 8px auto;
   box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
   /*一般區塊*/
   /*按下後區塊*/
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar {
+  width: 2px;
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .side_group .game_main .gm_menu .gm_menu_btn {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
@@ -782,7 +801,7 @@ md-content {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#878e98', endColorstr='#33373d', GradientType=0);
   /* IE6-9 */
-  height: 33px;
+  height: 30px;
   cursor: pointer;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name {
@@ -802,7 +821,7 @@ md-content {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
   width: 23px;
   height: 23px;
-  margin: 5px auto;
+  margin: 3px auto;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .baseball {
   background-position: 0 0;
@@ -854,8 +873,8 @@ md-content {
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
   color: #fff;
-  line-height: 33px;
-  font-size: 1rem;
+  line-height: 30px;
+  font-size: 0.9rem;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 10px;
 }
@@ -863,9 +882,9 @@ md-content {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #000000, inset 0px 1px 0px 0px #878e98;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
   background: #657180;
   margin: 3px auto;
   box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #000000, 0px 0px 0px 2px #545b60;
@@ -873,7 +892,7 @@ md-content {
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg span {
   color: #fff;
-  line-height: 26px;
+  line-height: 23px;
   font-size: 0.8rem;
   text-shadow: 1px 2px 1px #000000;
 }
@@ -1019,7 +1038,7 @@ md-content {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c6eb', endColorstr='#30a7e0', GradientType=0);
   /* IE6-9 */
-  height: 33px;
+  height: 30px;
   cursor: pointer;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name {
@@ -1039,7 +1058,7 @@ md-content {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
   width: 23px;
   height: 23px;
-  margin: 5px auto;
+  margin: 3px auto;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .baseball {
   background-position: -23px 0;
@@ -1091,7 +1110,7 @@ md-content {
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name span {
   color: #fff;
-  line-height: 33px;
+  line-height: 30px;
   font-size: 1rem;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 10px;
@@ -1156,9 +1175,9 @@ md-content {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #00538d, inset 0px 1px 0px 0px #caf1ff;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
   margin: 3px auto;
   text-align: center;
   background: #2a90c9;
@@ -1166,13 +1185,13 @@ md-content {
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg span {
   color: #34FFAD;
-  line-height: 26px;
+  line-height: 23px;
   font-size: 0.8rem;
   text-shadow: 1px 2px 1px #000000;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_list {
   background: #fff;
-  height: 33px;
+  height: 30px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
   padding: 0 0 0 45px;
@@ -1209,19 +1228,19 @@ md-content {
   color: #0064DB;
   left: 73px;
 }
+/*球類選單*/
 /*左邊最新下注區塊*/
 .new_list_group {
   width: 255px;
   min-height: 100vh;
   height: auto;
-  background: #3c4044;
   /*上方按扭區*/
   /*下方資訊區*/
 }
 .new_list_group .nl_btn_box {
   width: 100%;
-  padding: 8px 8px 0 8px;
-  height: 45px;
+  padding: 0px 8px 0 8px;
+  height: 37px;
   /*共用按鈕*/
   /*等待中*/
   /*作廢*/
@@ -1331,6 +1350,7 @@ md-content {
   background: #C31919;
   text-decoration: none;
 }
+/*最新下注-即時*/
 /*投注區塊*/
 .bet_info_group {
   width: 255px;
@@ -1602,6 +1622,7 @@ md-content {
 .bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 .btn_group:hover .btn_icon span {
   opacity: 1;
 }
+/*讓分投注勾選單*/
 /* @import 'commons.less'; */
 /*預設*/
 /* body {
@@ -1609,9 +1630,9 @@ md-content {
 	overflow-y: scroll;
     overflow-x: hidden;
 } */
-body {
-  background: #000;
-}
+/* body {
+    background: #000;
+} */
 .demo_bg {
   position: fixed;
   width: 100%;
@@ -1747,6 +1768,134 @@ body {
     transform: scale(1.2);
   }
 }
+/*背景輪播*/
+/*logo*/
+.logo_icon {
+  width: 255px;
+  background: rgba(225, 225, 225, 0.4);
+  padding: 8px 0 0 0;
+}
+.logo_icon .logo_img {
+  height: 55px;
+  width: 144px;
+  margin: 0 auto;
+  background: url(../images/logo/logo.png) no-repeat;
+}
+/*時區*/
+.time_info {
+  width: 255px;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #fff;
+}
+.time_info div {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 20px;
+  padding: 0 4%;
+}
+/*logo+時區區塊*/
+.account_info {
+  width: 255px;
+  position: relative;
+}
+.account_info .acc_box {
+  font-size: 0.9rem;
+  padding: 8px 0 0 8px;
+}
+.account_info .acc_box span {
+  color: #C5C5C5;
+}
+.account_info .acc_box span span {
+  color: #fff;
+}
+.account_info .acc_line {
+  background: #ccc;
+  width: 1px;
+  height: 30px;
+  /* margin: 12px 0 0 0; */
+  position: absolute;
+  right: 80px;
+  top: 12px;
+}
+.account_info .acc_button .acc_btn01 {
+  background: #3bb3e0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #fff;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  padding: 5px 15px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+}
+.account_info .acc_button .acc_btn01:hover {
+  color: #013880;
+  background: #72D9FF;
+  box-shadow: inset 0px 1px 0px #B0E9FF, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.account_info .acc_button .acc_btn01:active {
+  top: 12px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 0px #2D2D2D;
+  -webkit-transition: all 0s;
+  -ms-transition: all 0s;
+  transition: all 0s;
+}
+/*帳戶點數區*/
+/*上方-主要大類選單*/
+.top_menu01 {
+  font-size: 1rem;
+  color: #fff;
+  height: 43px;
+}
+.top_menu01 div {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6eb2eb+0,3c9aea+100 */
+  background: #6eb2eb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #6eb2eb 0%, #3c9aea 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #6eb2eb 0%, #3c9aea 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #6eb2eb 0%, #3c9aea 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6eb2eb', endColorstr='#3c9aea', GradientType=0);
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
+  padding: 0 3.8%;
+  height: 38px;
+  margin: 0 1px 0 0;
+  line-height: 38px;
+  cursor: pointer;
+  /* .transition (height 0.5s, background 0.3s, line-height 0s) */
+  -webkit-transition: height 0.3s, background 0.3s, line-height 0.1s;
+  -ms-transition: height 0.3s, background 0.3s, line-height 0.1s;
+  transition: height 0.3s, background 0.3s, line-height 0.1s;
+}
+.top_menu01 div:hover {
+  height: 43px;
+  line-height: 43px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a9dff+0,0069bf+100 */
+  background: #2a9dff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2a9dff 0%, #0069bf 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2a9dff 0%, #0069bf 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2a9dff 0%, #0069bf 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a9dff', endColorstr='#0069bf', GradientType=0);
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
+}
+/*上方選單區塊*/
 /* @import 'commons.less'; */
 /*預設*/
 body {
@@ -1889,13 +2038,28 @@ body {
 .main_content .main_left {
   height: auto;
   min-height: 100vh;
-  /*自定義-gamemenu區塊-載入*/
-}
-.main_content .main_left gamemenu {
   position: fixed;
   z-index: 999;
+  background: rgba(255, 255, 255, 0.3);
+  /*自定義-gamemenu區塊-載入*/
+}
+.main_content .main_right {
+  position: fixed;
+  left: 255px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.52);
+  height: 63px;
+  width: 100%;
+}
+.main_content .main_right .top {
+  padding: 0 0 0 2px;
+}
+.main_content .main_right .top div marquee {
+  font-size: 0.9rem;
+  margin: 0 10px;
 }
 /*內容區塊 END*/
+/*內頁主畫面*/
 /* .animation (@name; @animation; @styles) {
     -webkit-animation:  @name @animation;
     -moz-animation: @name @animation;

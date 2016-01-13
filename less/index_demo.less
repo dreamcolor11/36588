@@ -143,14 +143,35 @@ body {
 
 /*內容區塊*/
 .main_content {
-   .main_left {
-    height: auto;
-    min-height: 100vh;
-    /*自定義-gamemenu區塊-載入*/
-    gamemenu {
+    .main_left {
+        height: auto;
+        min-height: 100vh;
         position: fixed;
         z-index: 999;
+        background: rgba(255, 255, 255, 0.3);
+        /*自定義-gamemenu區塊-載入*/
+        gamemenu {
+
+        }
     }
-   } 
+    .main_right {
+        position: fixed;
+        left: 255px;
+        z-index: 999;
+        background: rgba(255, 255, 255, 0.52);
+        height: 63px;
+        width: 100%;
+        .top {
+            padding: 0 0 0 2px;
+            div {
+                topmenu01 {}
+                marquee {
+                    font-size: 0.9rem;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .main {}
+    } 
 }
 /*內容區塊 END*/

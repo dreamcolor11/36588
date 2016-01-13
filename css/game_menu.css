@@ -9,9 +9,9 @@ ul {
 /*左邊選單區塊*/
 .side_group {
   width: 255px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: auto;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3); */
   /* float:left; */
 }
 .side_group .game_main {
@@ -27,11 +27,29 @@ ul {
 }
 .side_group .game_main .gm_menu {
   width: 238px;
-  height: auto;
-  margin: 10px auto;
+  height: 454px;
+  margin: 8px auto;
   box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
   /*一般區塊*/
   /*按下後區塊*/
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar {
+  width: 2px;
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.side_group .game_main .gm_menu::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .side_group .game_main .gm_menu .gm_menu_btn {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
@@ -45,7 +63,7 @@ ul {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#878e98', endColorstr='#33373d', GradientType=0);
   /* IE6-9 */
-  height: 33px;
+  height: 30px;
   cursor: pointer;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name {
@@ -65,7 +83,7 @@ ul {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
   width: 23px;
   height: 23px;
-  margin: 5px auto;
+  margin: 3px auto;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .baseball {
   background-position: 0 0;
@@ -117,8 +135,8 @@ ul {
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
   color: #fff;
-  line-height: 33px;
-  font-size: 1rem;
+  line-height: 30px;
+  font-size: 0.9rem;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 10px;
 }
@@ -126,9 +144,9 @@ ul {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #000000, inset 0px 1px 0px 0px #878e98;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
   background: #657180;
   margin: 3px auto;
   box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #000000, 0px 0px 0px 2px #545b60;
@@ -136,7 +154,7 @@ ul {
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg span {
   color: #fff;
-  line-height: 26px;
+  line-height: 23px;
   font-size: 0.8rem;
   text-shadow: 1px 2px 1px #000000;
 }
@@ -282,7 +300,7 @@ ul {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c6eb', endColorstr='#30a7e0', GradientType=0);
   /* IE6-9 */
-  height: 33px;
+  height: 30px;
   cursor: pointer;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name {
@@ -302,7 +320,7 @@ ul {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
   width: 23px;
   height: 23px;
-  margin: 5px auto;
+  margin: 3px auto;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name .icon_box .baseball {
   background-position: -23px 0;
@@ -354,7 +372,7 @@ ul {
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name span {
   color: #fff;
-  line-height: 33px;
+  line-height: 30px;
   font-size: 1rem;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 10px;
@@ -419,9 +437,9 @@ ul {
   box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #00538d, inset 0px 1px 0px 0px #caf1ff;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
   margin: 3px auto;
   text-align: center;
   background: #2a90c9;
@@ -429,13 +447,13 @@ ul {
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg span {
   color: #34FFAD;
-  line-height: 26px;
+  line-height: 23px;
   font-size: 0.8rem;
   text-shadow: 1px 2px 1px #000000;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_list {
   background: #fff;
-  height: 33px;
+  height: 30px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
   padding: 0 0 0 45px;

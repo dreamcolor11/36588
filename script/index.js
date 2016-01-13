@@ -31,12 +31,42 @@ angular.module('app').directive('teamitem', function() {
 		templateUrl: "html/test.html"
 	}
 });
+/*左側-logo*/
+angular.module('app').directive('logo', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/logo.html"
+	}
+});
+/*左側-個人資訊*/
+angular.module('app').directive('accountinfo', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/accountinfo.html"
+	}
+});
+/*左側-球類選單*/
 angular.module('app').directive('gamemenu', function() {
 	return {
 		restrict: "E",
 		templateUrl: "html/gamemenu.html"
 	}
 });
+/*左側-最新注單*/
+angular.module('app').directive('newlist', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/newlist.html"
+	}
+});
+/*上方-主要選單*/
+angular.module('app').directive('topmenu01', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/topmenu01.html"
+	}
+});
+
 
 //Main 功能
 angular.module('app').controller('Main', function ($scope, $mdSidenav) {

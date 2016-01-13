@@ -1,0 +1,57 @@
+/*預設*/
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.account_info {
+  width: 255px;
+  position: relative;
+}
+.account_info .acc_box {
+  font-size: 0.9rem;
+  padding: 8px 0 0 8px;
+}
+.account_info .acc_box span {
+  color: #C5C5C5;
+}
+.account_info .acc_box span span {
+  color: #fff;
+}
+.account_info .acc_line {
+  background: #ccc;
+  width: 1px;
+  height: 30px;
+  /* margin: 12px 0 0 0; */
+  position: absolute;
+  right: 80px;
+  top: 12px;
+}
+.account_info .acc_button .acc_btn01 {
+  background: #3bb3e0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #fff;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  padding: 5px 15px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+}
+.account_info .acc_button .acc_btn01:hover {
+  color: #013880;
+  background: #72D9FF;
+  box-shadow: inset 0px 1px 0px #B0E9FF, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.account_info .acc_button .acc_btn01:active {
+  top: 12px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 0px #2D2D2D;
+  -webkit-transition: all 0s;
+  -ms-transition: all 0s;
+  transition: all 0s;
+}

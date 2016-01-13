@@ -1,0 +1,50 @@
+@import 'commons.less';
+
+.account_info {
+	width: 255px;
+	position: relative;
+	.acc_box {
+		font-size: 0.9rem;
+		padding: 8px 0 0 8px;
+		span {
+			color: #C5C5C5;
+			span {
+				color: #fff;
+			}
+		}
+	}
+	.acc_line {
+		background: #ccc;
+		width: 1px;
+		height: 30px; 
+		/* margin: 12px 0 0 0; */
+		position: absolute;
+		right: 80px;
+		top: 12px;
+	}
+	.acc_button {
+		.acc_btn01 {
+			background: #3bb3e0;
+			cursor: pointer;
+			font-size: 0.9rem;
+			color: #fff;
+			position: absolute;
+			top: 9px;
+			right: 10px;
+			padding: 5px 15px;
+			box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+			
+			&:hover {
+				color: #013880;
+				background: #72D9FF;
+				box-shadow: inset 0px 1px 0px #B0E9FF, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+				.transition ( all 0.3s );
+			}
+			&:active {
+				top: 12px;
+				box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 0px #2D2D2D;
+				.transition ( all 0.0s );		
+			}
+		}
+	}
+}
