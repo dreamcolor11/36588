@@ -10,6 +10,7 @@
 <!-- <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/login.css"> -->
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/size.css">
 
 <script type="text/javascript" src="http://127.0.0.1:35729/livereload.js?snipver="></script>
 
@@ -45,21 +46,21 @@
 	<!--底圖區塊 END-->
 	<!--內容區塊-->	
 	<div layout-fill class="main_content" layout="row">
-		<div class="main_left" layout="column" flex>
+		<div class="main_left" layout="column" flex="20">
 			<logo></logo>
 			<accountinfo></accountinfo>
 			<gamemenu></gamemenu>
 			<newlist></newlist>
 		</div>
-		<div class="main_right" layout="column" flex>
-			<div class="top">
-				<div layout="column">
+		<div class="main_right" layout="column">
+			<div id="top" class="top" layout="row" ng-init="setWidth();">
+				<div layout="column" flex>
 					<topmenu01></topmenu01>
 					<marquee>系統公告: 12345678</marquee>
 				</div>
-				<!-- <div></div> -->
+				<topmenu02 flex="35"></topmenu02>
 			</div>
-			<div class="main"></div>
+			<div></div>
 		</div>
 	</div>
 	<!--內容區塊-->	

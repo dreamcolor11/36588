@@ -66,10 +66,22 @@ angular.module('app').directive('topmenu01', function() {
 		templateUrl: "html/topmenu01.html"
 	}
 });
+/*上方右側-會員帳號選單*/
+angular.module('app').directive('topmenu02', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/topmenu02.html"
+	}
+});
 
-
+/*window.addEventListener('resize', function() {
+   var width = document.clientWidth - 255;
+   var dom = document.getElementById("top");
+   dom.style.width = width + "px";
+});
+*/
 //Main 功能
-angular.module('app').controller('Main', function ($scope, $mdSidenav) {
+angular.module('app').controller('Main', function ($scope, $mdSidenav, $window) {
 	//設定初始頁面
 		//主要頁面
 		$scope.tpl_body       = './html/login.html';
@@ -78,6 +90,12 @@ angular.module('app').controller('Main', function ($scope, $mdSidenav) {
 	$scope.$on('changePage', function(event, args) {
 		$scope.tpl_body       = args;
 	});
+
+	/*$scope.$on('resize', function(event, args) {
+		var elem = angular.element(document.querySelector('#top'));
+		var fixWidth = $window.innerWidth - 255;
+		elem.css('width', fixWidth+'px');
+	});*/
 	
 	//當中間段的body include完成後
 	$scope.onBodyLoaded = function() {
@@ -94,6 +112,12 @@ angular.module('app').controller('Main', function ($scope, $mdSidenav) {
 	$scope.toggleRight = function() {
 		$mdSidenav("right").toggle();
 	}
+	/*$scope.setWidth = function() {
+		var elem = angular.element(document.querySelector('#top'));
+		var fixWidth = $window.innerWidth - 255;
+		elem.css('width', fixWidth+'px');
+	};*/
+	
 });
 
 //頁面 Login 功能
@@ -118,3 +142,11 @@ angular.module('app').controller('pageMain', function ($scope) {
 		{ name: "MLB棒球4", link: "test" }
 	]
 });
+/*(function(){
+	window.onresize = function(event) {
+		alert(123);
+    	var elem = document.getElementById('top');
+		var fixWidth = window.innerWidth - 255;
+		elem.css('width', fixWidth+'px');
+	};
+});*/

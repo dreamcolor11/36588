@@ -1,0 +1,5 @@
+.main_content .main_right .top {
+  width: -moz-calc(100% - 255px) !important;
+  width: -webkit-calc(100% - 255px) !important;
+  width: calc(100% - 255px) !important;
+}
