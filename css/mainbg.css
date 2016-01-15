@@ -1,0 +1,142 @@
+/*預設*/
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*輪播大背景圖*/
+/*背景動態*/
+.main_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.main_bg ul {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  list-style: none;
+}
+.main_bg ul:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  content: " ";
+  background: transparent url(../images/demo/pattern.png) repeat top left;
+}
+.main_bg ul li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.main_bg ul li:nth-child(1) span {
+  background: url(http://tympanus.net/Tutorials/CSS3FullscreenSlideshow/images/1.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.main_bg ul li:nth-child(2) span {
+  background: url(http://tympanus.net/Tutorials/CSS3FullscreenSlideshow/images/2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.main_bg ul li:nth-child(3) span {
+  background: url(http://tympanus.net/Tutorials/CSS3FullscreenSlideshow/images/3.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  -webkit-animation-delay: 20s;
+  animation-delay: 20s;
+}
+.main_bg ul li:nth-child(4) span {
+  background: url(http://tympanus.net/Tutorials/CSS3FullscreenSlideshow/images/4.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  -webkit-animation-delay: 30s;
+  animation-delay: 30s;
+}
+.main_bg ul li:nth-child(5) span {
+  background: url(http://tympanus.net/Tutorials/CSS3FullscreenSlideshow/images/5.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  -webkit-animation-delay: 40s;
+  animation-delay: 40s;
+}
+.main_bg ul li span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  opacity: 1;
+  z-index: 0;
+  opacity: 0;
+  /*動畫*/
+  filter: alpha(opacity=0);
+  -webkit-animation: round 50s linear infinite;
+  animation: round 50s linear infinite;
+}
+/*動畫時間*/
+@-webkit-keyframes round {
+  6% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+    transform: scale(1.1);
+  }
+  26% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/
+    transform: scale(1.2);
+  }
+}
+@keyframes round {
+  6% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+    transform: scale(1.1);
+  }
+  26% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/
+    transform: scale(1.2);
+  }
+}
+/*背景動態 END*/

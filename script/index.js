@@ -31,6 +31,13 @@ angular.module('app').directive('teamitem', function() {
 		templateUrl: "html/test.html"
 	}
 });
+/*輪播大背景圖*/
+angular.module('app').directive('mainbg', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/mainbg.html"
+	}
+});
 /*左側-logo*/
 angular.module('app').directive('logo', function() {
 	return {

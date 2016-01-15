@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="app">
 <head>
-<title>DEMO</title>
+<title>大廳</title>
 <meta charset="UTF-8">
 <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -10,7 +10,6 @@
 <!-- <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/login.css"> -->
 <link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/size.css">
 
 <script type="text/javascript" src="http://127.0.0.1:35729/livereload.js?snipver="></script>
 
@@ -23,47 +22,37 @@
 <script src="script/index.js"></script>
 </head>
 <body ng-controller="Main" ng-cloak>
-	<!-- 底圖區塊 -->
-	<mainbg></mainbg>
-	<!-- <div layout-fill class="main_bg">
-		<ul>
-			<li>
-				<span>Image 01</span>
-			</li>
-			<li>
-				<span>Image 02</span>
-			</li>
-			<li>
-				<span>Image 03</span>
-			</li>
-			<li>
-				<span>Image 04</span>
-			</li>
-			<li>
-				<span>Image 05</span>
-			</li>
-		</ul>		
-	</div> -->
-	<!--底圖區塊 END-->
-	<!--內容區塊-->	
-	<div layout-fill class="demo_content" layout="row">
-		<div class="demo_left" layout="column">
-			<logo></logo>
-			<accountinfo></accountinfo>
-			<gamemenu></gamemenu>
-			<newlist></newlist>
-		</div>
-		<div class="demo_right" layout="column">
-			<div id="top" class="top" layout="row" ng-init="setWidth();">
-				<div layout="column" flex>
+	<mainbg></mainbg> <!--背景-->
+	<!--主要內容-->
+	<div layout-fill class="main_content">
+		<div class="main_center" layout="column">
+			<!--上方區塊-->
+			<div class="top" layout="row">
+				<logo></logo>
+				<div layout="column" class="topbg">
 					<topmenu01></topmenu01>
 					<marquee>系統公告: 12345678</marquee>
 				</div>
-				<topmenu02 flex="35"></topmenu02>
+				<topmenu02></topmenu02>
 			</div>
-			<div></div>
+			<!--上方區塊 END-->
+			<!--中間區塊-->
+			<!-- <div style="width:255px; height:300px; backgroung:red;"></div> -->
+			<div class="box" layout="row">
+				<!--左側選單區-->
+				<div class="box_left" layout="column">
+					<accountinfo></accountinfo>
+					<div class="box_scoll">
+						<gamemenu></gamemenu>
+						<newlist></newlist>
+					</div>
+				</div>
+				<!-- 右側選單區 -->
+				<div class="box_right"></div>
+			</div>
+			<!--中間區塊 END-->
 		</div>
 	</div>
-	<!--內容區塊-->	
+	<!--主要內容 END-->
 </body>
 </html>

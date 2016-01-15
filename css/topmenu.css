@@ -33,7 +33,7 @@ ul {
   margin: 0 1px 0 0;
   line-height: 38px;
   cursor: pointer;
-  width: 17.05%;
+  width: 130px;
   text-align: center;
   /* .transition (height 0.5s, background 0.3s, line-height 0s) */
   -webkit-transition: height 0.3s, background 0.3s, line-height 0.1s;
@@ -60,13 +60,16 @@ ul {
   box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
 }
 /*上方右側-會員帳號選單*/
+.top_menu02 {
+  background: rgba(255, 255, 255, 0.3);
+}
 .top_menu02 .tm2_left {
-  width: 50%;
+  width: 120px;
 }
 .top_menu02 .tm2_left > div {
   background: #0081D8 ;
   height: 30px;
-  width: 100%;
+  width: 120px;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
   position: relative;
@@ -79,7 +82,7 @@ ul {
   /*滑入狀態*/
 }
 .top_menu02 .tm2_left > div .tm_normal {
-  width: 200%;
+  width: 240px;
   height: 30px;
   position: absolute;
   top: 0;
@@ -93,7 +96,7 @@ ul {
   font-size: 0.8rem;
   position: absolute;
   top: 8px;
-  left: 13%;
+  left: 22px;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
@@ -103,7 +106,7 @@ ul {
   font-size: 0.8rem;
   position: absolute;
   top: 5px;
-  left: 21%;
+  left: 43px;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
@@ -114,7 +117,7 @@ ul {
 .top_menu02 .tm2_left > div .tm_hover i {
   position: absolute;
   top: 6px;
-  left: -40%;
+  left: -120px;
   font-size: 1rem;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -123,7 +126,7 @@ ul {
 .top_menu02 .tm2_left > div .tm_hover span {
   position: absolute;
   top: 5px;
-  left: -30%;
+  left: -55px;
   font-size: 0.8rem;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -133,24 +136,24 @@ ul {
   background: #9AD6FF;
 }
 .top_menu02 .tm2_left > div:hover .tm_normal > i {
-  left: 50%;
+  left: 120px;
 }
 .top_menu02 .tm2_left > div:hover .tm_normal > span {
-  left: 70%;
+  left: 180px;
 }
 .top_menu02 .tm2_left > div:hover .tm_hover i {
-  left: 25%;
+  left: 20px;
 }
 .top_menu02 .tm2_left > div:hover .tm_hover span {
-  left: 42%;
+  left: 43px;
 }
 .top_menu02 .tm2_right {
-  width: 50%;
+  width: 120px;
 }
 .top_menu02 .tm2_right > div {
   background: #3399de;
   height: 30px;
-  width: 100%;
+  width: 120px;
   border-bottom: 1px solid #ccc;
   position: relative;
   cursor: pointer;
@@ -159,7 +162,7 @@ ul {
   /*滑入狀態*/
 }
 .top_menu02 .tm2_right > div .tm_normal {
-  width: 200%;
+  width: 240px;
   height: 30px;
   position: absolute;
   top: 0;
@@ -173,7 +176,7 @@ ul {
   font-size: 0.8rem;
   position: absolute;
   top: 8px;
-  left: 13%;
+  left: 31px;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
@@ -183,7 +186,7 @@ ul {
   font-size: 0.8rem;
   position: absolute;
   top: 5px;
-  left: 25%;
+  left: 61px;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
@@ -194,7 +197,7 @@ ul {
 .top_menu02 .tm2_right > div .tm_hover i {
   position: absolute;
   top: 6px;
-  left: -40%;
+  left: -120px;
   font-size: 1rem;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -203,7 +206,7 @@ ul {
 .top_menu02 .tm2_right > div .tm_hover span {
   position: absolute;
   top: 5px;
-  left: -30%;
+  left: -30px;
   font-size: 0.8rem;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
@@ -213,14 +216,14 @@ ul {
   background: #9AD6FF;
 }
 .top_menu02 .tm2_right > div:hover .tm_normal > i {
-  left: 50%;
+  left: 120px;
 }
 .top_menu02 .tm2_right > div:hover .tm_normal > span {
-  left: 70%;
+  left: 180px;
 }
 .top_menu02 .tm2_right > div:hover .tm_hover i {
-  left: 25%;
+  left: 30px;
 }
 .top_menu02 .tm2_right > div:hover .tm_hover span {
-  left: 50%;
+  left: 62px;
 }
