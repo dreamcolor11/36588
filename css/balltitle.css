@@ -1,0 +1,146 @@
+/*預設*/
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.ball_title {
+  margin: 0 0 0 8px;
+}
+.ball_title .bt_func > div {
+  height: 24px;
+  background: #EAEAEA;
+  margin: 0 1px 0 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.ball_title .bt_func > div > span {
+  line-height: 24px;
+  font-size: 0.8rem;
+  color: #000;
+  padding: 0 5px;
+}
+.ball_title .bt_func > div:hover {
+  background: #626C75;
+}
+.ball_title .bt_func > div:hover span {
+  color: #fff;
+}
+.ball_title .bt_func .bt_btn01 {
+  width: 55px;
+}
+.ball_title .bt_func .bt_btn02 {
+  width: 145px;
+}
+.ball_title .bt_func .bt_btn02 .btn02_center {
+  margin: 0 auto;
+  width: 135px;
+  position: relative;
+}
+.ball_title .bt_func .bt_btn02 .btn02_center span:nth-child(1) {
+  position: absolute;
+  line-height: 24px;
+  font-size: 0.8rem;
+  color: #000;
+  top: 0px;
+  left: 10px;
+}
+.ball_title .bt_func .bt_btn02 .btn02_center span:nth-child(2) {
+  position: absolute;
+  line-height: 24px;
+  font-size: 0.8rem;
+  color: #ff0000;
+  top: 0px;
+  left: 110px;
+}
+.ball_title .bt_func .bt_btn02 .btn02_center i {
+  position: absolute;
+  top: -1px;
+  left: 75px;
+  color: #000;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.ball_title .bt_func .bt_btn02:hover {
+  background: #EAEAEA;
+}
+.ball_title .bt_func .bt_btn02:hover .btn02_center i {
+  top: 1px;
+  color: #008AFF;
+}
+.ball_title .bt_func .bt_btn03 {
+  width: 125px;
+  position: relative;
+}
+.ball_title .bt_func .bt_btn03 i {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  font-size: 1.2rem;
+}
+.ball_title .bt_func .bt_btn03 i:hover {
+  color: #ff0000;
+}
+.ball_title .bt_func .bt_btn03 span.nextpage {
+  position: absolute;
+  top: 0px;
+  left: 58px;
+  color: #000;
+}
+.ball_title .bt_func .bt_btn03 span.nextpage:hover {
+  color: #008AFF;
+}
+.ball_title .bt_func .bt_btn03:hover {
+  background: #EAEAEA;
+}
+.ball_title .bt_func .bt_btn04 {
+  width: 122px;
+}
+.ball_title .bt_func .bt_btn04:hover {
+  background: #EAEAEA;
+}
+.ball_title .bt_func .bt_btn05 {
+  width: 100px;
+}
+.ball_title .bt_func .bt_btn06 {
+  width: 110px;
+  position: relative;
+}
+.ball_title .bt_func .bt_btn06 span {
+  position: absolute;
+  left: 35px;
+}
+.ball_title .bt_func .bt_btn06 i {
+  position: absolute;
+  left: 10px;
+}
+.ball_title .bt_func .bt_btn06:hover i {
+  color: #fff;
+}
+.ball_title .bt_func .bt_btn07 {
+  width: 110px;
+  position: relative;
+}
+.ball_title .bt_func .bt_btn07 span {
+  position: absolute;
+  left: 35px;
+}
+.ball_title .bt_func .bt_btn07 i {
+  position: absolute;
+  left: 10px;
+}
+.ball_title .bt_func .bt_btn07:hover i {
+  color: #fff;
+}
+.ball_title .bt_func .bt_btn08 {
+  width: 120px;
+}
+.ball_title .bt_func .bt_btn09 {
+  width: 120px;
+}

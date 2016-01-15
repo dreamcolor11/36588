@@ -45,7 +45,7 @@ angular.module('app').directive('logo', function() {
 		templateUrl: "html/logo.html"
 	}
 });
-/*左側-個人資訊*/
+/*左側-個人資訊+圖*/
 angular.module('app').directive('accountinfo', function() {
 	return {
 		restrict: "E",
@@ -80,6 +80,23 @@ angular.module('app').directive('topmenu02', function() {
 		templateUrl: "html/topmenu02.html"
 	}
 });
+/*中間區塊-title*/
+angular.module('app').directive('balltitle', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/balltitle.html"
+	}
+});
+/*中間區塊-內容資訊*/
+angular.module('app').directive('ballcontent', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/ballcontent.html"
+	}
+});
+
+
+
 
 /*window.addEventListener('resize', function() {
    var width = document.clientWidth - 255;
