@@ -1,0 +1,104 @@
+
+<!-- 投注區塊 -->
+<div class="bet_info_group">
+	<div class="bi_main" layout="column">
+		<!--標題-->
+		<div class="bi_title" layout="row">
+			<h1>其他籃球-全場讓分投注</h1>
+		</div>
+		<!--投注選項區塊-->
+		<div class="bi_box" layout="column">
+			<!--訊息checkbox-->
+			<div class="bi_content">
+				<div class="bic_info" layout="column">
+					<h6>日本NBL聯賽</h6>
+					<span>栃木王道 9平</span>
+					<h6>千葉噴氣機</h6>
+					<span>栃木王道 0.950</span>
+				</div>
+				<div class="bic_checkbox" layout="column">
+					<div class="checkbox01" layout="row">
+						<md-checkbox ng-model="data.cb1" aria-label="Checkbox 1" class="md-checkbox">
+						</md-checkbox>
+						<span>自動接收最佳賠率</span>
+					</div>
+					<div class="checkbox01">
+						<md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" class="md-checkbox">
+						</md-checkbox>
+						<span>自動接收任何賠率</span>
+					</div>
+					<div class="checkbox01">
+						<md-checkbox ng-model="data.cb3" aria-label="Checkbox 3" class="md-checkbox">
+						</md-checkbox>
+						<span>默認投注可贏金額</span>
+					</div>
+					<div class="checkbox01">
+						<md-checkbox ng-model="data.cb4" aria-label="Checkbox 4" class="md-checkbox">
+						</md-checkbox>
+						<span layout="row">
+							<a href="#">賠率即時更新</a>
+							<p>8</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="bi_count">
+				<!--投注金額input-->
+				<div class="count_box" layout="row">
+					<span>投注金額</span>
+					<md-input-container md-no-float class="md-block bic-input">
+				      <input ng-model="user.phone" type="text" placeholder="請輸入金額">
+				    </md-input-container>
+				</div>
+				<div class="count_box" layout="row">
+					<span>可贏金額</span>
+					<md-input-container md-no-float class="md-block bic-input">
+				      <input ng-model="user.phone" type="text" placeholder="請輸入金額">
+				    </md-input-container>
+				</div>
+				<div class="count_box" layout="row">
+					<span>最低投注額</span>
+					<md-input-container md-no-float class="md-block bic-input">
+				      <input ng-model="user.phone" type="text" placeholder="請輸入金額">
+				    </md-input-container>
+				</div>
+				<div class="count_box" layout="row">
+					<span>最高投注額</span>
+					<md-input-container md-no-float class="md-block bic-input">
+				      <input ng-model="user.phone" type="text" placeholder="請輸入金額">
+				    </md-input-container>
+				</div>
+				<div class="count_box" layout="row">
+					<span>本場總注額</span>
+					<md-input-container md-no-float class="md-block bic-input">
+				      <input ng-model="user.phone" type="text" placeholder="請輸入金額">
+				    </md-input-container>
+				</div>
+			</div>
+			<!--按鈕-->
+			<div class="bi_btn" layout="row">
+				<div class="bi_btn01">
+					<div class="btn_group" layout-align="center" >
+						<span>取消</span>
+						<div class="btn_icon" layout="row">
+							<i class="material-icons">clear</i>
+							<span>cancel</span>
+						</div>
+						<!-- <div class="md-ripple-container"></div> -->
+					</div>
+				</div>
+				<div class="bi_btn02" layout-align="center">
+					<div class="btn_group" >
+						<span>確定</span>
+						<div class="btn_icon" layout="row">
+							<i class="material-icons">done</i>
+							<span>confirm</span>
+						</div>
+						<!-- <div class="md-ripple-container"></div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--投注區塊 END-->

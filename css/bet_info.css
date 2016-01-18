@@ -8,10 +8,9 @@ ul {
 }
 /*投注區塊*/
 .bet_info_group {
-  width: 255px;
-  min-height: 100vh;
   height: auto;
-  background: #3c4044;
+  margin: 5px 0 50px 0;
+  /* background: #3c4044; */
 }
 .bet_info_group .bi_main {
   width: 100%;

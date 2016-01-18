@@ -66,6 +66,13 @@ angular.module('app').directive('newlist', function() {
 		templateUrl: "html/newlist.html"
 	}
 });
+/*左側-投注資訊勾選單*/
+angular.module('app').directive('betinfo', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/betinfo.html"
+	}
+});
 /*上方-主要選單*/
 angular.module('app').directive('topmenu01', function() {
 	return {
@@ -87,13 +94,21 @@ angular.module('app').directive('balltitle', function() {
 		templateUrl: "html/balltitle.html"
 	}
 });
-/*中間區塊-內容資訊*/
-angular.module('app').directive('ballcontent', function() {
+/*中間區塊-內容資訊--走地中*/
+angular.module('app').directive('ballcontent01', function() {
 	return {
 		restrict: "E",
-		templateUrl: "html/ballcontent.html"
+		templateUrl: "html/ballcontent01.html"
 	}
 });
+/*中間區塊-內容資訊--尚未開賽*/
+angular.module('app').directive('ballcontent02', function() {
+	return {
+		restrict: "E",
+		templateUrl: "html/ballcontent02.html"
+	}
+});
+
 
 
 

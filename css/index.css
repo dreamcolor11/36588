@@ -23,8 +23,14 @@ md-toolbar {
   /*上方選單*/
   /*上方中間主選單*/
 }
+.login_top .top_menu {
+  top: 8px;
+}
 .login_top .top_menu .nav_icon {
   position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -33,6 +39,9 @@ md-toolbar {
 .login_top .top_menu .hamburger span {
   position: absolute;
   display: block;
+  width: 100%;
+  height: 13%;
+  background: rgba(241, 253, 23, 0.6);
   top: 0;
   left: 0;
   -webkit-transition: all 500ms ease;
@@ -63,15 +72,21 @@ md-toolbar {
   background: #f1fd17;
 }
 .login_top .top_menu .nav_icon:hover .first {
-  /* .transform ( rotate(45deg) translateY(-6px) translateX(35px));
-				width: 60%; */
+  -webkit-transform: rotate(45deg) translateY(-6px) translateX(35px);
+  -ms-transform: rotate(45deg) translateY(-6px) translateX(35px);
+  transform: rotate(45deg) translateY(-6px) translateX(35px);
+  width: 60%;
 }
 .login_top .top_menu .nav_icon:hover .second {
-  /* .transform ( translateY(29px) translateX(0px)); */
+  -webkit-transform: translateY(29px) translateX(0px);
+  -ms-transform: translateY(29px) translateX(0px);
+  transform: translateY(29px) translateX(0px);
 }
 .login_top .top_menu .nav_icon:hover .third {
-  /* .transform ( rotate(-45deg) translateY(47px) translateX(-6px));
-					    		width: 60%; */
+  -webkit-transform: rotate(-45deg) translateY(47px) translateX(-6px);
+  -ms-transform: rotate(-45deg) translateY(47px) translateX(-6px);
+  transform: rotate(-45deg) translateY(47px) translateX(-6px);
+  width: 60%;
 }
 .login_top .top_main_menu {
   top: 0;
@@ -1367,7 +1382,6 @@ md-content {
 /*左邊最新下注區塊*/
 .new_list_group {
   width: 255px;
-  margin: 0 0 100px 0;
   /* min-height: 100vh; 
 	height: auto; */
   /*上方按扭區*/
@@ -1489,10 +1503,9 @@ md-content {
 /*最新下注-即時*/
 /*投注區塊*/
 .bet_info_group {
-  width: 255px;
-  min-height: 100vh;
   height: auto;
-  background: #3c4044;
+  margin: 5px 0 50px 0;
+  /* background: #3c4044; */
 }
 .bet_info_group .bi_main {
   width: 100%;
@@ -2210,6 +2223,11 @@ md-content {
 /*上方選單區塊*/
 .ball_title {
   margin: 0 0 0 8px;
+  /*上方功能選單區*/
+  /*標題名稱*/
+}
+.ball_title .bt_func {
+  /*沒有資訊的標頭*/
 }
 .ball_title .bt_func > div {
   height: 24px;
@@ -2232,6 +2250,9 @@ md-content {
 }
 .ball_title .bt_func > div:hover span {
   color: #fff;
+}
+.ball_title .bt_func .btf_none {
+  height: 10px;
 }
 .ball_title .bt_func .bt_btn01 {
   width: 55px;
@@ -2285,9 +2306,18 @@ md-content {
   top: 2px;
   left: 20px;
   font-size: 1.2rem;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 .ball_title .bt_func .bt_btn03 i:hover {
   color: #ff0000;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .ball_title .bt_func .bt_btn03 span.nextpage {
   position: absolute;
@@ -2346,7 +2376,304 @@ md-content {
 .ball_title .bt_func .bt_btn09 {
   width: 120px;
 }
+.ball_title .bt_name .triangle_left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 10px 0;
+  border-color: transparent #7a7a7a transparent transparent;
+}
+.ball_title .bt_name .name_bar {
+  width: 975px;
+  height: 20px;
+  background: rgba(255, 161, 95, 0.7);
+}
+.ball_title .bt_name .name_bar span {
+  font-size: 0.9rem;
+  padding: 0 0 0 20px;
+  line-height: 20px;
+  color: #000;
+}
+.ball_title .bt_name .triangle_right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 20px 0px 0;
+  border-color: #7a7a7a transparent transparent transparent;
+}
 /*中間-球種標頭*/
+/*走地中表格  ballcontent01.html*/
+.ball_content01 {
+  /* width: 1016px; */
+  margin: 0 0 0 28px;
+  /*表格標題*/
+  /*內容資訊*/
+}
+.ball_content01 .bc_title01 {
+  width: 975px;
+  /* background: #ccc; */
+}
+.ball_content01 .bc_title01 > div {
+  height: 24px;
+  /* background: #51B0FF; */
+  background: #E26914;
+  border-right: 1px solid #fff;
+  text-align: center;
+  line-height: 24px;
+}
+.ball_content01 .bc_title01 > div > span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.ball_content01 .bc_title01 .bct_01 {
+  width: 249px;
+}
+.ball_content01 .bc_title01 .bct_02 {
+  width: 110px;
+}
+.ball_content01 .bc_title01 .bct_03 {
+  width: 150px;
+}
+.ball_content01 .bc_title01 .bct_04 {
+  width: 100px;
+}
+.ball_content01 .bc_title01 .bct_05 {
+  width: 110px;
+}
+.ball_content01 .bc_title01 .bct_06 {
+  width: 150px;
+}
+.ball_content01 .bc_title01 .bct_07 {
+  width: 100px;
+  border-right: 0px solid #fff;
+}
+.ball_content01 .bc_info01 {
+  width: 975px;
+}
+.ball_content01 .bc_info01 > div {
+  background: rgba(255, 255, 255, 0.7);
+  border-right: 1px solid #315B77;
+  text-align: center;
+  line-height: 20px;
+  height: 66px;
+  box-sizing: content-box;
+  padding: 3px 0;
+  /*投注按鈕*/
+}
+.ball_content01 .bc_info01 > div span {
+  font-size: 0.9rem;
+  /* padding: 0 5px; */
+}
+.ball_content01 .bc_info01 > div .bci_red > span {
+  color: #C50003;
+  background: rgba(197, 0, 3, 0);
+  cursor: pointer;
+  padding: 2px;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ball_content01 .bc_info01 > div .bci_red > span:hover {
+  color: #fff;
+  background: rgba(197, 0, 3, 0.7);
+}
+.ball_content01 .bc_info01 div.left {
+  text-align: left;
+}
+.ball_content01 .bc_info01 div.right {
+  text-align: right;
+}
+.ball_content01 .bc_info01 .bci_01 {
+  width: 249px;
+}
+.ball_content01 .bc_info01 .bci_01 .b01,
+.ball_content01 .bc_info01 .bci_01 .b02 {
+  padding: 0 0 0 10px;
+}
+.ball_content01 .bc_info01 .bci_01 i {
+  font-size: 1rem;
+  padding: 3px 10px 0 0;
+  color: #9A9A9A;
+  text-shadow: 0px 2px 0px #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ball_content01 .bc_info01 .bci_01 i:hover {
+  color: #C50003;
+}
+.ball_content01 .bc_info01 .bci_02 {
+  width: 110px;
+}
+.ball_content01 .bc_info01 .bci_02 .b01 {
+  padding: 0 0 0 10px;
+}
+.ball_content01 .bc_info01 .bci_03 {
+  width: 150px;
+}
+.ball_content01 .bc_info01 .bci_03 .b01 {
+  padding: 0 0 0 20px;
+}
+.ball_content01 .bc_info01 .bci_04 {
+  width: 100px;
+}
+.ball_content01 .bc_info01 .bci_05 {
+  width: 110px;
+}
+.ball_content01 .bc_info01 .bci_06 {
+  width: 150px;
+}
+.ball_content01 .bc_info01 .bci_07 {
+  width: 100px;
+  border-right: 0px solid #000;
+}
+/*走地中 結束*/
+/*尚未開賽表格  ballcontent02.html*/
+.ball_content02 {
+  /* width: 1016px; */
+  margin: 0 0 0 28px;
+  /*表格標題*/
+  /*內容資訊*/
+}
+.ball_content02 .bc_title02 {
+  width: 975px;
+  /* background: #ccc; */
+}
+.ball_content02 .bc_title02 > div {
+  height: 24px;
+  /* background: #51B0FF; */
+  background: #E26914;
+  border-right: 1px solid #fff;
+  text-align: center;
+  line-height: 24px;
+}
+.ball_content02 .bc_title02 > div > span {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.ball_content02 .bc_title02 .bct_01 {
+  width: 60px;
+}
+.ball_content02 .bc_title02 .bct_02 {
+  width: 190px;
+}
+.ball_content02 .bc_title02 .bct_03 {
+  width: 110px;
+}
+.ball_content02 .bc_title02 .bct_04 {
+  width: 130px;
+}
+.ball_content02 .bc_title02 .bct_05 {
+  width: 80px;
+}
+.ball_content02 .bc_title02 .bct_06 {
+  width: 70px;
+}
+.ball_content02 .bc_title02 .bct_07 {
+  width: 100px;
+}
+.ball_content02 .bc_title02 .bct_08 {
+  width: 130px;
+}
+.ball_content02 .bc_title02 .bct_09 {
+  width: 90px;
+}
+.ball_content02 .bc_title02 .bct_10 {
+  width: 50px;
+  border-right: 0px solid #fff;
+}
+.ball_content02 .bc_info02 {
+  width: 975px;
+}
+.ball_content02 .bc_info02 > div {
+  background: rgba(255, 255, 255, 0.7);
+  border-right: 1px solid #315B77;
+  text-align: center;
+  line-height: 20px;
+  height: 66px;
+  box-sizing: content-box;
+  padding: 3px 0;
+  /*投注按鈕*/
+}
+.ball_content02 .bc_info02 > div span {
+  font-size: 0.9rem;
+  /* padding: 0 5px; */
+}
+.ball_content02 .bc_info02 > div .bci_gray > span {
+  color: #8A8A8A;
+  background: rgba(197, 0, 3, 0);
+  cursor: pointer;
+  padding: 2px;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ball_content02 .bc_info02 > div .bci_gray > span:hover {
+  color: #fff;
+  background: rgba(74, 74, 74, 0.7);
+}
+.ball_content02 .bc_info02 div.left {
+  text-align: left;
+}
+.ball_content02 .bc_info02 div.right {
+  text-align: right;
+}
+.ball_content02 .bc_info02 .bci_01 {
+  width: 60px;
+}
+.ball_content02 .bc_info02 .bci_02 {
+  width: 190px;
+}
+.ball_content02 .bc_info02 .bci_02 .b01,
+.ball_content02 .bc_info02 .bci_02 .b02 {
+  padding: 0 0 0 10px;
+}
+.ball_content02 .bc_info02 .bci_02 i {
+  font-size: 1rem;
+  padding: 3px 10px 0 0;
+  color: #9A9A9A;
+  text-shadow: 0px 2px 0px #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ball_content02 .bc_info02 .bci_02 i:hover {
+  color: #C50003;
+}
+.ball_content02 .bc_info02 .bci_03 {
+  width: 110px;
+}
+.ball_content02 .bc_info02 .bci_03 .b01 {
+  padding: 0 0 0 10px;
+}
+.ball_content02 .bc_info02 .bci_04 {
+  width: 130px;
+}
+.ball_content02 .bc_info02 .bci_05 {
+  width: 80px;
+}
+.ball_content02 .bc_info02 .bci_06 {
+  width: 70px;
+}
+.ball_content02 .bc_info02 .bci_07 {
+  width: 100px;
+}
+.ball_content02 .bc_info02 .bci_08 {
+  width: 130px;
+}
+.ball_content02 .bc_info02 .bci_09 {
+  width: 90px;
+}
+.ball_content02 .bc_info02 .bci_10 {
+  width: 50px;
+  border-right: 0px solid #fff;
+}
+.ball_content02 .next > div {
+  background: rgba(255, 255, 255, 0.8);
+}
+/*尚未開賽表格 結束*/
 /*中間-球類內容資訊*/
 /* @import 'commons.less'; */
 /*內容區塊*/
@@ -2569,6 +2896,14 @@ md-content {
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-corner {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.main_content .main_center .box .box_right {
+  /*上方選單*/
+  /*走地中-表格*/
+  /*尚未開賽-表格*/
+}
+.main_content .main_center .box .box_right ballcontent02 {
+  margin: 20px 0 0 0;
 }
 /*內容區塊 END*/
 /*內頁主畫面*/

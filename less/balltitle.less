@@ -2,6 +2,7 @@
 
 .ball_title {
 	margin: 0 0 0 8px;
+	/*上方功能選單區*/
 	.bt_func {
 		>div {
 			height: 24px;
@@ -22,6 +23,10 @@
 					color: #fff;
 				}
 			}
+		}
+		/*沒有資訊的標頭*/
+		.btf_none {
+			height: 10px;
 		}
 		.bt_btn01 {
 			width: 55px;
@@ -75,8 +80,11 @@
 				top: 2px;
 				left: 20px;
 				font-size: 1.2rem;
+				.transition ( all 500ms ease);
+				.transform ( translateY(0));
 				&:hover {
 					color: #ff0000;
+					.transform ( rotate(90deg));
 				}
 			}
 			span.nextpage {
@@ -143,6 +151,34 @@
 		}
 		.bt_btn09 {
 			width: 120px;
+		}
+	}
+	/*標題名稱*/
+	.bt_name {
+		.triangle_left {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 20px 10px 0;
+			border-color: transparent #7a7a7a transparent transparent;
+		}
+		.name_bar {
+			width: 975px;
+			height: 20px;
+			background: rgba(255, 161, 95, 0.7);
+			span {
+				font-size: 0.9rem;
+				padding: 0 0 0 20px;
+				line-height: 20px;
+				color: #000;
+			}
+		}
+		.triangle_right {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width:10px 20px 0px 0;
+			border-color: #7a7a7a transparent transparent transparent;
 		}
 	}
 }

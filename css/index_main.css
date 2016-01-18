@@ -51,4 +51,12 @@
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-corner {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.main_content .main_center .box .box_right {
+  /*上方選單*/
+  /*走地中-表格*/
+  /*尚未開賽-表格*/
+}
+.main_content .main_center .box .box_right ballcontent02 {
+  margin: 20px 0 0 0;
+}
 /*內容區塊 END*/
