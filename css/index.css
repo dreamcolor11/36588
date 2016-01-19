@@ -917,7 +917,7 @@ md-content {
   width: 238px;
   height: auto;
   margin: 0px auto;
-  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.5);
   /* overflow-y: scroll;
 			&::-webkit-scrollbar {
 			      width: 2px;
@@ -940,23 +940,19 @@ md-content {
   /*按下後區塊*/
 }
 .side_group .game_main .gm_menu .gm_menu_btn {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
-  background: #878e98;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #878e98 1%, #565d62 2%, #4e5459 50%, #474c50 51%, #3f4347 97%, #3f4347 98%, #33373d 99%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #878e98 1%, #565d62 2%, #4e5459 50%, #474c50 51%, #3f4347 97%, #3f4347 98%, #33373d 99%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #878e98 1%, #565d62 2%, #4e5459 50%, #474c50 51%, #3f4347 97%, #3f4347 98%, #33373d 99%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#878e98', endColorstr='#33373d', GradientType=0);
-  /* IE6-9 */
   height: 30px;
   cursor: pointer;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name {
   position: relative;
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #7c7c7c, inset 0px 1px 0px 0px #878e98;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb16d+0,fe9e51+100 */
+  background: #feb16d;
+  /* Old browsers */
+  /* background: -moz-linear-gradient(top, #feb16d 0%, #fe9e51 100%); FF3.6-15
+					background: -webkit-linear-gradient(top, #feb16d 0%,#fe9e51 100%); Chrome10-25,Safari5.1-6
+					background: linear-gradient(to bottom, #feb16d 0%,#fe9e51 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb16d', endColorstr='#fe9e51',GradientType=0 ); IE6-9 */
+  box-shadow: inset 0px -1px 0px 0px #EC711F, inset -1px 0px 0px 0px #EC5E00, inset 0px 1px 0px 0px #FFD2AB;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name:before {
   content: ' ';
@@ -966,6 +962,13 @@ md-content {
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name:after {
   content: ' ';
   position: absolute;
+}
+.side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
+  color: #000;
+  line-height: 30px;
+  font-size: 0.9rem;
+  /* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
+  letter-spacing: 10px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .name_icon {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
@@ -1021,30 +1024,24 @@ md-content {
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .favorite {
   background-position: 0 -345px;
 }
-.side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
-  color: #fff;
-  line-height: 30px;
-  font-size: 0.9rem;
-  text-shadow: 1px 2px 1px #000000;
-  letter-spacing: 10px;
-}
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number {
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #000000, inset 0px 1px 0px 0px #878e98;
+  background: #FFA14D;
+  box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg {
-  width: 23px;
-  height: 23px;
-  border-radius: 23px;
-  background: #657180;
-  margin: 3px auto;
-  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #000000, 0px 0px 0px 2px #545b60;
+  /* width: 23px;
+						height: 23px;
+						border-radius: 23px;
+						background: #657180;
+						margin: 3px auto;
+						box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(0, 0, 0, 1),  0px 0px 0px 2px rgba(84, 91, 96, 1); */
   text-align: center;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg span {
-  color: #fff;
-  line-height: 23px;
-  font-size: 0.8rem;
-  text-shadow: 1px 2px 1px #000000;
+  color: #4C1F00;
+  line-height: 30px;
+  font-size: 1rem;
+  /* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44c6eb+0,30a7e0+100 */
@@ -1060,6 +1057,7 @@ md-content {
   /* IE6-9 */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name {
+  background: #FF6500;
   box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #92e3ff, inset 0px 1px 0px 0px #caf1ff;
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name:before {
@@ -1118,6 +1116,9 @@ md-content {
     width: 100%;
   }
 }
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name span {
+  color: #fff;
+}
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name .icon_box .baseball {
   background-position: -23px 0;
 }
@@ -1167,33 +1168,37 @@ md-content {
   background-position: -23px -345px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number {
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #00538d, inset 0px 1px 0px 0px #caf1ff;
+  box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg {
-  background: #2a90c9;
-  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #032eac, 0px 0px 0px 2px #13b8de;
+  background: #953B00;
+  box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
+}
+.side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg span {
+  color: #fff;
 }
 .side_group .game_main .gm_menu .gm_menu_active {
   /*標題active狀態*/
   /*白底選單區塊*/
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in {
-  background: #44c6eb;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #44c6eb 0%, #30a7e0 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #44c6eb 0%, #30a7e0 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #44c6eb 0%, #30a7e0 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c6eb', endColorstr='#30a7e0', GradientType=0);
-  /* IE6-9 */
   height: 30px;
   cursor: pointer;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name {
   position: relative;
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #92e3ff, inset 0px 1px 0px 0px #caf1ff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6600+0,dd5800+100 */
+  background: #ff6600;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff6600 0%, #dd5800 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff6600 0%, #dd5800 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff6600 0%, #dd5800 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6600', endColorstr='#dd5800', GradientType=0);
+  /* IE6-9 */
+  box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_name:before {
   content: ' ';
@@ -1262,7 +1267,7 @@ md-content {
   color: #fff;
   line-height: 30px;
   font-size: 1rem;
-  text-shadow: 1px 2px 1px #000000;
+  /* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
   letter-spacing: 10px;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in:hover .gm_name:before {
@@ -1322,25 +1327,40 @@ md-content {
   }
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number {
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset 1px 0px 0px 0px #00538d, inset 0px 1px 0px 0px #caf1ff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6600+0,dd5800+100 */
+  background: #ff6600;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #AF4600 0%, #8C3800 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #AF4600 0%, #8C3800 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #AF4600 0%, #8C3800 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AF4600', endColorstr='#8C3800', GradientType=0);
+  /* IE6-9 */
+  box-shadow: inset 0px -1px 0px 0px #A74300, inset 1px 0px 0px 0px #FF6600, inset 0px 1px 0px 0px #DC5700;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg {
-  width: 23px;
-  height: 23px;
-  border-radius: 23px;
-  margin: 3px auto;
+  /* width: 23px;
+							height: 23px;
+							border-radius: 23px;
+							margin: 3px auto;
+							text-align: center;
+							background: #2a90c9;
+							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1); */
   text-align: center;
-  background: #2a90c9;
-  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6), inset 0px 0px 2px 1px #032eac, 0px 0px 0px 2px #13b8de;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_btn_in .gm_number .number_bg span {
-  color: #34FFAD;
-  line-height: 23px;
-  font-size: 0.8rem;
-  text-shadow: 1px 2px 1px #000000;
+  color: #fff;
+  line-height: 30px;
+  font-size: 1.1rem;
+  /* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
 }
-.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box {
+  box-shadow: inset 0px 3px 5px -2px rgba(0, 0, 0, 0.7), inset 0px -3px 5px -2px rgba(0, 0, 0, 0.7);
   background: #fff;
+}
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list {
   height: 30px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
@@ -1350,7 +1370,7 @@ md-content {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list i {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list i {
   position: absolute;
   top: 5px;
   left: 43px;
@@ -1358,7 +1378,7 @@ md-content {
   -ms-transition: all 0.6s;
   transition: all 0.6s;
 }
-.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list span {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list span {
   position: absolute;
   left: 70px;
   top: 7px;
@@ -1368,14 +1388,14 @@ md-content {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover {
   background: #EFEFEF;
 }
-.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover i {
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover i {
   left: 50px;
 }
-.side_group .game_main .gm_menu .gm_menu_active .gm_menu_list:hover span {
-  color: #0064DB;
+.side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover span {
+  color: #CA5100;
   left: 73px;
 }
 /*球類選單*/
@@ -1921,7 +1941,7 @@ md-content {
 /*logo*/
 .logo_icon {
   width: 255px;
-  background: rgba(225, 225, 225, 0.35);
+  background: rgba(38, 38, 38, 0.8);
   padding: 8px 0 0 0;
 }
 .logo_icon .logo_img {
@@ -1952,13 +1972,13 @@ md-content {
   padding: 8px 0 0 8px;
 }
 .account_info .acc_box span {
-  color: #fff;
+  color: #000;
 }
 .account_info .acc_box span span {
   color: #fff;
 }
 .account_info .acc_line {
-  background: #ccc;
+  background: #AD4500;
   width: 1px;
   height: 30px;
   /* margin: 12px 0 0 0; */
@@ -1993,10 +2013,18 @@ md-content {
   transition: all 0s;
 }
 .account_info .gm_title {
-  background: url(../images/game_menu/gm_title.png) no-repeat top center;
+  /* background: url(../images/game_menu/gm_title.png) no-repeat top center;  */
+  background: rgba(0, 0, 0, 0.3);
   width: 238px;
-  height: 55px;
+  height: 36px;
   margin: 15px auto 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #FFAE66;
+}
+.account_info .gm_title span {
+  color: #FFEAD7;
+  line-height: 36px;
+  font-size: 1.1rem;
 }
 /*帳戶點數區*/
 /*上方-主要大類選單*/
@@ -2252,13 +2280,13 @@ md-content {
   color: #fff;
 }
 .ball_title .bt_func .btf_none {
-  height: 10px;
+  height: 15px;
 }
 .ball_title .bt_func .bt_btn01 {
-  width: 55px;
+  width: 60px;
 }
 .ball_title .bt_func .bt_btn02 {
-  width: 145px;
+  width: 165px;
 }
 .ball_title .bt_func .bt_btn02 .btn02_center {
   margin: 0 auto;
@@ -2298,41 +2326,38 @@ md-content {
   color: #008AFF;
 }
 .ball_title .bt_func .bt_btn03 {
-  width: 125px;
-  position: relative;
-}
-.ball_title .bt_func .bt_btn03 i {
-  position: absolute;
-  top: 2px;
-  left: 20px;
-  font-size: 1.2rem;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  transition: all 500ms ease;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-}
-.ball_title .bt_func .bt_btn03 i:hover {
-  color: #ff0000;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.ball_title .bt_func .bt_btn03 span.nextpage {
-  position: absolute;
-  top: 0px;
-  left: 58px;
-  color: #000;
-}
-.ball_title .bt_func .bt_btn03 span.nextpage:hover {
-  color: #008AFF;
-}
-.ball_title .bt_func .bt_btn03:hover {
-  background: #EAEAEA;
+  /* width: 125px;
+			position: relative;
+			i{
+				position: absolute;
+				top: 2px;
+				left: 20px;
+				font-size: 1.2rem;
+				.transition ( all 500ms ease);
+				.transform ( translateY(0));
+				&:hover {
+					color: #ff0000;
+					.transform ( rotate(90deg));
+				}
+			}
+			span.nextpage {
+				position: absolute;
+				color: #000;
+				top: 0px;
+				left: 58px;
+				color: #000;
+				&:hover {
+					color: #008AFF;
+				}
+			}
+			&:hover {
+				background: #EAEAEA;
+				i {}
+				span {}
+			} */
 }
 .ball_title .bt_func .bt_btn04 {
-  width: 122px;
+  width: 222px;
 }
 .ball_title .bt_func .bt_btn04:hover {
   background: #EAEAEA;
@@ -2376,19 +2401,38 @@ md-content {
 .ball_title .bt_func .bt_btn09 {
   width: 120px;
 }
+.ball_title .bt_name {
+  /*下方*/
+  /* .name_bar02 {
+			width: 1000px;
+			height: 20px;
+			margin: 0 0 0 8px;
+			background: rgba(255, 161, 95, 1);
+			border-top: 1px solid #fff;
+			span {
+				font-size: 0.9rem;
+				padding: 0 0 0 20px;
+				line-height: 20px;
+				color: #000;
+			}
+		} */
+}
 .ball_title .bt_name .triangle_left {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 20px 10px 0;
+  border-width: 0 8px 5px 0;
   border-color: transparent #7a7a7a transparent transparent;
 }
-.ball_title .bt_name .name_bar {
-  width: 975px;
-  height: 20px;
-  background: rgba(255, 161, 95, 0.7);
+.ball_title .bt_name .triangle_left_no {
+  width: 20px;
 }
-.ball_title .bt_name .name_bar span {
+.ball_title .bt_name .name_bar01 {
+  width: 1000px;
+  height: 20px;
+  background: #ffa15f;
+}
+.ball_title .bt_name .name_bar01 span {
   font-size: 0.9rem;
   padding: 0 0 0 20px;
   line-height: 20px;
@@ -2398,19 +2442,22 @@ md-content {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 20px 0px 0;
+  border-width: 5px 8px 0px 0;
   border-color: #7a7a7a transparent transparent transparent;
+}
+.ball_title .bt_name .triangle_right_no {
+  width: 20px;
 }
 /*中間-球種標頭*/
 /*走地中表格  ballcontent01.html*/
 .ball_content01 {
   /* width: 1016px; */
-  margin: 0 0 0 28px;
+  margin: 0 0 0 16px;
   /*表格標題*/
   /*內容資訊*/
 }
 .ball_content01 .bc_title01 {
-  width: 975px;
+  width: 1000px;
   /* background: #ccc; */
 }
 .ball_content01 .bc_title01 > div {
@@ -2429,10 +2476,10 @@ md-content {
   width: 249px;
 }
 .ball_content01 .bc_title01 .bct_02 {
-  width: 110px;
+  width: 125px;
 }
 .ball_content01 .bc_title01 .bct_03 {
-  width: 150px;
+  width: 160px;
 }
 .ball_content01 .bc_title01 .bct_04 {
   width: 100px;
@@ -2448,10 +2495,10 @@ md-content {
   border-right: 0px solid #fff;
 }
 .ball_content01 .bc_info01 {
-  width: 975px;
+  width: 1000px;
 }
 .ball_content01 .bc_info01 > div {
-  background: rgba(255, 255, 255, 0.7);
+  background: #ffffff;
   border-right: 1px solid #315B77;
   text-align: center;
   line-height: 20px;
@@ -2504,13 +2551,13 @@ md-content {
   color: #C50003;
 }
 .ball_content01 .bc_info01 .bci_02 {
-  width: 110px;
+  width: 125px;
 }
 .ball_content01 .bc_info01 .bci_02 .b01 {
   padding: 0 0 0 10px;
 }
 .ball_content01 .bc_info01 .bci_03 {
-  width: 150px;
+  width: 160px;
 }
 .ball_content01 .bc_info01 .bci_03 .b01 {
   padding: 0 0 0 20px;
@@ -2530,17 +2577,31 @@ md-content {
 }
 /*走地中 結束*/
 /*尚未開賽表格  ballcontent02.html*/
-.ball_content02 {
+.box_shadow .ball_title02 {
+  margin: 0 0 0 0px;
+}
+.box_shadow .ball_title02 .bt_name .name_bar02 {
+  width: 1000px;
+  height: 20px;
+  background: #ffa15f;
+}
+.box_shadow .ball_title02 .bt_name .name_bar02 span {
+  font-size: 0.9rem;
+  padding: 0 0 0 20px;
+  line-height: 20px;
+  color: #000;
+}
+.box_shadow .ball_content02 {
   /* width: 1016px; */
-  margin: 0 0 0 28px;
+  /* margin: 0 0 0 16px; */
   /*表格標題*/
   /*內容資訊*/
 }
-.ball_content02 .bc_title02 {
-  width: 975px;
+.box_shadow .ball_content02 .bc_title02 {
+  width: 1000px;
   /* background: #ccc; */
 }
-.ball_content02 .bc_title02 > div {
+.box_shadow .ball_content02 .bc_title02 > div {
   height: 24px;
   /* background: #51B0FF; */
   background: #E26914;
@@ -2548,46 +2609,47 @@ md-content {
   text-align: center;
   line-height: 24px;
 }
-.ball_content02 .bc_title02 > div > span {
+.box_shadow .ball_content02 .bc_title02 > div > span {
   font-size: 0.8rem;
   color: #fff;
 }
-.ball_content02 .bc_title02 .bct_01 {
+.box_shadow .ball_content02 .bc_title02 .bct_01 {
   width: 60px;
 }
-.ball_content02 .bc_title02 .bct_02 {
+.box_shadow .ball_content02 .bc_title02 .bct_02 {
   width: 190px;
 }
-.ball_content02 .bc_title02 .bct_03 {
-  width: 110px;
+.box_shadow .ball_content02 .bc_title02 .bct_03 {
+  width: 125px;
 }
-.ball_content02 .bc_title02 .bct_04 {
-  width: 130px;
+.box_shadow .ball_content02 .bc_title02 .bct_04 {
+  width: 140px;
 }
-.ball_content02 .bc_title02 .bct_05 {
+.box_shadow .ball_content02 .bc_title02 .bct_05 {
   width: 80px;
 }
-.ball_content02 .bc_title02 .bct_06 {
+.box_shadow .ball_content02 .bc_title02 .bct_06 {
   width: 70px;
 }
-.ball_content02 .bc_title02 .bct_07 {
+.box_shadow .ball_content02 .bc_title02 .bct_07 {
   width: 100px;
 }
-.ball_content02 .bc_title02 .bct_08 {
+.box_shadow .ball_content02 .bc_title02 .bct_08 {
   width: 130px;
 }
-.ball_content02 .bc_title02 .bct_09 {
+.box_shadow .ball_content02 .bc_title02 .bct_09 {
   width: 90px;
 }
-.ball_content02 .bc_title02 .bct_10 {
+.box_shadow .ball_content02 .bc_title02 .bct_10 {
   width: 50px;
   border-right: 0px solid #fff;
 }
-.ball_content02 .bc_info02 {
-  width: 975px;
+.box_shadow .ball_content02 .bc_info02 {
+  width: 1000px;
+  background: #ffffff;
+  cursor: pointer;
 }
-.ball_content02 .bc_info02 > div {
-  background: rgba(255, 255, 255, 0.7);
+.box_shadow .ball_content02 .bc_info02 > div {
   border-right: 1px solid #315B77;
   text-align: center;
   line-height: 20px;
@@ -2596,12 +2658,12 @@ md-content {
   padding: 3px 0;
   /*投注按鈕*/
 }
-.ball_content02 .bc_info02 > div span {
+.box_shadow .ball_content02 .bc_info02 > div span {
   font-size: 0.9rem;
   /* padding: 0 5px; */
 }
-.ball_content02 .bc_info02 > div .bci_gray > span {
-  color: #8A8A8A;
+.box_shadow .ball_content02 .bc_info02 > div .bci_gray > span {
+  color: #C30C0E;
   background: rgba(197, 0, 3, 0);
   cursor: pointer;
   padding: 2px;
@@ -2609,27 +2671,31 @@ md-content {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-.ball_content02 .bc_info02 > div .bci_gray > span:hover {
+.box_shadow .ball_content02 .bc_info02 > div .bci_gray > span:hover {
   color: #fff;
-  background: rgba(74, 74, 74, 0.7);
+  background: rgba(185, 0, 0, 0.7);
 }
-.ball_content02 .bc_info02 div.left {
+.box_shadow .ball_content02 .bc_info02:hover {
+  background: #F9FFC9;
+  box-shadow: inset 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
+}
+.box_shadow .ball_content02 .bc_info02 div.left {
   text-align: left;
 }
-.ball_content02 .bc_info02 div.right {
+.box_shadow .ball_content02 .bc_info02 div.right {
   text-align: right;
 }
-.ball_content02 .bc_info02 .bci_01 {
+.box_shadow .ball_content02 .bc_info02 .bci_01 {
   width: 60px;
 }
-.ball_content02 .bc_info02 .bci_02 {
+.box_shadow .ball_content02 .bc_info02 .bci_02 {
   width: 190px;
 }
-.ball_content02 .bc_info02 .bci_02 .b01,
-.ball_content02 .bc_info02 .bci_02 .b02 {
+.box_shadow .ball_content02 .bc_info02 .bci_02 .b01,
+.box_shadow .ball_content02 .bc_info02 .bci_02 .b02 {
   padding: 0 0 0 10px;
 }
-.ball_content02 .bc_info02 .bci_02 i {
+.box_shadow .ball_content02 .bc_info02 .bci_02 i {
   font-size: 1rem;
   padding: 3px 10px 0 0;
   color: #9A9A9A;
@@ -2639,39 +2705,44 @@ md-content {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-.ball_content02 .bc_info02 .bci_02 i:hover {
+.box_shadow .ball_content02 .bc_info02 .bci_02 i:hover {
   color: #C50003;
 }
-.ball_content02 .bc_info02 .bci_03 {
-  width: 110px;
+.box_shadow .ball_content02 .bc_info02 .bci_03 {
+  width: 125px;
 }
-.ball_content02 .bc_info02 .bci_03 .b01 {
+.box_shadow .ball_content02 .bc_info02 .bci_03 .b01 {
   padding: 0 0 0 10px;
 }
-.ball_content02 .bc_info02 .bci_04 {
-  width: 130px;
+.box_shadow .ball_content02 .bc_info02 .bci_04 {
+  width: 140px;
 }
-.ball_content02 .bc_info02 .bci_05 {
+.box_shadow .ball_content02 .bc_info02 .bci_05 {
   width: 80px;
 }
-.ball_content02 .bc_info02 .bci_06 {
+.box_shadow .ball_content02 .bc_info02 .bci_06 {
   width: 70px;
 }
-.ball_content02 .bc_info02 .bci_07 {
+.box_shadow .ball_content02 .bc_info02 .bci_07 {
   width: 100px;
 }
-.ball_content02 .bc_info02 .bci_08 {
+.box_shadow .ball_content02 .bc_info02 .bci_08 {
   width: 130px;
 }
-.ball_content02 .bc_info02 .bci_09 {
+.box_shadow .ball_content02 .bc_info02 .bci_09 {
   width: 90px;
 }
-.ball_content02 .bc_info02 .bci_10 {
+.box_shadow .ball_content02 .bc_info02 .bci_10 {
   width: 50px;
   border-right: 0px solid #fff;
 }
-.ball_content02 .next > div {
-  background: rgba(255, 255, 255, 0.8);
+.box_shadow .ball_content02 .next {
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.box_shadow .ball_content02 .next:hover {
+  background: #F9FFC9;
+  box-shadow: inset 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
 }
 /*尚未開賽表格 結束*/
 /*中間-球類內容資訊*/
@@ -2859,7 +2930,7 @@ md-content {
 }
 .main_content .main_center .top .topbg {
   height: 63px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(38, 38, 38, 0.8);
   /*跑馬燈*/
 }
 .main_content .main_center .top .topbg marquee {
@@ -2871,7 +2942,9 @@ md-content {
   top: 84px;
 }
 .main_content .main_center .box .box_left {
-  background: rgba(255, 255, 255, 0.3);
+  background: #DC5D04;
+  /* background: rgba(235, 235, 235, 1); */
+  /* background: rgba(255, 255, 255, 0.3); */
   /*左側-滾動區塊*/
 }
 .main_content .main_center .box .box_left .box_scoll {
@@ -2888,7 +2961,7 @@ md-content {
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-thumb {
   /*拉把*/
-  background-color: #3ecaff;
+  background-color: #9c3e00;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-button {
   background-color: rgba(0, 0, 0, 0.5);
@@ -2899,11 +2972,38 @@ md-content {
 }
 .main_content .main_center .box .box_right {
   /*上方選單*/
+  margin: -10px 0 0 0;
   /*走地中-表格*/
   /*尚未開賽-表格*/
 }
 .main_content .main_center .box .box_right ballcontent02 {
   margin: 20px 0 0 0;
+}
+.main_content .main_center .box .box_right .box_scoll {
+  margin: 12px 0 0 16px;
+  height: 700px;
+  width: 1000px;
+  overflow-y: scroll;
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.8);
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar {
+  width: 0px;
+  /*bar寬度改這裡*/
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-thumb {
+  /*拉把*/
+  background-color: #9c3e00;
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*內容區塊 END*/
 /*內頁主畫面*/

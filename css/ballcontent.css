@@ -9,12 +9,12 @@ ul {
 /*走地中表格  ballcontent01.html*/
 .ball_content01 {
   /* width: 1016px; */
-  margin: 0 0 0 28px;
+  margin: 0 0 0 16px;
   /*表格標題*/
   /*內容資訊*/
 }
 .ball_content01 .bc_title01 {
-  width: 975px;
+  width: 1000px;
   /* background: #ccc; */
 }
 .ball_content01 .bc_title01 > div {
@@ -33,10 +33,10 @@ ul {
   width: 249px;
 }
 .ball_content01 .bc_title01 .bct_02 {
-  width: 110px;
+  width: 125px;
 }
 .ball_content01 .bc_title01 .bct_03 {
-  width: 150px;
+  width: 160px;
 }
 .ball_content01 .bc_title01 .bct_04 {
   width: 100px;
@@ -52,10 +52,10 @@ ul {
   border-right: 0px solid #fff;
 }
 .ball_content01 .bc_info01 {
-  width: 975px;
+  width: 1000px;
 }
 .ball_content01 .bc_info01 > div {
-  background: rgba(255, 255, 255, 0.7);
+  background: #ffffff;
   border-right: 1px solid #315B77;
   text-align: center;
   line-height: 20px;
@@ -108,13 +108,13 @@ ul {
   color: #C50003;
 }
 .ball_content01 .bc_info01 .bci_02 {
-  width: 110px;
+  width: 125px;
 }
 .ball_content01 .bc_info01 .bci_02 .b01 {
   padding: 0 0 0 10px;
 }
 .ball_content01 .bc_info01 .bci_03 {
-  width: 150px;
+  width: 160px;
 }
 .ball_content01 .bc_info01 .bci_03 .b01 {
   padding: 0 0 0 20px;
@@ -134,17 +134,31 @@ ul {
 }
 /*走地中 結束*/
 /*尚未開賽表格  ballcontent02.html*/
-.ball_content02 {
+.box_shadow .ball_title02 {
+  margin: 0 0 0 0px;
+}
+.box_shadow .ball_title02 .bt_name .name_bar02 {
+  width: 1000px;
+  height: 20px;
+  background: #ffa15f;
+}
+.box_shadow .ball_title02 .bt_name .name_bar02 span {
+  font-size: 0.9rem;
+  padding: 0 0 0 20px;
+  line-height: 20px;
+  color: #000;
+}
+.box_shadow .ball_content02 {
   /* width: 1016px; */
-  margin: 0 0 0 28px;
+  /* margin: 0 0 0 16px; */
   /*表格標題*/
   /*內容資訊*/
 }
-.ball_content02 .bc_title02 {
-  width: 975px;
+.box_shadow .ball_content02 .bc_title02 {
+  width: 1000px;
   /* background: #ccc; */
 }
-.ball_content02 .bc_title02 > div {
+.box_shadow .ball_content02 .bc_title02 > div {
   height: 24px;
   /* background: #51B0FF; */
   background: #E26914;
@@ -152,46 +166,47 @@ ul {
   text-align: center;
   line-height: 24px;
 }
-.ball_content02 .bc_title02 > div > span {
+.box_shadow .ball_content02 .bc_title02 > div > span {
   font-size: 0.8rem;
   color: #fff;
 }
-.ball_content02 .bc_title02 .bct_01 {
+.box_shadow .ball_content02 .bc_title02 .bct_01 {
   width: 60px;
 }
-.ball_content02 .bc_title02 .bct_02 {
+.box_shadow .ball_content02 .bc_title02 .bct_02 {
   width: 190px;
 }
-.ball_content02 .bc_title02 .bct_03 {
-  width: 110px;
+.box_shadow .ball_content02 .bc_title02 .bct_03 {
+  width: 125px;
 }
-.ball_content02 .bc_title02 .bct_04 {
-  width: 130px;
+.box_shadow .ball_content02 .bc_title02 .bct_04 {
+  width: 140px;
 }
-.ball_content02 .bc_title02 .bct_05 {
+.box_shadow .ball_content02 .bc_title02 .bct_05 {
   width: 80px;
 }
-.ball_content02 .bc_title02 .bct_06 {
+.box_shadow .ball_content02 .bc_title02 .bct_06 {
   width: 70px;
 }
-.ball_content02 .bc_title02 .bct_07 {
+.box_shadow .ball_content02 .bc_title02 .bct_07 {
   width: 100px;
 }
-.ball_content02 .bc_title02 .bct_08 {
+.box_shadow .ball_content02 .bc_title02 .bct_08 {
   width: 130px;
 }
-.ball_content02 .bc_title02 .bct_09 {
+.box_shadow .ball_content02 .bc_title02 .bct_09 {
   width: 90px;
 }
-.ball_content02 .bc_title02 .bct_10 {
+.box_shadow .ball_content02 .bc_title02 .bct_10 {
   width: 50px;
   border-right: 0px solid #fff;
 }
-.ball_content02 .bc_info02 {
-  width: 975px;
+.box_shadow .ball_content02 .bc_info02 {
+  width: 1000px;
+  background: #ffffff;
+  cursor: pointer;
 }
-.ball_content02 .bc_info02 > div {
-  background: rgba(255, 255, 255, 0.7);
+.box_shadow .ball_content02 .bc_info02 > div {
   border-right: 1px solid #315B77;
   text-align: center;
   line-height: 20px;
@@ -200,12 +215,12 @@ ul {
   padding: 3px 0;
   /*投注按鈕*/
 }
-.ball_content02 .bc_info02 > div span {
+.box_shadow .ball_content02 .bc_info02 > div span {
   font-size: 0.9rem;
   /* padding: 0 5px; */
 }
-.ball_content02 .bc_info02 > div .bci_gray > span {
-  color: #8A8A8A;
+.box_shadow .ball_content02 .bc_info02 > div .bci_gray > span {
+  color: #C30C0E;
   background: rgba(197, 0, 3, 0);
   cursor: pointer;
   padding: 2px;
@@ -213,27 +228,31 @@ ul {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-.ball_content02 .bc_info02 > div .bci_gray > span:hover {
+.box_shadow .ball_content02 .bc_info02 > div .bci_gray > span:hover {
   color: #fff;
-  background: rgba(74, 74, 74, 0.7);
+  background: rgba(185, 0, 0, 0.7);
 }
-.ball_content02 .bc_info02 div.left {
+.box_shadow .ball_content02 .bc_info02:hover {
+  background: #F9FFC9;
+  box-shadow: inset 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
+}
+.box_shadow .ball_content02 .bc_info02 div.left {
   text-align: left;
 }
-.ball_content02 .bc_info02 div.right {
+.box_shadow .ball_content02 .bc_info02 div.right {
   text-align: right;
 }
-.ball_content02 .bc_info02 .bci_01 {
+.box_shadow .ball_content02 .bc_info02 .bci_01 {
   width: 60px;
 }
-.ball_content02 .bc_info02 .bci_02 {
+.box_shadow .ball_content02 .bc_info02 .bci_02 {
   width: 190px;
 }
-.ball_content02 .bc_info02 .bci_02 .b01,
-.ball_content02 .bc_info02 .bci_02 .b02 {
+.box_shadow .ball_content02 .bc_info02 .bci_02 .b01,
+.box_shadow .ball_content02 .bc_info02 .bci_02 .b02 {
   padding: 0 0 0 10px;
 }
-.ball_content02 .bc_info02 .bci_02 i {
+.box_shadow .ball_content02 .bc_info02 .bci_02 i {
   font-size: 1rem;
   padding: 3px 10px 0 0;
   color: #9A9A9A;
@@ -243,38 +262,43 @@ ul {
   -ms-transition: all 0.3s;
   transition: all 0.3s;
 }
-.ball_content02 .bc_info02 .bci_02 i:hover {
+.box_shadow .ball_content02 .bc_info02 .bci_02 i:hover {
   color: #C50003;
 }
-.ball_content02 .bc_info02 .bci_03 {
-  width: 110px;
+.box_shadow .ball_content02 .bc_info02 .bci_03 {
+  width: 125px;
 }
-.ball_content02 .bc_info02 .bci_03 .b01 {
+.box_shadow .ball_content02 .bc_info02 .bci_03 .b01 {
   padding: 0 0 0 10px;
 }
-.ball_content02 .bc_info02 .bci_04 {
-  width: 130px;
+.box_shadow .ball_content02 .bc_info02 .bci_04 {
+  width: 140px;
 }
-.ball_content02 .bc_info02 .bci_05 {
+.box_shadow .ball_content02 .bc_info02 .bci_05 {
   width: 80px;
 }
-.ball_content02 .bc_info02 .bci_06 {
+.box_shadow .ball_content02 .bc_info02 .bci_06 {
   width: 70px;
 }
-.ball_content02 .bc_info02 .bci_07 {
+.box_shadow .ball_content02 .bc_info02 .bci_07 {
   width: 100px;
 }
-.ball_content02 .bc_info02 .bci_08 {
+.box_shadow .ball_content02 .bc_info02 .bci_08 {
   width: 130px;
 }
-.ball_content02 .bc_info02 .bci_09 {
+.box_shadow .ball_content02 .bc_info02 .bci_09 {
   width: 90px;
 }
-.ball_content02 .bc_info02 .bci_10 {
+.box_shadow .ball_content02 .bc_info02 .bci_10 {
   width: 50px;
   border-right: 0px solid #fff;
 }
-.ball_content02 .next > div {
-  background: rgba(255, 255, 255, 0.8);
+.box_shadow .ball_content02 .next {
+  background: #f5f5f5;
+  cursor: pointer;
+}
+.box_shadow .ball_content02 .next:hover {
+  background: #F9FFC9;
+  box-shadow: inset 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
 }
 /*尚未開賽表格 結束*/

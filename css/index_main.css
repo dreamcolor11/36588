@@ -13,7 +13,7 @@
 }
 .main_content .main_center .top .topbg {
   height: 63px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(38, 38, 38, 0.8);
   /*跑馬燈*/
 }
 .main_content .main_center .top .topbg marquee {
@@ -25,7 +25,9 @@
   top: 84px;
 }
 .main_content .main_center .box .box_left {
-  background: rgba(255, 255, 255, 0.3);
+  background: #DC5D04;
+  /* background: rgba(235, 235, 235, 1); */
+  /* background: rgba(255, 255, 255, 0.3); */
   /*左側-滾動區塊*/
 }
 .main_content .main_center .box .box_left .box_scoll {
@@ -42,7 +44,7 @@
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-thumb {
   /*拉把*/
-  background-color: #3ecaff;
+  background-color: #9c3e00;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-button {
   background-color: rgba(0, 0, 0, 0.5);
@@ -53,10 +55,37 @@
 }
 .main_content .main_center .box .box_right {
   /*上方選單*/
+  margin: -10px 0 0 0;
   /*走地中-表格*/
   /*尚未開賽-表格*/
 }
 .main_content .main_center .box .box_right ballcontent02 {
   margin: 20px 0 0 0;
+}
+.main_content .main_center .box .box_right .box_scoll {
+  margin: 12px 0 0 16px;
+  height: 700px;
+  width: 1000px;
+  overflow-y: scroll;
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.8);
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar {
+  width: 0px;
+  /*bar寬度改這裡*/
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-thumb {
+  /*拉把*/
+  background-color: #9c3e00;
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 0px;
+}
+.main_content .main_center .box .box_right .box_scoll::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*內容區塊 END*/

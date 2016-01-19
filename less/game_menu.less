@@ -22,7 +22,7 @@
 			width: 238px;
 			height: auto;
 			margin: 0px auto;
-			box-shadow:0px 4px 12px 2px rgba(0,0,0,0.8);
+			box-shadow:0px 2px 5px 2px rgba(0,0,0,0.5);
 			/* overflow-y: scroll;
 			&::-webkit-scrollbar {
 			      width: 2px;
@@ -43,19 +43,21 @@
 			} */
 			/*一般區塊*/
 			.gm_menu_btn {
-				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#878e98+1,565d62+2,4e5459+50,474c50+51,3f4347+97,3f4347+98,33373d+99 */
-				background: #878e98; /* Old browsers */
-				background: -moz-linear-gradient(top, #878e98 1%, #565d62 2%, #4e5459 50%, #474c50 51%, #3f4347 97%, #3f4347 98%, #33373d 99%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top, #878e98 1%,#565d62 2%,#4e5459 50%,#474c50 51%,#3f4347 97%,#3f4347 98%,#33373d 99%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom, #878e98 1%,#565d62 2%,#4e5459 50%,#474c50 51%,#3f4347 97%,#3f4347 98%,#33373d 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878e98', endColorstr='#33373d',GradientType=0 ); /* IE6-9 */
+				
+				
 				height: 30px;
 				cursor: pointer;
 				.gm_name {
-					 position: relative;
-					 box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),
-					 			inset -1px 0px 0px 0px rgba(124, 124, 124, 1),
-					 			inset 0px 1px 0px 0px rgba(135, 142, 152, 1);
+					position: relative;
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb16d+0,fe9e51+100 */
+					background: #feb16d; /* Old browsers */
+					/* background: -moz-linear-gradient(top, #feb16d 0%, #fe9e51 100%); FF3.6-15
+					background: -webkit-linear-gradient(top, #feb16d 0%,#fe9e51 100%); Chrome10-25,Safari5.1-6
+					background: linear-gradient(to bottom, #feb16d 0%,#fe9e51 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb16d', endColorstr='#fe9e51',GradientType=0 ); IE6-9 */
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset -1px 0px 0px 0px #EC5E00, 
+								inset 0px 1px 0px 0px #FFD2AB;
 					&:before {
 						content:' ';
 						position: absolute;
@@ -65,6 +67,13 @@
 						content:' ';
 						position: absolute;
 					} 
+					span {
+						color:#000;
+						line-height: 30px;
+						font-size:0.9rem;
+						/* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
+						letter-spacing: 10px;
+					}
 					.icon_box {
 						.name_icon {
 							background: url(../images/game_menu/menu_icon.png) no-repeat;
@@ -121,29 +130,23 @@
 							background-position: 0 -345px;
 						}
 					}
-					span {
-						color:#fff;
-						line-height: 30px;
-						font-size:0.9rem;
-						text-shadow: 1px 2px 1px rgba(0,0,0,1);
-						letter-spacing: 10px;
-					}
 				}
 				.gm_number {
-					box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 0, 0, 1),inset 0px 1px 0px 0px rgba(135, 142, 152, 1);
+					background: #FFA14D;
+					box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
 					.number_bg {
-						width: 23px;
+						/* width: 23px;
 						height: 23px;
 						border-radius: 23px;
 						background: #657180;
 						margin: 3px auto;
-						box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(0, 0, 0, 1),  0px 0px 0px 2px rgba(84, 91, 96, 1);
+						box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(0, 0, 0, 1),  0px 0px 0px 2px rgba(84, 91, 96, 1); */
 						text-align: center;
 						span {
-							color: #fff;
-							line-height: 23px;
-							font-size: 0.8rem;
-							text-shadow: 1px 2px 1px rgba(0,0,0,1);
+							color: #4C1F00;
+							line-height: 30px;
+							font-size: 1rem;
+							/* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
 						}
 					}
 				}
@@ -155,6 +158,7 @@
 					background: linear-gradient(to bottom, #44c6eb 0%,#30a7e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#30a7e0',GradientType=0 ); /* IE6-9 */
 					.gm_name {
+						background: #FF6500; 
 						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset -1px 0px 0px 0px rgba(146, 227, 255, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
 						&:before {	
 							.animation( gowave, 800ms, { 
@@ -164,7 +168,10 @@
 							}); 
 						}
 						&:after {
-						} 
+						}
+						span {
+								color:#fff;
+							} 
 						.icon_box {
 							.baseball {
 								background-position: -23px 0; 
@@ -218,10 +225,13 @@
 
 					}
 					.gm_number {
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 83, 141, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
+						box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
 						.number_bg {
-							background: #2a90c9;
-							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1);
+							background: #953B00;
+							box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
+							span {
+								color: #fff;
+							}
 						}
 					}
 					
@@ -231,18 +241,18 @@
 			.gm_menu_active {
 				/*標題active狀態*/
 				.gm_menu_btn_in {
-					background: #44c6eb; /* Old browsers */
-					background: -moz-linear-gradient(top, #44c6eb 0%, #30a7e0 100%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(top, #44c6eb 0%,#30a7e0 100%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(to bottom, #44c6eb 0%,#30a7e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#30a7e0',GradientType=0 ); /* IE6-9 */
+					
 					height: 30px;
 					cursor: pointer;
 					.gm_name {
 						position: relative;
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),
-								   inset -1px 0px 0px 0px rgba(146, 227, 255, 1),
-								   inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6600+0,dd5800+100 */
+						background: #ff6600; /* Old browsers */
+						background: -moz-linear-gradient(top, #ff6600 0%, #dd5800 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top, #ff6600 0%,#dd5800 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom, #ff6600 0%,#dd5800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6600', endColorstr='#dd5800',GradientType=0 ); /* IE6-9 */
+						box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
 						&:before {
 							content:' ';
 							position: absolute;
@@ -312,7 +322,7 @@
 							color:#fff;
 							line-height: 30px;
 							font-size:1rem;
-							text-shadow: 1px 2px 1px rgba(0,0,0,1);
+							/* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
 							letter-spacing: 10px;
 						}
 					}
@@ -330,55 +340,66 @@
 					}
 
 					.gm_number {
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset 1px 0px 0px 0px rgba(0, 83, 141, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6600+0,dd5800+100 */
+						background: #ff6600; /* Old browsers */
+						background: -moz-linear-gradient(top, #AF4600 0%, #8C3800 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top, #AF4600 0%,#8C3800 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom, #AF4600 0%,#8C3800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AF4600', endColorstr='#8C3800',GradientType=0 ); /* IE6-9 */
+						box-shadow: inset 0px -1px 0px 0px #A74300, inset 1px 0px 0px 0px #FF6600, inset 0px 1px 0px 0px #DC5700;
 						.number_bg {
-							width: 23px;
+							/* width: 23px;
 							height: 23px;
 							border-radius: 23px;
 							margin: 3px auto;
 							text-align: center;
 							background: #2a90c9;
-							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1);
+							box-shadow:inset 0px 0px 10px 3px rgba(0, 0, 0, 0.6),inset 0px 0px 2px 1px rgba(3, 46, 172, 1),  0px 0px 0px 2px rgba(19, 184, 222, 1); */
+							
+							text-align: center;
 							span {
-								color: #34FFAD;
-								line-height: 23px;
-								font-size: 0.8rem;
-								text-shadow: 1px 2px 1px rgba(0,0,0,1);
+								color: #fff;
+								line-height: 30px;
+								font-size: 1.1rem;
+								/* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
 							}
 						}
 					}
 				}
 				/*白底選單區塊*/
-				.gm_menu_list {
+				.gm_menu_box {
+					box-shadow: inset 0px 3px 5px -2px rgba(0, 0, 0, 0.7), inset 0px -3px 5px -2px rgba(0, 0, 0, 0.7);
 					background: #fff;
-					height: 30px;
-					cursor: pointer;
-					border-bottom: 1px solid #ccc;
-					padding: 0 0 0 45px;
-					position: relative;
-					.transition ( all 0.5s );
-					i {
-						position: absolute;
-						top:5px;
-						left: 43px;
-						.transition ( all 0.6s );
-					}
-					span {
-						position: absolute;
-						left: 70px;
-						top: 7px;
-						font-size: 0.9rem;
-						color: #000;
-						.transition ( all 0.3s );
-					}
-					&:hover {
-						background: #EFEFEF;
+					.gm_menu_list {
+						height: 30px;
+						cursor: pointer;
+						border-bottom: 1px solid #ccc;
+						padding: 0 0 0 45px;
+						position: relative;
+						.transition ( all 0.5s );
 						i {
-							left: 50px;
+							position: absolute;
+							top:5px;
+							left: 43px;
+							.transition ( all 0.6s );
 						}
 						span {
-							color: #0064DB;
-							left: 73px;
+							position: absolute;
+							left: 70px;
+							top: 7px;
+							font-size: 0.9rem;
+							color: #000;
+							.transition ( all 0.3s );
+						}
+						&:hover {
+							background: #EFEFEF;
+							i {
+								left: 50px;
+							}
+							span {
+								color: #CA5100;
+								left: 73px;
+							}
 						}
 					}
 				}
