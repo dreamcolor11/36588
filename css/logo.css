@@ -9,7 +9,8 @@ ul {
 /*logo*/
 .logo_icon {
   width: 255px;
-  background: rgba(38, 38, 38, 0.8);
+  background: #903B00;
+  /* background: rgba(38, 38, 38, 0.8); */
   padding: 8px 0 0 0;
 }
 .logo_icon .logo_img {

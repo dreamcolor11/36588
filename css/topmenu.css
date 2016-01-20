@@ -13,65 +13,85 @@ ul {
   height: 43px;
 }
 .top_menu01 div {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6eb2eb+0,3c9aea+100 */
-  background: #6eb2eb;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f58937+0,f57d21+100 */
+  background: #f58937;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #6eb2eb 0%, #3c9aea 100%);
+  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #6eb2eb 0%, #3c9aea 100%);
+  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #6eb2eb 0%, #3c9aea 100%);
+  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6eb2eb', endColorstr='#3c9aea', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
   /* IE6-9 */
-  -webkit-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
-  -moz-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
-  -o-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
-  box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #C75404;
   /* padding: 0 6.8%; */
   height: 38px;
-  margin: 0 1px 0 0;
+  margin: 0 0px 0 0;
   line-height: 38px;
   cursor: pointer;
-  width: 130px;
+  width: 128px;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0px 2px 3px #A74B05;
   /* .transition (height 0.5s, background 0.3s, line-height 0s) */
   -webkit-transition: height 0.3s, background 0.3s, line-height 0.1s;
   -ms-transition: height 0.3s, background 0.3s, line-height 0.1s;
   transition: height 0.3s, background 0.3s, line-height 0.1s;
 }
 .top_menu01 div:hover {
-  height: 43px;
-  line-height: 43px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a9dff+0,0069bf+100 */
-  background: #2a9dff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57c20+0,f27312+100 */
+  background: #f57c20;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #2a9dff 0%, #0069bf 100%);
+  background: -moz-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2a9dff 0%, #0069bf 100%);
+  background: -webkit-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2a9dff 0%, #0069bf 100%);
+  background: linear-gradient(to bottom, #FF6E00 0%, #EF6700 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a9dff', endColorstr='#0069bf', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f57c20', endColorstr='#f27312', GradientType=0);
   /* IE6-9 */
-  -webkit-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
-  -moz-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
-  -o-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
-  box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid #753000;
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2), 0 -1px 0 0 #C75404, 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  margin: 1px 0 0 0 ;
+}
+.top_menu01 div:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57c20+0,f27312+100 */
+  background: #f57c20;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #FF6E00 0%, #EF6700 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f57c20', endColorstr='#f27312', GradientType=0);
+  /* IE6-9 */
+  border: 1px solid #753000;
+  box-shadow: 0 -1px 0 0 #C75404, 0 1px 2px 0 rgba(0, 0, 0, 0.1), inset 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  margin: 1px 0 0 0 ;
 }
 /*上方右側-會員帳號選單*/
 .top_menu02 {
-  background: rgba(255, 255, 255, 0.3);
+  background: #903B00;
+  height: 63px;
+  padding: 0 0 0 1px;
+  /* background: rgba(255, 255, 255, 0.3); */
 }
-.top_menu02 .tm2_left {
+.top_menu02 .tm2_btn_box {
   width: 120px;
+  padding: 0 0 0 1px;
 }
-.top_menu02 .tm2_left > div {
-  background: #0081D8 ;
+.top_menu02 .tm2_btn_box > div {
+  /* background: #903B00 ; */
   height: 30px;
   width: 120px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -79,73 +99,142 @@ ul {
   -ms-transition: all 0.6s;
   transition: all 0.6s;
   /*一般狀態*/
+  /* .tm_normal{
+				width: 240px;
+				height: 30px;
+				position: absolute;
+				top:0;
+				left:0;
+				.transition (all 0.6s);
+				>i {
+					color: #fff;
+					font-size: 0.8rem;
+					position: absolute;
+					top: 8px;
+					left: 22px;
+					.transition (all 0.6s);
+				}
+				>span {
+					color: #fff;
+					font-size: 0.8rem;
+					position: absolute;
+					top: 5px;
+					left: 43px;
+					.transition (all 0.6s);
+				}
+			}
+			.tm_hover {
+				position: relative;
+				i {
+					position: absolute;
+					top: 6px;
+					left: -120px;
+					font-size: 1rem;
+					.transition (all 0.6s);
+				}
+				span {
+					position: absolute;
+					top: 5px;
+					left: -55px;
+					font-size: 0.8rem;
+					.transition (all 0.6s);
+				}
+			} */
   /*滑入狀態*/
+  /* &:hover {
+				background:#9AD6FF;
+				.tm_normal{
+					>i {
+						left: 120px;
+					}
+					>span {
+						left: 180px;
+					}
+				}
+				.tm_hover {
+					i {
+						left: 20px;
+					}
+					span {
+						left: 43px;
+					}
+				}
+			} */
 }
-.top_menu02 .tm2_left > div .tm_normal {
-  width: 240px;
-  height: 30px;
+.top_menu02 .tm2_btn_box > div .tm_btn {
+  -moz-box-shadow: inset 0 0 0 1px #963E00;
+  -webkit-box-shadow: inset 0 0 0 1px #963E00;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #eee;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+  background: -moz-linear-gradient(#eee, #e2e2e2);
+  background: linear-gradient(#eee, #e2e2e2);
+  border: solid 1px #FFFFFF;
+  border-bottom: solid 3px #b2b1b1;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #f5f5f5;
+  color: #555;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 1px 0px 0px 0px;
+  padding: 0px 0px;
+  height: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #fafafa;
+  cursor: pointer;
+  width: 115px;
+}
+.top_menu02 .tm2_btn_box > div .tm_btn > i {
+  position: absolute;
+  top: 3px;
+  left: 14px;
+  font-size: 1.2rem;
+}
+.top_menu02 .tm2_btn_box > div .tm_btn > span {
+  position: absolute;
+  top: 2px;
+  left: 37px;
+}
+.top_menu02 .tm2_btn_box > div .tm_btn:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #FFC38D 0px 2px 3px 1px;
+  -moz-box-shadow: #FFC38D 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #FFC38D 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 0px 0 0;
   position: absolute;
   top: 0;
-  left: 0;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+  width: 100%;
 }
-.top_menu02 .tm2_left > div .tm_normal > i {
-  color: #fff;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 8px;
-  left: 22px;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+.top_menu02 .tm2_btn_box > div .tm_btn:active:before {
+  padding: 1px 0 0;
 }
-.top_menu02 .tm2_left > div .tm_normal > span {
-  color: #fff;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 5px;
-  left: 43px;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+.top_menu02 .tm2_btn_box > div .tm_btn:hover {
+  background: #e4e4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+  background: -moz-linear-gradient(#e4e4e4, #ededed);
+  background: linear-gradient(#e4e4e4, #ededed);
+  border: solid 1px #c2c2c2;
+  border-bottom: solid 3px #b2b1b1;
+  box-shadow: inset 0 0 0 1px #efefef;
 }
-.top_menu02 .tm2_left > div .tm_hover {
-  position: relative;
-}
-.top_menu02 .tm2_left > div .tm_hover i {
-  position: absolute;
-  top: 6px;
-  left: -120px;
-  font-size: 1rem;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.top_menu02 .tm2_left > div .tm_hover span {
-  position: absolute;
-  top: 5px;
-  left: -55px;
-  font-size: 0.8rem;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.top_menu02 .tm2_left > div:hover {
-  background: #9AD6FF;
-}
-.top_menu02 .tm2_left > div:hover .tm_normal > i {
-  left: 120px;
-}
-.top_menu02 .tm2_left > div:hover .tm_normal > span {
-  left: 180px;
-}
-.top_menu02 .tm2_left > div:hover .tm_hover i {
-  left: 20px;
-}
-.top_menu02 .tm2_left > div:hover .tm_hover span {
-  left: 43px;
+.top_menu02 .tm2_btn_box > div .tm_btn:active {
+  background: #dfdfdf;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+  background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+  background: linear-gradient(#dfdfdf, #e3e3e3);
+  border: solid 1px #959595;
+  box-shadow: inset 0 10px 15px 0 #c4c4c4;
+  top: 2px;
 }
 .top_menu02 .tm2_right {
   width: 120px;

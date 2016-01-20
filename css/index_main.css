@@ -13,7 +13,8 @@
 }
 .main_content .main_center .top .topbg {
   height: 63px;
-  background: rgba(38, 38, 38, 0.8);
+  background: #903B00;
+  /* background: rgba(38, 38, 38, 0.8); */
   /*跑馬燈*/
 }
 .main_content .main_center .top .topbg marquee {
@@ -25,33 +26,36 @@
   top: 84px;
 }
 .main_content .main_center .box .box_left {
+  width: 254px;
   background: #DC5D04;
   /* background: rgba(235, 235, 235, 1); */
   /* background: rgba(255, 255, 255, 0.3); */
   /*左側-滾動區塊*/
 }
 .main_content .main_center .box .box_left .box_scoll {
-  margin: 8px 0 0 0;
-  height: 780px;
+  margin: 8px 0 50px 0;
+  height: 742px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar {
   width: 2px;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.5);
+  /*背景*/
+  background-color: #dc5d04;
   height: 0px;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-thumb {
   /*拉把*/
-  background-color: #9c3e00;
+  background-color: #ffaf67;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #dc5d04;
   height: 0px;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-corner {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #dc5d04;
 }
 .main_content .main_center .box .box_right {
   /*上方選單*/

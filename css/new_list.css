@@ -17,34 +17,112 @@ ul {
 .new_list_group .nl_btn_box {
   width: 100%;
   padding: 0px 8px 0 8px;
-  height: 37px;
+  height: 40px;
   /*共用按鈕*/
+  /* .nl_btn {
+			padding: 0 6.2%;
+			height: 30px;
+			Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,e3e3e3+100
+			background: #eeeeee; Old browsers
+			background: -moz-linear-gradient(top, #eeeeee 0%, #e3e3e3 100%); FF3.6-15
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#e3e3e3 100%); Chrome10-25,Safari5.1-6
+			background: linear-gradient(to bottom, #eeeeee 0%,#e3e3e3 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e3e3e3',GradientType=0 ); IE6-9
+			border: 1px solid #f5f5f5;
+			text-align: center; 
+			margin: 0 1px;
+			line-height: 30px;
+			font-size: 1rem;
+			color: #fff;
+			cursor: pointer;
+			text-shadow: 1px 1px 1px rgba(0,0,0,1);
+			-webkit-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    -webkit-box-shadow: #959595 0 2px 5px;
+		    -moz-box-shadow: #959595 0 2px 5px;
+		    border-radius: 3px;
+		    box-shadow: #959595 0 2px 5px;
+			.transition ( all 0.2s );
+			&:hover {
+				height: 31px;
+				line-height: 32px;
+				Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3e3e3+0,eeeeee+100
+				background: #e3e3e3; Old browsers
+				background: -moz-linear-gradient(top, #e3e3e3 0%, #eeeeee 100%); FF3.6-15
+				background: -webkit-linear-gradient(top, #e3e3e3 0%,#eeeeee 100%); Chrome10-25,Safari5.1-6
+				background: linear-gradient(to bottom, #e3e3e3 0%,#eeeeee 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#eeeeee',GradientType=0 ); IE6-9
+				text-shadow: 1px 2px 1px rgba(0,0,0,1);
+			}
+		} */
+  /** Grey **/
   /*等待中*/
   /*作廢*/
   /*最新注單*/
 }
 .new_list_group .nl_btn_box .nl_btn {
-  padding: 0 6.2%;
+  -moz-box-shadow: inset 0 0 0 1px #963E00;
+  -webkit-box-shadow: inset 0 0 0 1px #963E00;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #eee;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+  background: -moz-linear-gradient(#eee, #e2e2e2);
+  background: linear-gradient(#eee, #e2e2e2);
+  border: solid 1px #FFFFFF;
+  border-bottom: solid 5px #b2b1b1;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #f5f5f5;
+  color: #555;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 1px 0px 2px;
+  padding: 0px 15px;
   height: 30px;
-  background: #ffab41;
-  border-bottom: 5px solid #a0661a;
+  line-height: 28px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
   text-align: center;
-  margin: 0 1px;
-  line-height: 30px;
-  font-size: 1rem;
-  color: #fff;
+  text-shadow: 0 1px 0 #fafafa;
   cursor: pointer;
-  text-shadow: 1px 1px 1px #000000;
-  -webkit-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+}
+.new_list_group .nl_btn_box .nl_btn:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 4px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.new_list_group .nl_btn_box .nl_btn:active:before {
+  padding: 1px 0 0;
 }
 .new_list_group .nl_btn_box .nl_btn:hover {
-  height: 31px;
-  line-height: 32px;
-  background: #ff9600;
-  border-bottom: 5px solid #7f4c0a;
-  text-shadow: 1px 2px 1px #000000;
+  background: #e4e4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+  background: -moz-linear-gradient(#e4e4e4, #ededed);
+  background: linear-gradient(#e4e4e4, #ededed);
+  border: solid 1px #c2c2c2;
+  border-bottom: solid 3px #b2b1b1;
+  box-shadow: inset 0 0 0 1px #efefef;
+}
+.new_list_group .nl_btn_box .nl_btn:active {
+  background: #dfdfdf;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+  background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+  background: linear-gradient(#dfdfdf, #e3e3e3);
+  border: solid 1px #959595;
+  box-shadow: inset 0 10px 15px 0 #c4c4c4;
+  top: 2px;
 }
 .new_list_group .nl_info_box {
   width: 100%;
@@ -55,12 +133,24 @@ ul {
 }
 .new_list_group .nl_info_box .nl_refresh {
   text-align: center;
-  background: #ff0000;
-  height: 22px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: #ff3019;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0);
+  /* IE6-9 */
+  /* background: #ff0000; */
+  height: 25px;
   cursor: pointer;
   position: relative;
   box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid #AF0000;
+  border: 1px solid #FFC38D;
   -webkit-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
@@ -68,27 +158,56 @@ ul {
 .new_list_group .nl_info_box .nl_refresh i {
   position: absolute;
   color: #fff;
-  font-size: 0.9rem;
-  top: 3px;
+  font-size: 1rem;
+  top: 4px;
   left: 90px;
   transform: rotate(0deg);
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .new_list_group .nl_info_box .nl_refresh span {
   position: absolute;
   color: #fff;
   font-size: 0.9rem;
-  top: 0px;
+  top: 3px;
   left: 110px;
 }
 .new_list_group .nl_info_box .nl_refresh:hover {
-  background: #DC1010;
-  box-shadow: inset 0px 0px 8px 3px #ff0000;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc0000+0,db1515+100 */
+  background: #bc0000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bc0000 0%, #db1515 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bc0000 0%, #db1515 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bc0000 0%, #db1515 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc0000', endColorstr='#db1515', GradientType=0);
+  /* IE6-9 */
+  /* background: #DC1010; */
+  /* box-shadow: inset 0px 0px 8px 3px rgb(255, 0, 0); */
 }
 .new_list_group .nl_info_box .nl_refresh:hover i {
   transform: rotate(90deg);
+}
+.new_list_group .nl_info_box .nl_refresh:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8e0000+0,ad0c0c+100 */
+  background: #8e0000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8e0000 0%, #ad0c0c 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #8e0000 0%, #ad0c0c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #8e0000 0%, #ad0c0c 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8e0000', endColorstr='#ad0c0c', GradientType=0);
+  /* IE6-9 */
+  /* background: #DC1010; */
+  /* box-shadow: inset 0px 0px 8px 3px rgb(255, 0, 0); */
+}
+.new_list_group .nl_info_box .nl_refresh:active span {
+  top: 4px;
 }
 .new_list_group .nl_info_box .nl_info {
   width: 100%;
@@ -96,7 +215,7 @@ ul {
   padding: 10px 8px 10px 8px;
   background: #fff;
   /* box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.6); */
-  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.3), inset 0px 4px 5px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0), inset 0px 4px 5px -4px rgba(0, 0, 0, 0), 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   /*無注單*/
   /*注單列表*/
 }

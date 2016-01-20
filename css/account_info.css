@@ -7,7 +7,7 @@ ul {
   padding: 0;
 }
 .account_info {
-  width: 255px;
+  width: 254px;
   position: relative;
 }
 .account_info .acc_box {
@@ -15,7 +15,7 @@ ul {
   padding: 8px 0 0 8px;
 }
 .account_info .acc_box span {
-  color: #000;
+  color: #fff;
 }
 .account_info .acc_box span span {
   color: #fff;
@@ -30,42 +30,66 @@ ul {
   top: 12px;
 }
 .account_info .acc_button .acc_btn01 {
-  background: #3bb3e0;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+  border: 1px solid #CA5300;
+  box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2, 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #8c8c8c;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
   cursor: pointer;
-  font-size: 0.9rem;
-  color: #fff;
+  display: inline-block;
+  font-family: Verdana, sans-serif, '微軟正黑體';
   position: absolute;
   top: 9px;
   right: 10px;
-  padding: 5px 15px;
-  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+  padding: 0px 14px;
+  line-height: 33px;
+  font-size: 1rem;
+  color: #4C4C4C;
+  font-weight: bold;
+  -webkit-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+  /* background: #3bb3e0;
+			cursor: pointer;
+			font-size: 0.9rem;
+			color: #fff;
+			position: absolute;
+			top: 9px;
+			right: 10px;
+			padding: 5px 15px;
+			box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D; */
 }
 .account_info .acc_button .acc_btn01:hover {
-  color: #013880;
-  background: #72D9FF;
-  box-shadow: inset 0px 1px 0px #B0E9FF, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  top: 10px;
+  background: #FBF2EB;
+  border: 1px solid #F16300;
+  box-shadow: inset 0 1px 2px #4a1e00, inset 0 -1px 0 #FFFFFF, inset 0 0 2px 1px #FFEEDF;
+  /* background: #FFF1E5;
+			    border:1px solid #983D00;
+			    box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2; */
 }
 .account_info .acc_button .acc_btn01:active {
   top: 12px;
-  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 0px #2D2D2D;
+  box-shadow: inset 0 1px 2px #4a1e00, inset 0 -1px 0 #FFFFFF, inset 0 0 2px 1px #FFEEDF;
   -webkit-transition: all 0s;
   -ms-transition: all 0s;
   transition: all 0s;
 }
 .account_info .gm_title {
   /* background: url(../images/game_menu/gm_title.png) no-repeat top center;  */
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
   width: 238px;
-  height: 36px;
+  height: 28px;
   margin: 15px auto 0 auto;
   text-align: center;
-  border-bottom: 1px solid #FFAE66;
+  border-bottom: 1px solid #FF7800;
+  border-top: 1px solid #A54100;
+  letter-spacing: 2px;
 }
 .account_info .gm_title span {
   color: #FFEAD7;
-  line-height: 36px;
-  font-size: 1.1rem;
+  line-height: 28px;
+  font-size: 0.9rem;
 }

@@ -58,13 +58,13 @@ ul {
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name {
   position: relative;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb16d+0,fe9e51+100 */
-  background: #feb16d;
-  /* Old browsers */
-  /* background: -moz-linear-gradient(top, #feb16d 0%, #fe9e51 100%); FF3.6-15
-					background: -webkit-linear-gradient(top, #feb16d 0%,#fe9e51 100%); Chrome10-25,Safari5.1-6
-					background: linear-gradient(to bottom, #feb16d 0%,#fe9e51 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb16d', endColorstr='#fe9e51',GradientType=0 ); IE6-9 */
-  box-shadow: inset 0px -1px 0px 0px #EC711F, inset -1px 0px 0px 0px #EC5E00, inset 0px 1px 0px 0px #FFD2AB;
+  /* background: #feb16d; Old browsers
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset -1px 0px 0px 0px #EC5E00, 
+								inset 0px 1px 0px 0px #FFD2AB; */
+  background: #FFC38D;
+  box-shadow: inset 0px -1px 0px 0px #EA8E3A, inset -1px 0px 0px 0px #FFA76D, inset 0px 1px 0px 0px #FFD9B9;
+  /*順序-下-右-上*/
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name:before {
   content: ' ';
@@ -76,11 +76,11 @@ ul {
   position: absolute;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
-  color: #000;
+  color: #922100;
   line-height: 30px;
   font-size: 0.9rem;
   /* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .name_icon {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
@@ -137,7 +137,11 @@ ul {
   background-position: 0 -345px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number {
-  background: #FFA14D;
+  /* background: #FFA14D;
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset 1px 0px 0px 0px #FFCBA8, 
+								inset 0px 1px 0px 0px #FFD2AB; */
+  background: #FFAF67;
   box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg {
@@ -170,7 +174,8 @@ ul {
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name {
   background: #FF6500;
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #92e3ff, inset 0px 1px 0px 0px #caf1ff;
+  box-shadow: inset 0px -1px 0px 0px #CE5100, inset -1px 0px 0px 0px #D65500, inset 0px 1px 0px 0px #FFBC90;
+  /* box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset -1px 0px 0px 0px rgba(146, 227, 255, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1); */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name:before {
   -webkit-animation: gowave 800ms;
@@ -280,14 +285,16 @@ ul {
   background-position: -23px -345px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number {
-  box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
+  background: #953B00;
+  box-shadow: inset 0px -1px 0px 0px #843908, inset 1px 0px 0px 0px #FF9E47, inset 0px 1px 0px 0px #FFAF67;
+  /* box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90; */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg {
-  background: #953B00;
-  box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
+  /* box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB; */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg span {
   color: #fff;
+  font-size: 1.1rem;
 }
 .side_group .game_main .gm_menu .gm_menu_active {
   /*標題active狀態*/
@@ -486,6 +493,7 @@ ul {
   position: absolute;
   top: 5px;
   left: 43px;
+  color: #9a9a9a;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
@@ -505,6 +513,7 @@ ul {
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover i {
   left: 50px;
+  color: #000;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover span {
   color: #CA5100;

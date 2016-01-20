@@ -50,14 +50,15 @@
 				.gm_name {
 					position: relative;
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb16d+0,fe9e51+100 */
-					background: #feb16d; /* Old browsers */
-					/* background: -moz-linear-gradient(top, #feb16d 0%, #fe9e51 100%); FF3.6-15
-					background: -webkit-linear-gradient(top, #feb16d 0%,#fe9e51 100%); Chrome10-25,Safari5.1-6
-					background: linear-gradient(to bottom, #feb16d 0%,#fe9e51 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb16d', endColorstr='#fe9e51',GradientType=0 ); IE6-9 */
+					/* background: #feb16d; Old browsers
 					box-shadow: inset 0px -1px 0px 0px #EC711F, 
 								inset -1px 0px 0px 0px #EC5E00, 
-								inset 0px 1px 0px 0px #FFD2AB;
+								inset 0px 1px 0px 0px #FFD2AB; */
+					background: #FFC38D; 
+				    box-shadow: inset 0px -1px 0px 0px #EA8E3A,
+				                inset -1px 0px 0px 0px #FFA76D, 
+				                inset 0px 1px 0px 0px #FFD9B9;	
+				                /*順序-下-右-上*/
 					&:before {
 						content:' ';
 						position: absolute;
@@ -68,11 +69,11 @@
 						position: absolute;
 					} 
 					span {
-						color:#000;
+						color: #922100;
 						line-height: 30px;
 						font-size:0.9rem;
 						/* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
-						letter-spacing: 10px;
+						letter-spacing: 5px;
 					}
 					.icon_box {
 						.name_icon {
@@ -132,8 +133,14 @@
 					}
 				}
 				.gm_number {
-					background: #FFA14D;
-					box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
+					/* background: #FFA14D;
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset 1px 0px 0px 0px #FFCBA8, 
+								inset 0px 1px 0px 0px #FFD2AB; */
+					background: #FFAF67;
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset 1px 0px 0px 0px #FFCBA8, 
+								inset 0px 1px 0px 0px #FFD2AB;
 					.number_bg {
 						/* width: 23px;
 						height: 23px;
@@ -159,7 +166,8 @@
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#30a7e0',GradientType=0 ); /* IE6-9 */
 					.gm_name {
 						background: #FF6500; 
-						box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset -1px 0px 0px 0px rgba(146, 227, 255, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1);
+						box-shadow: inset 0px -1px 0px 0px #CE5100, inset -1px 0px 0px 0px #D65500, inset 0px 1px 0px 0px #FFBC90;
+						/* box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset -1px 0px 0px 0px rgba(146, 227, 255, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1); */
 						&:before {	
 							.animation( gowave, 800ms, { 
 							  0% { background: rgba(255, 255, 255, 0);left: 50%;width: 0%;};
@@ -225,12 +233,15 @@
 
 					}
 					.gm_number {
-						box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
+						background: #953B00;
+						box-shadow: inset 0px -1px 0px 0px #843908, inset 1px 0px 0px 0px #FF9E47, inset 0px 1px 0px 0px #FFAF67;
+						/* box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90; */
 						.number_bg {
-							background: #953B00;
-							box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
+							
+							/* box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB; */
 							span {
 								color: #fff;
+								font-size: 1.1rem;
 							}
 						}
 					}
@@ -381,6 +392,7 @@
 							position: absolute;
 							top:5px;
 							left: 43px;
+							color: #9a9a9a;
 							.transition ( all 0.6s );
 						}
 						span {
@@ -395,6 +407,7 @@
 							background: #EFEFEF;
 							i {
 								left: 50px;
+								color: #000;
 							}
 							span {
 								color: #CA5100;

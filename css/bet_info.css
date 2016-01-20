@@ -9,7 +9,7 @@ ul {
 /*投注區塊*/
 .bet_info_group {
   height: auto;
-  margin: 5px 0 50px 0;
+  margin: 10px 0 50px 0;
   /* background: #3c4044; */
 }
 .bet_info_group .bi_main {
@@ -19,28 +19,27 @@ ul {
 }
 .bet_info_group .bi_main .bi_title {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5297d1+0,325c86+30,325c86+100 */
-  background: #6277B7;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #5297d1 0%, #325c86 30%, #325c86 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5297d1', endColorstr='#325c86', GradientType=0);
-  /* IE6-9 */
-  height: 42px;
+  /* background: #6277B7; Old browsers
+			background: -moz-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%); FF3.6-15
+			background: -webkit-linear-gradient(top, #5297d1 0%,#325c86 30%,#325c86 100%); Chrome10-25,Safari5.1-6
+			background: linear-gradient(to bottom, #5297d1 0%,#325c86 30%,#325c86 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5297d1', endColorstr='#325c86',GradientType=0 ); IE6-9 */
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #FF7800;
+  border-top: 1px solid #A54100;
   color: #fff;
-  border: 1px solid #7fd4eb;
+  margin: 0 0 5px 0;
 }
 .bet_info_group .bi_main .bi_title h1 {
-  width: 90%;
   padding: 0 5%;
   text-align: center;
-  line-height: 42px;
+  line-height: 30px;
+  height: 30px;
+  margin: 0 auto;
 }
 .bet_info_group .bi_main .bi_box {
   background: #fff;
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0), inset 0px 4px 5px -4px rgba(0, 0, 0, 0), 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   /*第1區塊*/
   /*第2區塊*/
   /*第3區塊*/
@@ -76,23 +75,103 @@ ul {
   position: absolute;
   left: 25px;
   font-size: 0.95rem;
+  /* a {
+								text-decoration: none;
+								background: #c1d0ff;
+								border-bottom: 3px solid #465A96;
+								padding: 4px 18px 2px 18px;
+								font-size: 0.92em;
+								color: #233B84;
+								border-radius: 3px;
+								.transition ( all 0.3s );
+								&:hover {
+									background: #759fd4;
+									border-bottom: 3px solid #43628A;
+									color:#fff;
+								}
+							} */
 }
-.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a {
-  text-decoration: none;
-  background: #c1d0ff;
-  border-bottom: 3px solid #465A96;
-  padding: 4px 18px 2px 18px;
-  font-size: 0.92em;
-  color: #233B84;
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn {
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #C75404;
+  background: #f58937;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #BD4E01;
   border-radius: 3px;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a:hover {
-  background: #759fd4;
-  border-bottom: 3px solid #43628A;
   color: #fff;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 1px 0px 2px;
+  padding: 0px 15px;
+  height: 27px;
+  line-height: 25px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 2px 3px #A74B05;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 3px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:active:before {
+  padding: 1px 0 0;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A04200;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #C75404;
+  box-shadow: inset 0 4px 6px 0 #D25600;
+  top: 2px;
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span p {
   font-size: 1.5rem;
@@ -102,105 +181,309 @@ ul {
   margin: 0 0 0 15px;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box {
-  border-top: 1px solid #9DBEDE;
-  background: #F4F4F5;
+  border-top: 1px solid #FFAF67;
+  background: #F1F1F1;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box span {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: 90px;
-  line-height: 34px;
+  line-height: 44px;
   text-align: center;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box .bic-input {
   padding: 2px 0 0 0;
-  margin: 0px;
+  margin: 5px 0px;
   height: 30px;
   width: 135px;
+  border: 1px solid #FFDAB9;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box .bic-input input {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   font-family: "微軟正黑體";
   color: #ff0000;
   background: #fff;
   padding: 0 0 0 5px;
 }
 .bet_info_group .bi_main .bi_box .bi_btn {
-  padding: 10px 28px 10px 29px;
-  border-top: 1px solid #9DBEDE;
+  padding: 13px 24px 10px 24px;
+  border-top: 1px solid #FFAF67;
+  height: 60px;
   /*btn01 END*/
   /*btn02 END*/
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 {
-  overflow: hidden;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box {
   margin: 0 5px;
+  /* .btn_group {
+						position: relative;
+						background: #9E9E9E;
+						border-bottom: 3px solid #3f3f3f;
+						height: 30px;
+						width: 80px;
+						cursor: pointer;
+						border-radius: 3px;
+					 */
+  /* >span {
+							color: #fff;
+							position: absolute;
+							top: 6px;
+							right: 0px;
+							font-size: 0.8rem;
+							width: 100%;
+							text-align: center;
+							.transition ( all 0.5s );
+						}
+						.btn_icon {
+							position: absolute;
+							top:3px;
+							left: -100%;
+							text-align: center;
+							width: 100%;
+							.transition ( all 0.5s );
+							i {
+								color: #344371;
+								position: relative;
+								top: 4px;
+								left: 4%;
+								opacity: 0;
+								font-size: 1rem;
+								.transition ( all 1.5s );
+							}
+							span {
+								color: #344371;
+							    font-size: 0.9rem;
+								line-height: 26px;
+								padding: 0 0 0 5%;
+								opacity: 0;
+								.transition ( all 1.5s );
+						
+							}
+						}
+						&:hover {
+							background: #C1D0FF;
+							border-bottom: 3px solid #344371;
+							>span {
+								right: -100%;
+							}
+							.btn_icon {
+								left: 0px;
+								i{
+									opacity: 1;
+								}
+								span{
+									opacity: 1;
+								}
+							}
+						}
+											} */
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group {
-  position: relative;
-  background: #9E9E9E;
-  border-bottom: 3px solid #3f3f3f;
-  height: 30px;
-  width: 80px;
-  cursor: pointer;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02 {
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #C75404;
+  background: #f58937;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #BD4E01;
   border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 0px 0px 0px;
+  height: 30px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 2px 3px #A74B05;
+  width: 80px;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group > span {
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02 i {
   color: #fff;
   position: absolute;
-  top: 6px;
-  right: 0px;
-  font-size: 0.8rem;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon {
-  position: absolute;
-  top: 3px;
-  left: -100%;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon i {
-  color: #344371;
-  position: relative;
-  top: 4px;
-  left: 4%;
-  opacity: 0;
+  top: 7px;
+  left: 10px;
+  opacity: 1;
   font-size: 1rem;
   -webkit-transition: all 1.5s;
   -ms-transition: all 1.5s;
   transition: all 1.5s;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon span {
-  color: #344371;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02 span {
+  position: absolute;
+  color: #fff;
   font-size: 0.9rem;
   line-height: 26px;
-  padding: 0 0 0 5%;
-  opacity: 0;
+  top: 2px;
+  left: 34px;
+  opacity: 1;
   -webkit-transition: all 1.5s;
   -ms-transition: all 1.5s;
   transition: all 1.5s;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover {
-  background: #C1D0FF;
-  border-bottom: 3px solid #344371;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 3px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover > span {
-  right: -100%;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:active:before {
+  padding: 1px 0 0;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon {
-  left: 0px;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A04200;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon i {
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #C75404;
+  box-shadow: inset 0 4px 6px 0 #D25600;
+  top: 2px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03 {
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #FF8377, inset 0px -1px 0px 0px #E40600, inset 1px 0px 0px #FF5351, inset -1px 0px 0px 0px #FF4F4F, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #E20000;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: #ff3019;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A50000;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 0px 0px 0px;
+  height: 30px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 2px 3px #A74B05;
+  width: 80px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03 i {
+  color: #fff;
+  position: absolute;
+  top: 7px;
+  left: 10px;
   opacity: 1;
+  font-size: 1rem;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon span {
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03 span {
+  position: absolute;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 26px;
+  top: 2px;
+  left: 34px;
   opacity: 1;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 3px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:active:before {
+  padding: 1px 0 0;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c90000+0,ed1717+100 */
+  background: #c90000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c90000 0%, #ed1717 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c90000', endColorstr='#ed1717', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A04200;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c90000+0,ed1717+100 */
+  background: #c90000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c90000 0%, #ed1717 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c90000', endColorstr='#ed1717', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #8C0000;
+  box-shadow: inset 0 4px 6px 0 #D25600;
+  top: 2px;
 }
 .bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 {
   overflow: hidden;

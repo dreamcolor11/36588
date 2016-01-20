@@ -12,6 +12,8 @@ ul {
   /*標題名稱*/
 }
 .ball_title .bt_func {
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
   /*沒有資訊的標頭*/
 }
 .ball_title .bt_func > div {

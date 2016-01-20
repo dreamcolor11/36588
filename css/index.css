@@ -946,13 +946,13 @@ md-content {
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name {
   position: relative;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb16d+0,fe9e51+100 */
-  background: #feb16d;
-  /* Old browsers */
-  /* background: -moz-linear-gradient(top, #feb16d 0%, #fe9e51 100%); FF3.6-15
-					background: -webkit-linear-gradient(top, #feb16d 0%,#fe9e51 100%); Chrome10-25,Safari5.1-6
-					background: linear-gradient(to bottom, #feb16d 0%,#fe9e51 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb16d', endColorstr='#fe9e51',GradientType=0 ); IE6-9 */
-  box-shadow: inset 0px -1px 0px 0px #EC711F, inset -1px 0px 0px 0px #EC5E00, inset 0px 1px 0px 0px #FFD2AB;
+  /* background: #feb16d; Old browsers
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset -1px 0px 0px 0px #EC5E00, 
+								inset 0px 1px 0px 0px #FFD2AB; */
+  background: #FFC38D;
+  box-shadow: inset 0px -1px 0px 0px #EA8E3A, inset -1px 0px 0px 0px #FFA76D, inset 0px 1px 0px 0px #FFD9B9;
+  /*順序-下-右-上*/
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name:before {
   content: ' ';
@@ -964,11 +964,11 @@ md-content {
   position: absolute;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name span {
-  color: #000;
+  color: #922100;
   line-height: 30px;
   font-size: 0.9rem;
   /* text-shadow: 1px 2px 1px rgba(0,0,0,1); */
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_name .icon_box .name_icon {
   background: url(../images/game_menu/menu_icon.png) no-repeat;
@@ -1025,7 +1025,11 @@ md-content {
   background-position: 0 -345px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number {
-  background: #FFA14D;
+  /* background: #FFA14D;
+					box-shadow: inset 0px -1px 0px 0px #EC711F, 
+								inset 1px 0px 0px 0px #FFCBA8, 
+								inset 0px 1px 0px 0px #FFD2AB; */
+  background: #FFAF67;
   box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
 }
 .side_group .game_main .gm_menu .gm_menu_btn .gm_number .number_bg {
@@ -1058,7 +1062,8 @@ md-content {
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name {
   background: #FF6500;
-  box-shadow: inset 0px -1px 0px 0px #33373d, inset -1px 0px 0px 0px #92e3ff, inset 0px 1px 0px 0px #caf1ff;
+  box-shadow: inset 0px -1px 0px 0px #CE5100, inset -1px 0px 0px 0px #D65500, inset 0px 1px 0px 0px #FFBC90;
+  /* box-shadow:inset 0px -1px 0px 0px rgba(51, 55, 61, 1),inset -1px 0px 0px 0px rgba(146, 227, 255, 1),inset 0px 1px 0px 0px rgba(202, 241, 255, 1); */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_name:before {
   -webkit-animation: gowave 800ms;
@@ -1168,14 +1173,16 @@ md-content {
   background-position: -23px -345px;
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number {
-  box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90;
+  background: #953B00;
+  box-shadow: inset 0px -1px 0px 0px #843908, inset 1px 0px 0px 0px #FF9E47, inset 0px 1px 0px 0px #FFAF67;
+  /* box-shadow: inset 0px -1px 0px 0px #DE5900, inset -1px 0px 0px 0px #FFA15F, inset 0px 1px 0px 0px #FFBC90; */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg {
-  background: #953B00;
-  box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB;
+  /* box-shadow: inset 0px -1px 0px 0px #EC711F, inset 1px 0px 0px 0px #FFCBA8, inset 0px 1px 0px 0px #FFD2AB; */
 }
 .side_group .game_main .gm_menu .gm_menu_btn:hover .gm_number .number_bg span {
   color: #fff;
+  font-size: 1.1rem;
 }
 .side_group .game_main .gm_menu .gm_menu_active {
   /*標題active狀態*/
@@ -1374,6 +1381,7 @@ md-content {
   position: absolute;
   top: 5px;
   left: 43px;
+  color: #9a9a9a;
   -webkit-transition: all 0.6s;
   -ms-transition: all 0.6s;
   transition: all 0.6s;
@@ -1393,6 +1401,7 @@ md-content {
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover i {
   left: 50px;
+  color: #000;
 }
 .side_group .game_main .gm_menu .gm_menu_active .gm_menu_box .gm_menu_list:hover span {
   color: #CA5100;
@@ -1410,34 +1419,112 @@ md-content {
 .new_list_group .nl_btn_box {
   width: 100%;
   padding: 0px 8px 0 8px;
-  height: 37px;
+  height: 40px;
   /*共用按鈕*/
+  /* .nl_btn {
+			padding: 0 6.2%;
+			height: 30px;
+			Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,e3e3e3+100
+			background: #eeeeee; Old browsers
+			background: -moz-linear-gradient(top, #eeeeee 0%, #e3e3e3 100%); FF3.6-15
+			background: -webkit-linear-gradient(top, #eeeeee 0%,#e3e3e3 100%); Chrome10-25,Safari5.1-6
+			background: linear-gradient(to bottom, #eeeeee 0%,#e3e3e3 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e3e3e3',GradientType=0 ); IE6-9
+			border: 1px solid #f5f5f5;
+			text-align: center; 
+			margin: 0 1px;
+			line-height: 30px;
+			font-size: 1rem;
+			color: #fff;
+			cursor: pointer;
+			text-shadow: 1px 1px 1px rgba(0,0,0,1);
+			-webkit-border-radius: 3px;
+		    -moz-border-radius: 3px;
+		    -webkit-box-shadow: #959595 0 2px 5px;
+		    -moz-box-shadow: #959595 0 2px 5px;
+		    border-radius: 3px;
+		    box-shadow: #959595 0 2px 5px;
+			.transition ( all 0.2s );
+			&:hover {
+				height: 31px;
+				line-height: 32px;
+				Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3e3e3+0,eeeeee+100
+				background: #e3e3e3; Old browsers
+				background: -moz-linear-gradient(top, #e3e3e3 0%, #eeeeee 100%); FF3.6-15
+				background: -webkit-linear-gradient(top, #e3e3e3 0%,#eeeeee 100%); Chrome10-25,Safari5.1-6
+				background: linear-gradient(to bottom, #e3e3e3 0%,#eeeeee 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#eeeeee',GradientType=0 ); IE6-9
+				text-shadow: 1px 2px 1px rgba(0,0,0,1);
+			}
+		} */
+  /** Grey **/
   /*等待中*/
   /*作廢*/
   /*最新注單*/
 }
 .new_list_group .nl_btn_box .nl_btn {
-  padding: 0 6.2%;
+  -moz-box-shadow: inset 0 0 0 1px #963E00;
+  -webkit-box-shadow: inset 0 0 0 1px #963E00;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #eee;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+  background: -moz-linear-gradient(#eee, #e2e2e2);
+  background: linear-gradient(#eee, #e2e2e2);
+  border: solid 1px #FFFFFF;
+  border-bottom: solid 5px #b2b1b1;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #f5f5f5;
+  color: #555;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 1px 0px 2px;
+  padding: 0px 15px;
   height: 30px;
-  background: #ffab41;
-  border-bottom: 5px solid #a0661a;
+  line-height: 28px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
   text-align: center;
-  margin: 0 1px;
-  line-height: 30px;
-  font-size: 1rem;
-  color: #fff;
+  text-shadow: 0 1px 0 #fafafa;
   cursor: pointer;
-  text-shadow: 1px 1px 1px #000000;
-  -webkit-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+}
+.new_list_group .nl_btn_box .nl_btn:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 4px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.new_list_group .nl_btn_box .nl_btn:active:before {
+  padding: 1px 0 0;
 }
 .new_list_group .nl_btn_box .nl_btn:hover {
-  height: 31px;
-  line-height: 32px;
-  background: #ff9600;
-  border-bottom: 5px solid #7f4c0a;
-  text-shadow: 1px 2px 1px #000000;
+  background: #e4e4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+  background: -moz-linear-gradient(#e4e4e4, #ededed);
+  background: linear-gradient(#e4e4e4, #ededed);
+  border: solid 1px #c2c2c2;
+  border-bottom: solid 3px #b2b1b1;
+  box-shadow: inset 0 0 0 1px #efefef;
+}
+.new_list_group .nl_btn_box .nl_btn:active {
+  background: #dfdfdf;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+  background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+  background: linear-gradient(#dfdfdf, #e3e3e3);
+  border: solid 1px #959595;
+  box-shadow: inset 0 10px 15px 0 #c4c4c4;
+  top: 2px;
 }
 .new_list_group .nl_info_box {
   width: 100%;
@@ -1448,12 +1535,24 @@ md-content {
 }
 .new_list_group .nl_info_box .nl_refresh {
   text-align: center;
-  background: #ff0000;
-  height: 22px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: #ff3019;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0);
+  /* IE6-9 */
+  /* background: #ff0000; */
+  height: 25px;
   cursor: pointer;
   position: relative;
   box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid #AF0000;
+  border: 1px solid #FFC38D;
   -webkit-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
@@ -1461,27 +1560,56 @@ md-content {
 .new_list_group .nl_info_box .nl_refresh i {
   position: absolute;
   color: #fff;
-  font-size: 0.9rem;
-  top: 3px;
+  font-size: 1rem;
+  top: 4px;
   left: 90px;
   transform: rotate(0deg);
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .new_list_group .nl_info_box .nl_refresh span {
   position: absolute;
   color: #fff;
   font-size: 0.9rem;
-  top: 0px;
+  top: 3px;
   left: 110px;
 }
 .new_list_group .nl_info_box .nl_refresh:hover {
-  background: #DC1010;
-  box-shadow: inset 0px 0px 8px 3px #ff0000;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc0000+0,db1515+100 */
+  background: #bc0000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bc0000 0%, #db1515 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bc0000 0%, #db1515 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bc0000 0%, #db1515 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc0000', endColorstr='#db1515', GradientType=0);
+  /* IE6-9 */
+  /* background: #DC1010; */
+  /* box-shadow: inset 0px 0px 8px 3px rgb(255, 0, 0); */
 }
 .new_list_group .nl_info_box .nl_refresh:hover i {
   transform: rotate(90deg);
+}
+.new_list_group .nl_info_box .nl_refresh:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8e0000+0,ad0c0c+100 */
+  background: #8e0000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8e0000 0%, #ad0c0c 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #8e0000 0%, #ad0c0c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #8e0000 0%, #ad0c0c 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8e0000', endColorstr='#ad0c0c', GradientType=0);
+  /* IE6-9 */
+  /* background: #DC1010; */
+  /* box-shadow: inset 0px 0px 8px 3px rgb(255, 0, 0); */
+}
+.new_list_group .nl_info_box .nl_refresh:active span {
+  top: 4px;
 }
 .new_list_group .nl_info_box .nl_info {
   width: 100%;
@@ -1489,7 +1617,7 @@ md-content {
   padding: 10px 8px 10px 8px;
   background: #fff;
   /* box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.6); */
-  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.3), inset 0px 4px 5px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0), inset 0px 4px 5px -4px rgba(0, 0, 0, 0), 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   /*無注單*/
   /*注單列表*/
 }
@@ -1524,7 +1652,7 @@ md-content {
 /*投注區塊*/
 .bet_info_group {
   height: auto;
-  margin: 5px 0 50px 0;
+  margin: 10px 0 50px 0;
   /* background: #3c4044; */
 }
 .bet_info_group .bi_main {
@@ -1534,28 +1662,27 @@ md-content {
 }
 .bet_info_group .bi_main .bi_title {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5297d1+0,325c86+30,325c86+100 */
-  background: #6277B7;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #5297d1 0%, #325c86 30%, #325c86 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5297d1', endColorstr='#325c86', GradientType=0);
-  /* IE6-9 */
-  height: 42px;
+  /* background: #6277B7; Old browsers
+			background: -moz-linear-gradient(top, #5297d1 0%, #325c86 30%, #325c86 100%); FF3.6-15
+			background: -webkit-linear-gradient(top, #5297d1 0%,#325c86 30%,#325c86 100%); Chrome10-25,Safari5.1-6
+			background: linear-gradient(to bottom, #5297d1 0%,#325c86 30%,#325c86 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5297d1', endColorstr='#325c86',GradientType=0 ); IE6-9 */
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #FF7800;
+  border-top: 1px solid #A54100;
   color: #fff;
-  border: 1px solid #7fd4eb;
+  margin: 0 0 5px 0;
 }
 .bet_info_group .bi_main .bi_title h1 {
-  width: 90%;
   padding: 0 5%;
   text-align: center;
-  line-height: 42px;
+  line-height: 30px;
+  height: 30px;
+  margin: 0 auto;
 }
 .bet_info_group .bi_main .bi_box {
   background: #fff;
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0), inset 0px 4px 5px -4px rgba(0, 0, 0, 0), 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   /*第1區塊*/
   /*第2區塊*/
   /*第3區塊*/
@@ -1591,23 +1718,103 @@ md-content {
   position: absolute;
   left: 25px;
   font-size: 0.95rem;
+  /* a {
+								text-decoration: none;
+								background: #c1d0ff;
+								border-bottom: 3px solid #465A96;
+								padding: 4px 18px 2px 18px;
+								font-size: 0.92em;
+								color: #233B84;
+								border-radius: 3px;
+								.transition ( all 0.3s );
+								&:hover {
+									background: #759fd4;
+									border-bottom: 3px solid #43628A;
+									color:#fff;
+								}
+							} */
 }
-.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a {
-  text-decoration: none;
-  background: #c1d0ff;
-  border-bottom: 3px solid #465A96;
-  padding: 4px 18px 2px 18px;
-  font-size: 0.92em;
-  color: #233B84;
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn {
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #C75404;
+  background: #f58937;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #BD4E01;
   border-radius: 3px;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a:hover {
-  background: #759fd4;
-  border-bottom: 3px solid #43628A;
   color: #fff;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 1px 0px 2px;
+  padding: 0px 15px;
+  height: 27px;
+  line-height: 25px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 2px 3px #A74B05;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 3px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:active:before {
+  padding: 1px 0 0;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A04200;
+}
+.bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #C75404;
+  box-shadow: inset 0 4px 6px 0 #D25600;
+  top: 2px;
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span p {
   font-size: 1.5rem;
@@ -1617,105 +1824,309 @@ md-content {
   margin: 0 0 0 15px;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box {
-  border-top: 1px solid #9DBEDE;
-  background: #F4F4F5;
+  border-top: 1px solid #FFAF67;
+  background: #F1F1F1;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box span {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: 90px;
-  line-height: 34px;
+  line-height: 44px;
   text-align: center;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box .bic-input {
   padding: 2px 0 0 0;
-  margin: 0px;
+  margin: 5px 0px;
   height: 30px;
   width: 135px;
+  border: 1px solid #FFDAB9;
 }
 .bet_info_group .bi_main .bi_box .bi_count .count_box .bic-input input {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   font-family: "微軟正黑體";
   color: #ff0000;
   background: #fff;
   padding: 0 0 0 5px;
 }
 .bet_info_group .bi_main .bi_box .bi_btn {
-  padding: 10px 28px 10px 29px;
-  border-top: 1px solid #9DBEDE;
+  padding: 13px 24px 10px 24px;
+  border-top: 1px solid #FFAF67;
+  height: 60px;
   /*btn01 END*/
   /*btn02 END*/
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 {
-  overflow: hidden;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box {
   margin: 0 5px;
+  /* .btn_group {
+						position: relative;
+						background: #9E9E9E;
+						border-bottom: 3px solid #3f3f3f;
+						height: 30px;
+						width: 80px;
+						cursor: pointer;
+						border-radius: 3px;
+					 */
+  /* >span {
+							color: #fff;
+							position: absolute;
+							top: 6px;
+							right: 0px;
+							font-size: 0.8rem;
+							width: 100%;
+							text-align: center;
+							.transition ( all 0.5s );
+						}
+						.btn_icon {
+							position: absolute;
+							top:3px;
+							left: -100%;
+							text-align: center;
+							width: 100%;
+							.transition ( all 0.5s );
+							i {
+								color: #344371;
+								position: relative;
+								top: 4px;
+								left: 4%;
+								opacity: 0;
+								font-size: 1rem;
+								.transition ( all 1.5s );
+							}
+							span {
+								color: #344371;
+							    font-size: 0.9rem;
+								line-height: 26px;
+								padding: 0 0 0 5%;
+								opacity: 0;
+								.transition ( all 1.5s );
+						
+							}
+						}
+						&:hover {
+							background: #C1D0FF;
+							border-bottom: 3px solid #344371;
+							>span {
+								right: -100%;
+							}
+							.btn_icon {
+								left: 0px;
+								i{
+									opacity: 1;
+								}
+								span{
+									opacity: 1;
+								}
+							}
+						}
+											} */
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group {
-  position: relative;
-  background: #9E9E9E;
-  border-bottom: 3px solid #3f3f3f;
-  height: 30px;
-  width: 80px;
-  cursor: pointer;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02 {
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #C75404;
+  background: #f58937;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #BD4E01;
   border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 0px 0px 0px;
+  height: 30px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 2px 3px #A74B05;
+  width: 80px;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group > span {
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02 i {
   color: #fff;
   position: absolute;
-  top: 6px;
-  right: 0px;
-  font-size: 0.8rem;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon {
-  position: absolute;
-  top: 3px;
-  left: -100%;
-  text-align: center;
-  width: 100%;
-  -webkit-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon i {
-  color: #344371;
-  position: relative;
-  top: 4px;
-  left: 4%;
-  opacity: 0;
+  top: 7px;
+  left: 10px;
+  opacity: 1;
   font-size: 1rem;
   -webkit-transition: all 1.5s;
   -ms-transition: all 1.5s;
   transition: all 1.5s;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group .btn_icon span {
-  color: #344371;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02 span {
+  position: absolute;
+  color: #fff;
   font-size: 0.9rem;
   line-height: 26px;
-  padding: 0 0 0 5%;
-  opacity: 0;
+  top: 2px;
+  left: 34px;
+  opacity: 1;
   -webkit-transition: all 1.5s;
   -ms-transition: all 1.5s;
   transition: all 1.5s;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover {
-  background: #C1D0FF;
-  border-bottom: 3px solid #344371;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 3px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover > span {
-  right: -100%;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:active:before {
+  padding: 1px 0 0;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon {
-  left: 0px;
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A04200;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon i {
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn02:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
+  background: #f27312;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #C75404;
+  box-shadow: inset 0 4px 6px 0 #D25600;
+  top: 2px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03 {
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #FF8377, inset 0px -1px 0px 0px #E40600, inset 1px 0px 0px #FF5351, inset -1px 0px 0px 0px #FF4F4F, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #E20000;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,cf0404+100;Red+3D */
+  background: #ff3019;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A50000;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 0 0px 0px 0px;
+  height: 30px;
+  font-size: 0.9rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 2px 3px #A74B05;
+  width: 80px;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03 i {
+  color: #fff;
+  position: absolute;
+  top: 7px;
+  left: 10px;
   opacity: 1;
+  font-size: 1rem;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
 }
-.bet_info_group .bi_main .bi_box .bi_btn .bi_btn01 .btn_group:hover .btn_icon span {
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03 span {
+  position: absolute;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 26px;
+  top: 2px;
+  left: 34px;
   opacity: 1;
+  -webkit-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
+  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #8A3900 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 3px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:active:before {
+  padding: 1px 0 0;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c90000+0,ed1717+100 */
+  background: #c90000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c90000 0%, #ed1717 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c90000', endColorstr='#ed1717', GradientType=0);
+  /* IE6-9 */
+  border-bottom: solid 3px #A04200;
+}
+.bet_info_group .bi_main .bi_box .bi_btn .bi_btn_box .bi_btn03:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c90000+0,ed1717+100 */
+  background: #c90000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c90000 0%, #ed1717 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c90000 0%, #ed1717 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c90000', endColorstr='#ed1717', GradientType=0);
+  /* IE6-9 */
+  border: solid 1px #8C0000;
+  box-shadow: inset 0 4px 6px 0 #D25600;
+  top: 2px;
 }
 .bet_info_group .bi_main .bi_box .bi_btn .bi_btn02 {
   overflow: hidden;
@@ -1941,7 +2352,8 @@ md-content {
 /*logo*/
 .logo_icon {
   width: 255px;
-  background: rgba(38, 38, 38, 0.8);
+  background: #903B00;
+  /* background: rgba(38, 38, 38, 0.8); */
   padding: 8px 0 0 0;
 }
 .logo_icon .logo_img {
@@ -1964,7 +2376,7 @@ md-content {
 }
 /*logo+時區區塊*/
 .account_info {
-  width: 255px;
+  width: 254px;
   position: relative;
 }
 .account_info .acc_box {
@@ -1972,7 +2384,7 @@ md-content {
   padding: 8px 0 0 8px;
 }
 .account_info .acc_box span {
-  color: #000;
+  color: #fff;
 }
 .account_info .acc_box span span {
   color: #fff;
@@ -1987,44 +2399,68 @@ md-content {
   top: 12px;
 }
 .account_info .acc_button .acc_btn01 {
-  background: #3bb3e0;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+  border: 1px solid #CA5300;
+  box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2, 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #8c8c8c;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
   cursor: pointer;
-  font-size: 0.9rem;
-  color: #fff;
+  display: inline-block;
+  font-family: Verdana, sans-serif, '微軟正黑體';
   position: absolute;
   top: 9px;
   right: 10px;
-  padding: 5px 15px;
-  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
+  padding: 0px 14px;
+  line-height: 33px;
+  font-size: 1rem;
+  color: #4C4C4C;
+  font-weight: bold;
+  -webkit-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+  /* background: #3bb3e0;
+			cursor: pointer;
+			font-size: 0.9rem;
+			color: #fff;
+			position: absolute;
+			top: 9px;
+			right: 10px;
+			padding: 5px 15px;
+			box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D; */
 }
 .account_info .acc_button .acc_btn01:hover {
-  color: #013880;
-  background: #72D9FF;
-  box-shadow: inset 0px 1px 0px #B0E9FF, 0px 5px 0px 0px #156785, 0px 10px 2px #2D2D2D;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+  top: 10px;
+  background: #FBF2EB;
+  border: 1px solid #F16300;
+  box-shadow: inset 0 1px 2px #4a1e00, inset 0 -1px 0 #FFFFFF, inset 0 0 2px 1px #FFEEDF;
+  /* background: #FFF1E5;
+			    border:1px solid #983D00;
+			    box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2; */
 }
 .account_info .acc_button .acc_btn01:active {
   top: 12px;
-  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 0px #2D2D2D;
+  box-shadow: inset 0 1px 2px #4a1e00, inset 0 -1px 0 #FFFFFF, inset 0 0 2px 1px #FFEEDF;
   -webkit-transition: all 0s;
   -ms-transition: all 0s;
   transition: all 0s;
 }
 .account_info .gm_title {
   /* background: url(../images/game_menu/gm_title.png) no-repeat top center;  */
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
   width: 238px;
-  height: 36px;
+  height: 28px;
   margin: 15px auto 0 auto;
   text-align: center;
-  border-bottom: 1px solid #FFAE66;
+  border-bottom: 1px solid #FF7800;
+  border-top: 1px solid #A54100;
+  letter-spacing: 2px;
 }
 .account_info .gm_title span {
   color: #FFEAD7;
-  line-height: 36px;
-  font-size: 1.1rem;
+  line-height: 28px;
+  font-size: 0.9rem;
 }
 /*帳戶點數區*/
 /*上方-主要大類選單*/
@@ -2034,65 +2470,85 @@ md-content {
   height: 43px;
 }
 .top_menu01 div {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6eb2eb+0,3c9aea+100 */
-  background: #6eb2eb;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f58937+0,f57d21+100 */
+  background: #f58937;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #6eb2eb 0%, #3c9aea 100%);
+  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #6eb2eb 0%, #3c9aea 100%);
+  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #6eb2eb 0%, #3c9aea 100%);
+  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6eb2eb', endColorstr='#3c9aea', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
   /* IE6-9 */
-  -webkit-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
-  -moz-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
-  -o-box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
-  box-shadow: inset 0px 1px 0px #92CDFF, 0px 5px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  /*上-下-左-右-陰影*/
+  border: 1px solid #C75404;
   /* padding: 0 6.8%; */
   height: 38px;
-  margin: 0 1px 0 0;
+  margin: 0 0px 0 0;
   line-height: 38px;
   cursor: pointer;
-  width: 130px;
+  width: 128px;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0px 2px 3px #A74B05;
   /* .transition (height 0.5s, background 0.3s, line-height 0s) */
   -webkit-transition: height 0.3s, background 0.3s, line-height 0.1s;
   -ms-transition: height 0.3s, background 0.3s, line-height 0.1s;
   transition: height 0.3s, background 0.3s, line-height 0.1s;
 }
 .top_menu01 div:hover {
-  height: 43px;
-  line-height: 43px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2a9dff+0,0069bf+100 */
-  background: #2a9dff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57c20+0,f27312+100 */
+  background: #f57c20;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #2a9dff 0%, #0069bf 100%);
+  background: -moz-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2a9dff 0%, #0069bf 100%);
+  background: -webkit-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2a9dff 0%, #0069bf 100%);
+  background: linear-gradient(to bottom, #FF6E00 0%, #EF6700 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a9dff', endColorstr='#0069bf', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f57c20', endColorstr='#f27312', GradientType=0);
   /* IE6-9 */
-  -webkit-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
-  -moz-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
-  -o-box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #156785, 0px 10px 5px #999;
-  box-shadow: inset 0px 1px 0px #92CDFF, 0px 0px 0px 0px #0a3356, 0px 10px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid #753000;
+  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2), 0 -1px 0 0 #C75404, 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  margin: 1px 0 0 0 ;
+}
+.top_menu01 div:active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f57c20+0,f27312+100 */
+  background: #f57c20;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #FF6E00 0%, #EF6700 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #FF6E00 0%, #EF6700 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f57c20', endColorstr='#f27312', GradientType=0);
+  /* IE6-9 */
+  border: 1px solid #753000;
+  box-shadow: 0 -1px 0 0 #C75404, 0 1px 2px 0 rgba(0, 0, 0, 0.1), inset 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  margin: 1px 0 0 0 ;
 }
 /*上方右側-會員帳號選單*/
 .top_menu02 {
-  background: rgba(255, 255, 255, 0.3);
+  background: #903B00;
+  height: 63px;
+  padding: 0 0 0 1px;
+  /* background: rgba(255, 255, 255, 0.3); */
 }
-.top_menu02 .tm2_left {
+.top_menu02 .tm2_btn_box {
   width: 120px;
+  padding: 0 0 0 1px;
 }
-.top_menu02 .tm2_left > div {
-  background: #0081D8 ;
+.top_menu02 .tm2_btn_box > div {
+  /* background: #903B00 ; */
   height: 30px;
   width: 120px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -2100,73 +2556,142 @@ md-content {
   -ms-transition: all 0.6s;
   transition: all 0.6s;
   /*一般狀態*/
+  /* .tm_normal{
+				width: 240px;
+				height: 30px;
+				position: absolute;
+				top:0;
+				left:0;
+				.transition (all 0.6s);
+				>i {
+					color: #fff;
+					font-size: 0.8rem;
+					position: absolute;
+					top: 8px;
+					left: 22px;
+					.transition (all 0.6s);
+				}
+				>span {
+					color: #fff;
+					font-size: 0.8rem;
+					position: absolute;
+					top: 5px;
+					left: 43px;
+					.transition (all 0.6s);
+				}
+			}
+			.tm_hover {
+				position: relative;
+				i {
+					position: absolute;
+					top: 6px;
+					left: -120px;
+					font-size: 1rem;
+					.transition (all 0.6s);
+				}
+				span {
+					position: absolute;
+					top: 5px;
+					left: -55px;
+					font-size: 0.8rem;
+					.transition (all 0.6s);
+				}
+			} */
   /*滑入狀態*/
+  /* &:hover {
+				background:#9AD6FF;
+				.tm_normal{
+					>i {
+						left: 120px;
+					}
+					>span {
+						left: 180px;
+					}
+				}
+				.tm_hover {
+					i {
+						left: 20px;
+					}
+					span {
+						left: 43px;
+					}
+				}
+			} */
 }
-.top_menu02 .tm2_left > div .tm_normal {
-  width: 240px;
-  height: 30px;
+.top_menu02 .tm2_btn_box > div .tm_btn {
+  -moz-box-shadow: inset 0 0 0 1px #963E00;
+  -webkit-box-shadow: inset 0 0 0 1px #963E00;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #eee;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+  background: -moz-linear-gradient(#eee, #e2e2e2);
+  background: linear-gradient(#eee, #e2e2e2);
+  border: solid 1px #FFFFFF;
+  border-bottom: solid 3px #b2b1b1;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #f5f5f5;
+  color: #555;
+  display: inline-block;
+  font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
+  margin: 1px 0px 0px 0px;
+  padding: 0px 0px;
+  height: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #fafafa;
+  cursor: pointer;
+  width: 115px;
+}
+.top_menu02 .tm2_btn_box > div .tm_btn > i {
+  position: absolute;
+  top: 3px;
+  left: 14px;
+  font-size: 1.2rem;
+}
+.top_menu02 .tm2_btn_box > div .tm_btn > span {
+  position: absolute;
+  top: 2px;
+  left: 37px;
+}
+.top_menu02 .tm2_btn_box > div .tm_btn:before {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-box-shadow: #FFC38D 0px 2px 3px 1px;
+  -moz-box-shadow: #FFC38D 0px 2px 3px 1px;
+  border-radius: 3px;
+  box-shadow: #FFC38D 0px 2px 3px -1px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  padding: 0px 0 0;
   position: absolute;
   top: 0;
-  left: 0;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+  width: 100%;
 }
-.top_menu02 .tm2_left > div .tm_normal > i {
-  color: #fff;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 8px;
-  left: 22px;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+.top_menu02 .tm2_btn_box > div .tm_btn:active:before {
+  padding: 1px 0 0;
 }
-.top_menu02 .tm2_left > div .tm_normal > span {
-  color: #fff;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 5px;
-  left: 43px;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
+.top_menu02 .tm2_btn_box > div .tm_btn:hover {
+  background: #e4e4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+  background: -moz-linear-gradient(#e4e4e4, #ededed);
+  background: linear-gradient(#e4e4e4, #ededed);
+  border: solid 1px #c2c2c2;
+  border-bottom: solid 3px #b2b1b1;
+  box-shadow: inset 0 0 0 1px #efefef;
 }
-.top_menu02 .tm2_left > div .tm_hover {
-  position: relative;
-}
-.top_menu02 .tm2_left > div .tm_hover i {
-  position: absolute;
-  top: 6px;
-  left: -120px;
-  font-size: 1rem;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.top_menu02 .tm2_left > div .tm_hover span {
-  position: absolute;
-  top: 5px;
-  left: -55px;
-  font-size: 0.8rem;
-  -webkit-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.top_menu02 .tm2_left > div:hover {
-  background: #9AD6FF;
-}
-.top_menu02 .tm2_left > div:hover .tm_normal > i {
-  left: 120px;
-}
-.top_menu02 .tm2_left > div:hover .tm_normal > span {
-  left: 180px;
-}
-.top_menu02 .tm2_left > div:hover .tm_hover i {
-  left: 20px;
-}
-.top_menu02 .tm2_left > div:hover .tm_hover span {
-  left: 43px;
+.top_menu02 .tm2_btn_box > div .tm_btn:active {
+  background: #dfdfdf;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+  background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+  background: linear-gradient(#dfdfdf, #e3e3e3);
+  border: solid 1px #959595;
+  box-shadow: inset 0 10px 15px 0 #c4c4c4;
+  top: 2px;
 }
 .top_menu02 .tm2_right {
   width: 120px;
@@ -2255,6 +2780,8 @@ md-content {
   /*標題名稱*/
 }
 .ball_title .bt_func {
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
   /*沒有資訊的標頭*/
 }
 .ball_title .bt_func > div {
@@ -2930,7 +3457,8 @@ md-content {
 }
 .main_content .main_center .top .topbg {
   height: 63px;
-  background: rgba(38, 38, 38, 0.8);
+  background: #903B00;
+  /* background: rgba(38, 38, 38, 0.8); */
   /*跑馬燈*/
 }
 .main_content .main_center .top .topbg marquee {
@@ -2942,33 +3470,36 @@ md-content {
   top: 84px;
 }
 .main_content .main_center .box .box_left {
+  width: 254px;
   background: #DC5D04;
   /* background: rgba(235, 235, 235, 1); */
   /* background: rgba(255, 255, 255, 0.3); */
   /*左側-滾動區塊*/
 }
 .main_content .main_center .box .box_left .box_scoll {
-  margin: 8px 0 0 0;
-  height: 780px;
+  margin: 8px 0 50px 0;
+  height: 742px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar {
   width: 2px;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.5);
+  /*背景*/
+  background-color: #dc5d04;
   height: 0px;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-thumb {
   /*拉把*/
-  background-color: #9c3e00;
+  background-color: #ffaf67;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #dc5d04;
   height: 0px;
 }
 .main_content .main_center .box .box_left .box_scoll::-webkit-scrollbar-corner {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #dc5d04;
 }
 .main_content .main_center .box .box_right {
   /*上方選單*/
