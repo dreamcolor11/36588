@@ -1735,50 +1735,44 @@ md-content {
 							} */
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn {
-  -webkit-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 0px #ffb984, inset 0px -1px 0px 0px #db6f1d, inset 1px 0px 0px #f59851, inset -1px 0px 0px 0px #f59851, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px 1px 0px #FFFFFF, inset 0px -1px 0px 0px #FFFFFF, inset 1px 0px 0px #FFFFFF, inset -1px 0px 0px 0px #FFFFFF, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 0px #FFFFFF, inset 0px -1px 0px 0px #FFFFFF, inset 1px 0px 0px #FFFFFF, inset -1px 0px 0px 0px #FFFFFF, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: inset 0px 1px 0px #FFFFFF, inset 0px -1px 0px 0px #FFFFFF, inset 1px 0px 0px #FFFFFF, inset -1px 0px 0px 0px #FFFFFF, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 0px #FFFFFF, inset 0px -1px 0px 0px #FFFFFF, inset 1px 0px 0px #FFFFFF, inset -1px 0px 0px 0px #FFFFFF, 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
   /*上-下-左-右-陰影*/
-  border: 1px solid #C75404;
-  background: #f58937;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f58937 0%, #f57d21 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f58937 0%, #f57d21 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f58937 0%, #f57d21 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f58937', endColorstr='#f57d21', GradientType=0);
-  /* IE6-9 */
-  border-bottom: solid 3px #BD4E01;
+  border: solid 1px #D4D4D4;
+  background: #eee;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#eee), to(#e2e2e2));
+  background: -moz-linear-gradient(#eee, #e2e2e2);
+  background: linear-gradient(#eee, #e2e2e2);
+  border-bottom: solid 2px #ADA091;
   border-radius: 3px;
-  color: #fff;
+  color: #555;
   display: inline-block;
   font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
   margin: 0 1px 0px 2px;
   padding: 0px 15px;
   height: 27px;
-  line-height: 25px;
+  line-height: 27px;
   font-size: 0.9rem;
   position: relative;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  text-shadow: 0px 2px 3px #A74B05;
+  text-shadow: 0 1px 0 #fafafa;
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:before {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -webkit-box-shadow: #8A3900 0px 2px 3px 1px;
-  -moz-box-shadow: #8A3900 0px 2px 3px 1px;
   border-radius: 3px;
-  box-shadow: #8A3900 0px 2px 3px -1px;
+  -webkit-box-shadow: #696969 0px 2px 3px -2px, 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: #696969 0px 2px 3px -2px, 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: #696969 0px 2px 3px -2px, 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
   content: "";
   display: block;
   height: 100%;
   left: 0;
-  padding: 3px 0 0;
+  padding: 2px 0 0;
   position: absolute;
   top: 0;
   width: 100%;
@@ -1787,33 +1781,20 @@ md-content {
   padding: 1px 0 0;
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:hover {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
-  background: #f27312;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
-  /* IE6-9 */
-  border-bottom: solid 3px #A04200;
+  background: #e4e4e4;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#ededed));
+  background: -moz-linear-gradient(#e4e4e4, #ededed);
+  background: linear-gradient(#e4e4e4, #ededed);
+  border: solid 1px #c2c2c2;
+  border-bottom: solid 3px #ADA091;
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span a.bi_btn:active {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f27312+0,fc7f32+100 */
-  background: #f27312;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f27312 0%, #fc7f32 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f27312 0%, #fc7f32 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f27312 0%, #fc7f32 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27312', endColorstr='#fc7f32', GradientType=0);
-  /* IE6-9 */
-  border: solid 1px #C75404;
-  box-shadow: inset 0 4px 6px 0 #D25600;
+  background: #dfdfdf;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dfdfdf), to(#e3e3e3));
+  background: -moz-linear-gradient(#dfdfdf, #e3e3e3);
+  background: linear-gradient(#dfdfdf, #e3e3e3);
+  border: solid 1px #959595;
+  box-shadow: inset 0 10px 15px 0 #c4c4c4;
   top: 2px;
 }
 .bet_info_group .bi_main .bi_box .bi_content .bic_checkbox .checkbox01 span p {
@@ -2621,6 +2602,7 @@ md-content {
 .top_menu02 .tm2_btn_box > div .tm_btn {
   -moz-box-shadow: inset 0 0 0 1px #963E00;
   -webkit-box-shadow: inset 0 0 0 1px #963E00;
+  box-shadow: inset 0 0 0 1px #f5f5f5;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   background: #eee;
@@ -2630,7 +2612,6 @@ md-content {
   border: solid 1px #FFFFFF;
   border-bottom: solid 3px #b2b1b1;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 1px #f5f5f5;
   color: #555;
   display: inline-block;
   font-family: '微軟正黑體', Arial, Helvetica, Clean, sans-serif;
@@ -3111,6 +3092,9 @@ md-content {
   width: 1000px;
   height: 20px;
   background: #ffa15f;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 3;
 }
 .box_shadow .ball_title02 .bt_name .name_bar02 span {
   font-size: 0.9rem;
